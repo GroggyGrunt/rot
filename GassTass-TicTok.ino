@@ -1,5 +1,5 @@
-/*********************Programmed by SyntheMafia(06_06_2018)**********************/
-/************************Edited by GassTass(09_01_2019)**************************/
+//*********************Programmed by SyntheMafia(06_06_2018)**********************
+//************************Edited by GassTass(09_01_2019)**************************
 
 
 #include <SimpleTimer.h>
@@ -7,7 +7,6 @@
 
 SimpleTimer timer;
 int count = 0;
-
 
 void setup() {
   Serial.begin(9600);
@@ -21,18 +20,16 @@ void setup() {
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(11, INPUT);
-    
-}
+  }
 
 bool started = false;
 int priority = 0;
 int input1X = 0;
 float BPM; 
-int max_BPM = 240*4; /******************************************** maxbpm... go figure */
-int min_BPM = 60*4;  /******************************************** minBpm.. go figure again */
+int max_BPM = 240*4; //******************************************** maxbpm... go figure 
+int min_BPM = 60*4;  //******************************************** minBpm.. go figure again 
 int max_time = ((1/(min_BPM/60)) * 1000);
 int min_time = ((1/(max_BPM/60)) * 1000);
-
 
 void loop() {
   
@@ -42,21 +39,12 @@ void loop() {
   }
   
   timer.run();
-
-  
-
   Serial.print(" COUNT: ");
   Serial.print(count);
   Serial.print(" BPM: ");
   Serial.println(BPM/4);
   
-
 }
-
-
-/*********************************************************************/
-
-
 
 void cycle_off() {
   digitalWrite(2, LOW);
@@ -81,17 +69,7 @@ void cycle_off() {
     count = 0;
   }  
 
-
-
-
-
-  
 }
-
-
-
-/*********************************************************************/
-
 
 void cycle_on() {
 
@@ -740,14 +718,10 @@ void cycle_on() {
 
   int input1 = analogRead(A0);
 
-
   if (priority == 0){
     BPM = map(input1, 0, 1023, min_BPM, max_BPM);
      
-  
-
-}
-
+  }
 
   if (input1X - input1 > 5){
     priority = 0;
@@ -768,5 +742,3 @@ void cycle_on() {
   timer.setTimeout(cycle_stop, cycle_off);
 
 }
-
-/*********************************************************************/
