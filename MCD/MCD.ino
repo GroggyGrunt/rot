@@ -11,7 +11,7 @@ const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
 const int OUT_9_PIN = 11;
 
-const int divider0 = 1; //deviders
+const int divider0 = 1; //dividers
 const int divider1 = 2;
 const int divider2 = 3;
 const int divider3 = 4;
@@ -20,14 +20,15 @@ const int divider5 = 6;
 const int divider6 = 7;
 const int divider7 = 8;
 const int divider8 = 9;
-const int divider9 = 12;
+const int divider9 = 32;
 
 //float bpm;        // bpm
 int bpm = 120;      //bpm
+/*
 int bpmHi = 360;	//max bpm
 int bpmLo = 60;		//min bpm
 int pri = 0;		  //listen for bpmPot?
-int bpmPotX = 0;	//listen for bpmPot?
+int bpmPotX = 0;	//listen for bpmPot? */
 int cyclePeriod = 60000 / bpm / 4;  //?
 unsigned long count = 0;	//run you long time baby 150 000h - elektrofon
 bool started = false;	
@@ -108,4 +109,9 @@ void cycleOff() {
   digitalWrite(OUT_9_PIN, LOW);
 
   count++;
+  
+  Serial.print(" count: ");
+  Serial.print(count);
+  Serial.print(" bpm: ");
+  Serial.println(bpm);
 }
