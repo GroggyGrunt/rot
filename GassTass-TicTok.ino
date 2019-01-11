@@ -1,6 +1,6 @@
-//*********************Programmed by SyntheMafia(06_06_2018)**********************
-//************************Edited by GassTass(09_01_2019)**************************
-
+//Programmed by SyntheMafia(06_06_2018)
+//Edited by GGroggyGrunt(09_01_2019)
+//Trigger Clock for synth
 
 #include <SimpleTimer.h>
 
