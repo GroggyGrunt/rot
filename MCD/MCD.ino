@@ -50,7 +50,7 @@ void loop() {
     started = true;
   }
   
-    int bpmPot = analogRead(A0);
+  /*int bpmPot = analogRead(A0);
   
   if (pri == 0){
 	  bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
@@ -64,9 +64,8 @@ void loop() {
 	  pri = 0;
   }
 
-  bpmPotX = bpmPot;
+  bpmPotX = bpmPot;*/
 
-  
   timer.run();
   Serial.print(" count: ");
   Serial.print(count);
