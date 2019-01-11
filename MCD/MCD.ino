@@ -8,6 +8,8 @@ const int OUT_4_PIN = 6;
 const int OUT_5_PIN = 7;
 const int OUT_6_PIN = 8;
 const int OUT_7_PIN = 9;
+const int OUT_8_PIN = 10;
+const int OUT_9_PIN = 11;
 
 const int divider0 = 1; //deviders
 const int divider1 = 2;
@@ -17,6 +19,8 @@ const int divider4 = 5;
 const int divider5 = 6;
 const int divider6 = 7;
 const int divider7 = 8;
+const int divider8 = 9;
+const int divider9 = 12;
 
 //float bpm;        // bpm
 int bpm = 120;      //bpm
@@ -42,6 +46,8 @@ void setup() {
   pinMode(OUT_5_PIN, OUTPUT);
   pinMode(OUT_6_PIN, OUTPUT);
   pinMode(OUT_7_PIN, OUTPUT);
+  pinMode(OUT_8_PIN, OUTPUT);
+  pinMode(OUT_9_PIN, OUTPUT);
 }
 
 void loop() {
@@ -82,8 +88,8 @@ void cycleOn() {
   digitalWrite(OUT_5_PIN, !(count % divider5));
   digitalWrite(OUT_6_PIN, !(count % divider6));
   digitalWrite(OUT_7_PIN, !(count % divider7));
-
-
+  digitalWrite(OUT_8_PIN, !(count % divider8));
+  digitalWrite(OUT_9_PIN, !(count % divider9));
   
   timer.setTimeout(cyclePeriod, cycleOn);
   timer.setTimeout(2, cycleOff); // 2ms trigger length
@@ -98,6 +104,8 @@ void cycleOff() {
   digitalWrite(OUT_5_PIN, LOW);
   digitalWrite(OUT_6_PIN, LOW);
   digitalWrite(OUT_7_PIN, LOW);
+  digitalWrite(OUT_8_PIN, LOW);
+  digitalWrite(OUT_9_PIN, LOW);
 
   count++;
 }
