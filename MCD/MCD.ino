@@ -11,16 +11,16 @@ const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
 const int OUT_9_PIN = 11;
 
-const int divider0 = 1; //dividers
-const int divider1 = 2;
-const int divider2 = 3;
-const int divider3 = 4;
-const int divider4 = 5;
-const int divider5 = 6;
-const int divider6 = 7;
-const int divider7 = 8;
-const int divider8 = 9;
-const int divider9 = 32;
+const int divider0 = 2; //dividers
+const int divider1 = 4;
+const int divider2 = 8;
+const int divider3 = 16;
+const int divider4 = 32;
+const int divider5 = 1;
+const int divider6 = 3;
+const int divider7 = 5;
+const int divider8 = 7;
+const int divider9 = 13;
 
 //float bpm;        // bpm
 int bpm = 120;      //bpm
