@@ -70,13 +70,13 @@ void cycle_off() {
   digitalWrite(10, LOW);
   
   count++;
-/*
+
   int input2 = digitalRead(11);
   
     if (input2 == HIGH){
     count = 127;
-  }*/
-
+  }
+  
     if (count == 127){
     count = 0;
   }  
