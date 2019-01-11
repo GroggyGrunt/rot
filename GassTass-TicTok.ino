@@ -28,8 +28,8 @@ bool started = false;
 int priority = 0;
 int input1X = 0;
 float BPM; 
-int max_BPM = 960; /******************************************** write hier the max BPM that you want */
-int min_BPM = 240;  /******************************************** write hier the min BPM that you want */
+int max_BPM = 240*4; /******************************************** maxbpm... go figure */
+int min_BPM = 60*4;  /******************************************** minBpm.. go figure again */
 int max_time = ((1/(min_BPM/60)) * 1000);
 int min_time = ((1/(max_BPM/60)) * 1000);
 
