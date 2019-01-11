@@ -20,14 +20,14 @@ void setup() {
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(11, INPUT);
-  }
+ }
 
 bool started = false;
 int priority = 0;
 int input1X = 0;
 float BPM; 
-int max_BPM = 240*4; //******************************************** maxbpm... go figure 
-int min_BPM = 60*4;  //******************************************** minBpm.. go figure again 
+int max_BPM = 240*4; // maxbpm... go figure 
+int min_BPM = 60*4;  // minBpm.. go figure again 
 int max_time = ((1/(min_BPM/60)) * 1000);
 int min_time = ((1/(max_BPM/60)) * 1000);
 
@@ -59,15 +59,15 @@ void cycle_off() {
   
   count++;
 
- /* int input2 = digitalRead(11);
+ /* int input2 = digitalRead(11); //read push button for reset loop
   
-    if (input2 == HIGH){
-    count = 127;
+    if (input2 == HIGH){ // feels for voltage
+    count = 127; // sets count to last (127) so next step is 0
   }*/
   
-    if (count == 127){
-    count = 0;
-  }  
+    if (count == 127){ //checks steps for 127
+    count = 0; // resets loop to count 0
+	}  
 
 }
 
