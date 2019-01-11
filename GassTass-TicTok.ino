@@ -25,11 +25,11 @@ void setup() {
 bool started = false;
 int priority = 0;
 int input1X = 0;
-float BPM; 
-int max_BPM = 240*4; // maxbpm... go figure 
-int min_BPM = 60*4;  // minBpm.. go figure again 
-int max_time = ((1/(min_BPM/60)) * 1000);
-int min_time = ((1/(max_BPM/60)) * 1000);
+float bpm; 
+int maxBpm = 240*4; // maxBpm... go figure 
+int minBpm = 60*4;  // minBpm.. go figure again 
+int max_time = ((1/(minBpm/60)) * 1000);
+int min_time = ((1/(maxBpm/60)) * 1000);
 
 void loop() {
   
@@ -42,7 +42,7 @@ void loop() {
   Serial.print(" COUNT: ");
   Serial.print(count);
   Serial.print(" BPM: ");
-  Serial.println(BPM/4);
+  Serial.println(bpm/4);
   
 }
 
@@ -719,7 +719,7 @@ void cycle_on() {
   int input1 = analogRead(A0);
 
   if (priority == 0){
-    BPM = map(input1, 0, 1023, min_BPM, max_BPM);
+    bpm = map(input1, 0, 1023, minBpm, maxBpm);
      
   }
 
@@ -732,7 +732,7 @@ void cycle_on() {
 
   input1X = input1;
   
-  int cycletime = (60000/BPM);
+  int cycletime = (60000/bpm);
   float cycle_start = cycletime;
   float cycle_stop = 2;
 
