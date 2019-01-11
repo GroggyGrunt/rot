@@ -71,11 +71,11 @@ void cycle_off() {
   
   count++;
 
-  int input2 = digitalRead(11);
+ /* int input2 = digitalRead(11);
   
     if (input2 == HIGH){
     count = 127;
-  }
+  }*/
   
     if (count == 127){
     count = 0;
