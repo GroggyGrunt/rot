@@ -733,10 +733,8 @@ void cycle_on() {
   input1X = input1;
   
   int cycletime = (60000/BPM);
-
   float cycle_start = cycletime;
   float cycle_stop = 2;
-
 
   timer.setTimeout(cycle_start, cycle_on);
   timer.setTimeout(cycle_stop, cycle_off);
