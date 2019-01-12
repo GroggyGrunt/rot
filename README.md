@@ -1,1 +1,3 @@
-# GassTass TicTok
+# MCD - masterClockDivider
+Eurorack Trigger Clock
+
