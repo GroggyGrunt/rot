@@ -1,6 +1,6 @@
 #include <SimpleTimer.h>
-
-const int OUT_0_PIN = 2; //sets pinout
+//sets pinout
+const int OUT_0_PIN = 2;
 const int OUT_1_PIN = 3;
 const int OUT_2_PIN = 4;
 const int OUT_3_PIN = 5;
@@ -10,35 +10,34 @@ const int OUT_6_PIN = 8;
 const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
 const int OUT_9_PIN = 11;
+//dividers
+const int divider0 = 2;				//pin2
+const int divider1 = 4;				//pin3
+const int divider2 = 8;				//pin4
+const int divider3 = 16;			//pin5
+const int divider4 = 32;			//pin6
+const int divider5 = 1;				//pin7
+const int divider6 = 3;				//pin8
+const int divider7 = 5;				//pin9
+const int divider8 = 7;				//pin10
+const int divider9 = 13;			//pin11
 
-const int divider0 = 2; //dividers
-const int divider1 = 4;
-const int divider2 = 8;
-const int divider3 = 16;
-const int divider4 = 32;
-const int divider5 = 1;
-const int divider6 = 3;
-const int divider7 = 5;
-const int divider8 = 7;
-const int divider9 = 13;
-
-//float bpm;        // bpm
-int bpm = 120;      //bpm
-/*
+float bpm;       					//bpm
+//int bpm = 120;      				//bpm
 int bpmHi = 360;	//max bpm
 int bpmLo = 60;		//min bpm
-int pri = 0;		  //listen for bpmPot?
-int bpmPotX = 0;	//listen for bpmPot? */
+int priority = 0;		  //listen for bpmPot?
+int bpmPotX = 0;	//listen for bpmPot? 
 int cyclePeriod = 60000 / bpm / 4;  //?
-unsigned long count = 0;	//run you long time baby 150 000h - elektrofon
+unsigned long count = 0;			//run you long time baby 150 000h - elektrofon
 bool started = false;	
 
 SimpleTimer timer;
 
-void cycleOn();
-void cycleOff();
+void cycleOn();						//?
+void cycleOff();					//?
 
-void setup() {
+void setup() { 						//sets pinmode I/O
   pinMode(OUT_0_PIN, OUTPUT);
   pinMode(OUT_1_PIN, OUTPUT);
   pinMode(OUT_2_PIN, OUTPUT);
@@ -51,27 +50,27 @@ void setup() {
   pinMode(OUT_9_PIN, OUTPUT);
 }
 
-void loop() {
-  if (!started) {
-    cycleOn();
+void loop() {						//repeating code
+  if (!started) {					//starts if not started
+    cycleOn();					
     started = true;
   }
   
-  /*int bpmPot = analogRead(A0);
+  int bpmPot = analogRead(A0);		
   
-  if (pri == 0){
+  if (priority == 0){
 	  bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
   }
   
   if (bpmPotX - bpmPot > 5){
-	  pri = 0;
+	  priority = 0;
   }
   
   if (bpmPotX - bpmPot < -5){
-	  pri = 0;
+	  priority = 0;
   }
 
-  bpmPotX = bpmPot;*/
+  bpmPotX = bpmPot;
 
   timer.run();
   Serial.print(" count: ");
@@ -93,7 +92,7 @@ void cycleOn() {
   digitalWrite(OUT_9_PIN, !(count % divider9));
   
   timer.setTimeout(cyclePeriod, cycleOn);
-  timer.setTimeout(2, cycleOff); // 2ms trigger length
+  timer.setTimeout(2, cycleOff); 	// 2ms trigger length
 }
 
 void cycleOff() {
