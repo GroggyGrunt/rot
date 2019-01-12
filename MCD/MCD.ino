@@ -25,7 +25,7 @@ const int divider9 = 13;			//pin11
 int bpm = 120;      				//bpm
 int bpmHi = 360;	//max bpm
 int bpmLo = 60;		//min bpm
-int priority = 0;		  //listen for bpmPot?
+//int priority = 0;		  //listen for bpmPot?
 int bpmPotX = 0;	//listen for bpmPot? 
 int cyclePeriod = 60000 / bpm / 4;  //?
 unsigned long count = 0;			//run you long time baby 150 000h - elektrofon
@@ -56,20 +56,21 @@ void loop() {						//repeating code
   }
         
   int bpmPot = analogRead(A0);    //set bpmPot to analog input A0
-  
-  if (priority == 0){
+    
+  if (abs(bpmPotX - bpmPot) > 5){
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
   }
   
-  if (bpmPotX - bpmPot > 5){
-    priority = 0;
-  }
-  
-  if (bpmPotX - bpmPot < -5){
-    priority = 0;
-  }
+ /* if (bpmPotX - bpmPot < -5){
+    bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
+  }*/
 
   bpmPotX = bpmPot;
+
+  Serial.print(" count: ");
+  Serial.print(count);
+  Serial.print(" bpm: ");
+  Serial.println(bpm);
 
   timer.run();
 }
@@ -104,8 +105,4 @@ void cycleOff() {
 
   count++;
   
-  Serial.print(" count: ");
-  Serial.print(count);
-  Serial.print(" bpm: ");
-  Serial.println(bpm);
 }
