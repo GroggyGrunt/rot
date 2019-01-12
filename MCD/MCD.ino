@@ -55,22 +55,6 @@ void loop() {						//repeating code
     cycleOn();					
     started = true;
   }
-  
-  int bpmPot = analogRead(A0);		
-  
-  if (priority == 0){
-	  bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
-  }
-  
-  if (bpmPotX - bpmPot > 5){
-	  priority = 0;
-  }
-  
-  if (bpmPotX - bpmPot < -5){
-	  priority = 0;
-  }
-
-  bpmPotX = bpmPot;
 
   timer.run();
   Serial.print(" count: ");
@@ -90,6 +74,22 @@ void cycleOn() {
   digitalWrite(OUT_7_PIN, !(count % divider7));
   digitalWrite(OUT_8_PIN, !(count % divider8));
   digitalWrite(OUT_9_PIN, !(count % divider9));
+      
+  int bpmPot = analogRead(A0);		//set bpmPot to analog input A0
+  
+  if (priority == 0){
+	  bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
+  }
+  
+  if (bpmPotX - bpmPot > 5){
+	  priority = 0;
+  }
+  
+  if (bpmPotX - bpmPot < -5){
+	  priority = 0;
+  }
+
+  bpmPotX = bpmPot;
   
   timer.setTimeout(cyclePeriod, cycleOn);
   timer.setTimeout(2, cycleOff); 	// 2ms trigger length
