@@ -22,8 +22,8 @@ const int divider7 = 5;				//pin9
 const int divider8 = 7;				//pin10
 const int divider9 = 13;			//pin11
 
-float bpm;       					//bpm
-//int bpm = 120;      				//bpm
+//float bpm;       					//bpm
+int bpm = 120;      				//bpm
 int bpmHi = 360;	//max bpm
 int bpmLo = 60;		//min bpm
 int priority = 0;		  //listen for bpmPot?
@@ -62,13 +62,13 @@ void loop() {						//repeating code
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
   }
   
-  if (bpmPotX - bpmPot > 5){
+  /*if (bpmPotX - bpmPot > 5){
     priority = 0;
   }
   
   if (bpmPotX - bpmPot < -5){
     priority = 0;
-  }
+  }*/
 
   bpmPotX = bpmPot;
 
