@@ -23,7 +23,7 @@ const int divider8 = 7;				//pin10
 const int divider9 = 13;			//pin11
 
 int bpm = 120;      				//bpm
-int bpmHi = 360;	//max bpm
+int bpmHi = 240;	//max bpm
 int bpmLo = 60;		//min bpm
 //int priority = 0;		  //listen for bpmPot?
 int bpmPotX = 0;	//listen for bpmPot? 
@@ -37,6 +37,7 @@ void cycleOn();						//?
 void cycleOff();					//?
 
 void setup() { 						//sets pinmode I/O
+  Serial.begin(9600);
   pinMode(OUT_0_PIN, OUTPUT);
   pinMode(OUT_1_PIN, OUTPUT);
   pinMode(OUT_2_PIN, OUTPUT);
@@ -59,18 +60,18 @@ void loop() {						//repeating code
     
   if (abs(bpmPotX - bpmPot) > 5){
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
+    cyclePeriod = 60000 / bpm / 4;
+    Serial.print(" count: ");
+    Serial.print(count);
+    Serial.print(" bpmPot: ");
+    Serial.print(bpmPot);
+    Serial.print(" bpm: ");
+    Serial.println(bpm);
   }
   
- /* if (bpmPotX - bpmPot < -5){
-    bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
-  }*/
-
   bpmPotX = bpmPot;
 
-  Serial.print(" count: ");
-  Serial.print(count);
-  Serial.print(" bpm: ");
-  Serial.println(bpm);
+  int cyclePeriod = 60000 / bpm / 4;  //?
 
   timer.run();
 }
@@ -104,5 +105,5 @@ void cycleOff() {
   digitalWrite(OUT_9_PIN, LOW);
 
   count++;
-  
+
 }
