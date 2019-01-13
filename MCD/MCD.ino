@@ -11,31 +11,31 @@ const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
 const int OUT_9_PIN = 11;
 //dividers
-const int divider0 = 2;				//pin2
-const int divider1 = 4;				//pin3
-const int divider2 = 8;				//pin4
-const int divider3 = 16;			//pin5
-const int divider4 = 32;			//pin6
-const int divider5 = 1;				//pin7
-const int divider6 = 3;				//pin8
-const int divider7 = 5;				//pin9
-const int divider8 = 7;				//pin10
-const int divider9 = 13;			//pin11
+const int divider0 = 2;        //pin2
+const int divider1 = 4;       //pin3
+const int divider2 = 8;       //pin4
+const int divider3 = 16;      //pin5
+const int divider4 = 32;      //pin6
+const int divider5 = 1;       //pin7
+const int divider6 = 3;       //pin8
+const int divider7 = 5;       //pin9
+const int divider8 = 7;       //pin10
+const int divider9 = 13;      //pin11
 
-int bpm = 120;      				//bpm
-int bpmHi = 240;					//max bpm
-int bpmLo = 60;						//min bpm
-int bpmOld = 0;					//old bpm
+int bpm = 120;              //bpm
+int bpmHi = 240;          //max bpm
+int bpmLo = 60;           //min bpm
+int bpmOld = 0;         //old bpm
 int cyclePeriod = 60000 / bpm / 4;  //?
-unsigned long count = 0;			//run you long time baby 150 000h - elektrofon
-bool started = false;	
+unsigned long count = 0;      //run you long time baby 150 000h - elektrofon
+bool started = false; 
 
 SimpleTimer timer;
 
-void cycleOn();						//define cycle function on?
-void cycleOff();					//define cycle function off?
+void cycleOn();           //define cycle function on?
+void cycleOff();          //define cycle function off?
 
-void setup() { 						//sets pinmode I/O
+void setup() {            //sets pinmode I/O
   Serial.begin(9600);
   pinMode(OUT_0_PIN, OUTPUT);
   pinMode(OUT_1_PIN, OUTPUT);
@@ -49,15 +49,15 @@ void setup() { 						//sets pinmode I/O
   pinMode(OUT_9_PIN, OUTPUT);
 }
 
-void loop() {						//repeating code
-  if (!started) {					//starts if not started
-    cycleOn();						
+void loop() {           //repeating code
+  if (!started) {         //starts if not started
+    cycleOn();            
     started = true;
   }
         
-  int bpmPot = analogRead(A0);    	//set bpmPot to analog input A0
+  int bpmPot = analogRead(A0);      //set bpmPot to analog input A0
     
-  if (abs(bpmOld - bpmPot) > 15){	//bpm update rate
+  if (abs(bpmOld - bpmPot) > 15){ //bpm update rate
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
     cyclePeriod = 60000 / bpm / 4;
     Serial.print(" count: ");
@@ -88,7 +88,7 @@ void cycleOn() {
   digitalWrite(OUT_9_PIN, !(count % divider9));
   
   timer.setTimeout(cyclePeriod, cycleOn);
-  timer.setTimeout(2, cycleOff); 	// 2ms trigger length
+  timer.setTimeout(2, cycleOff);  // 2ms trigger length
 }
 
 void cycleOff() {
