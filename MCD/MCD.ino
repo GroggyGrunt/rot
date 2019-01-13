@@ -23,18 +23,17 @@ const int divider8 = 7;				//pin10
 const int divider9 = 13;			//pin11
 
 int bpm = 120;      				//bpm
-int bpmHi = 240;	//max bpm
-int bpmLo = 60;		//min bpm
-//int priority = 0;		  //listen for bpmPot?
-int bpmPotX = 0;	//listen for bpmPot? 
+int bpmHi = 240;					//max bpm
+int bpmLo = 60;						//min bpm
+int bpmOld = 0;					//old bpm
 int cyclePeriod = 60000 / bpm / 4;  //?
 unsigned long count = 0;			//run you long time baby 150 000h - elektrofon
 bool started = false;	
 
 SimpleTimer timer;
 
-void cycleOn();						//?
-void cycleOff();					//?
+void cycleOn();						//define cycle function on?
+void cycleOff();					//define cycle function off?
 
 void setup() { 						//sets pinmode I/O
   Serial.begin(9600);
@@ -52,13 +51,13 @@ void setup() { 						//sets pinmode I/O
 
 void loop() {						//repeating code
   if (!started) {					//starts if not started
-    cycleOn();					
+    cycleOn();						
     started = true;
   }
         
-  int bpmPot = analogRead(A0);    //set bpmPot to analog input A0
+  int bpmPot = analogRead(A0);    	//set bpmPot to analog input A0
     
-  if (abs(bpmPotX - bpmPot) > 5){
+  if (abs(bpmOld - bpmPot) > 15){	//bpm update rate
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
     cyclePeriod = 60000 / bpm / 4;
     Serial.print(" count: ");
@@ -69,7 +68,7 @@ void loop() {						//repeating code
     Serial.println(bpm);
   }
   
-  bpmPotX = bpmPot;
+  bpmOld = bpmPot;
 
   int cyclePeriod = 60000 / bpm / 4;  //?
 
