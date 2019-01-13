@@ -11,7 +11,7 @@ const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
 const int OUT_9_PIN = 11;
 //dividers
-const int divider0 = 2;        //pin2
+const int divider0 = 2;       //pin2
 const int divider1 = 4;       //pin3
 const int divider2 = 8;       //pin4
 const int divider3 = 16;      //pin5
@@ -22,11 +22,11 @@ const int divider7 = 5;       //pin9
 const int divider8 = 7;       //pin10
 const int divider9 = 13;      //pin11
 
-int bpm = 120;              //bpm
-int bpmHi = 240;          //max bpm
-int bpmLo = 60;           //min bpm
-int bpmOld = 0;         //old bpm
-int cyclePeriod = 60000 / bpm / 4;  //?
+int bpm = 120;            	  //bpm
+int bpmHi = 240;        	  //max bpm
+int bpmLo = 60;				  //min bpm
+int bpmOld = 0;        		  //old bpm
+int cyclePeriod = 60000 / bpm / 4;  //set cycle length
 unsigned long count = 0;      //run you long time baby 150 000h - elektrofon
 bool started = false; 
 
