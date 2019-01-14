@@ -9,18 +9,16 @@ const int OUT_5_PIN = 7;
 const int OUT_6_PIN = 8;
 const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
-const int OUT_9_PIN = 11;
 //dividers
-const int divider0 = 2;       //pin2
-const int divider1 = 4;       //pin3
-const int divider2 = 8;       //pin4
-const int divider3 = 16;      //pin5
-const int divider4 = 32;      //pin6
-const int divider5 = 1;       //pin7
-const int divider6 = 3;       //pin8
-const int divider7 = 5;       //pin9
-const int divider8 = 7;       //pin10
-const int divider9 = 13;      //pin11
+const int divider0 = 4;       //led1
+const int divider1 = 2;       //led2
+const int divider2 = 1;       //led3
+const int divider3 = 8;      //led4
+const int divider4 = 16;      //led5
+const int divider5 = 3;       //led6
+const int divider6 = 32;       //led7
+const int divider7 = 13;       //led8
+const int divider8 = 7;       //led9
 
 int bpm = 120;            	  //bpm
 int bpmHi = 240;        	  //max bpm
@@ -46,7 +44,6 @@ void setup() {            //sets pinmode I/O
   pinMode(OUT_6_PIN, OUTPUT);
   pinMode(OUT_7_PIN, OUTPUT);
   pinMode(OUT_8_PIN, OUTPUT);
-  pinMode(OUT_9_PIN, OUTPUT);
 }
 
 void loop() {           //repeating code
@@ -57,7 +54,7 @@ void loop() {           //repeating code
         
   int bpmPot = analogRead(A0);      //set bpmPot to analog input A0
     
-  if (abs(bpmOld - bpmPot) > 15){ //bpm update rate
+  if (abs(bpmOld - bpmPot) > 15){ 	//bpm update threshold
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
     cyclePeriod = 60000 / bpm / 4;
     Serial.print(" count: ");
@@ -68,9 +65,9 @@ void loop() {           //repeating code
     Serial.println(bpm);
   }
   
-  bpmOld = bpmPot;
+  bpmOld = bpmPot;			//save bpmPot in bpmOld
 
-  int cyclePeriod = 60000 / bpm / 4;  //?
+  int cyclePeriod = 60000 / bpm / 4;  //set cycle length
 
   timer.run();
 }
@@ -85,7 +82,6 @@ void cycleOn() {
   digitalWrite(OUT_6_PIN, !(count % divider6));
   digitalWrite(OUT_7_PIN, !(count % divider7));
   digitalWrite(OUT_8_PIN, !(count % divider8));
-  digitalWrite(OUT_9_PIN, !(count % divider9));
   
   timer.setTimeout(cyclePeriod, cycleOn);
   timer.setTimeout(2, cycleOff);  // 2ms trigger length
@@ -101,7 +97,6 @@ void cycleOff() {
   digitalWrite(OUT_6_PIN, LOW);
   digitalWrite(OUT_7_PIN, LOW);
   digitalWrite(OUT_8_PIN, LOW);
-  digitalWrite(OUT_9_PIN, LOW);
 
   count++;
 
