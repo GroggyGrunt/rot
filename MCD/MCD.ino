@@ -20,10 +20,11 @@ const int divider6 = 32;       //led7
 const int divider7 = 13;       //led8
 const int divider8 = 7;       //led9
 
-int bpm = 120;            	  //bpm
+int bpm = 0;            	  //bpm
 int bpmHi = 240;        	  //max bpm
 int bpmLo = 60;				  //min bpm
 int bpmOld = 0;        		  //old bpm
+int bpmPot = 0;     //bpmPot
 int cyclePeriod = 60000 / bpm / 4;  //set cycle length
 unsigned long count = 0;      //run you long time baby 150 000h - elektrofon
 bool started = false; 
@@ -44,19 +45,25 @@ void setup() {            //sets pinmode I/O
   pinMode(OUT_6_PIN, OUTPUT);
   pinMode(OUT_7_PIN, OUTPUT);
   pinMode(OUT_8_PIN, OUTPUT);
+  pinMode(A0, INPUT);
 }
 
 void loop() {           //repeating code
+  
+  bpmPot = analogRead(A0);      //set bpmPot to analog input A0
+  
   if (!started) {         //starts if not started
+    bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
+    cyclePeriod = 60000 / bpm / 4;
     cycleOn();            
     started = true;
   }
-        
-  int bpmPot = analogRead(A0);      //set bpmPot to analog input A0
-    
-  if (abs(bpmOld - bpmPot) > 15){ 	//bpm update threshold
+      
+  if (abs(bpmOld - bpmPot) > 5){ 	//bpm update threshold
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
     cyclePeriod = 60000 / bpm / 4;
+    bpmOld = bpmPot;      //save bpmPot in bpmOld
+    cyclePeriod = 60000 / bpm / 4;  //set cycle length
     Serial.print(" count: ");
     Serial.print(count);
     Serial.print(" bpmPot: ");
@@ -65,10 +72,6 @@ void loop() {           //repeating code
     Serial.println(bpm);
   }
   
-  bpmOld = bpmPot;			//save bpmPot in bpmOld
-
-  int cyclePeriod = 60000 / bpm / 4;  //set cycle length
-
   timer.run();
 }
 
