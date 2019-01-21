@@ -1,7 +1,7 @@
 #include <Wire.h>
 
 void setup() {
-  Wire.begin(4);        // join i2c bus (address optional for master)
+  Wire.begin();        // join i2c bus (address optional for master)
   Serial.begin(9600);  // start serial for output
 }
 
