@@ -11,6 +11,7 @@ const int OUT_5_PIN = 7;
 const int OUT_6_PIN = 8;
 const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
+
 //dividers
 const int divider0 = 1;       //led1
 const int divider1 = 2;       //led2
@@ -39,8 +40,8 @@ void rqBpm();             //define i2c request
 
 void setup() {            //sets pinmode I/O
   Wire.begin(8); // join i2c bus (address optional for master)
-  Serial.begin(9600);
   Wire.onRequest(rqBpm); // register event
+  Serial.begin(9600);
   pinMode(OUT_0_PIN, OUTPUT);
   pinMode(OUT_1_PIN, OUTPUT);
   pinMode(OUT_2_PIN, OUTPUT);
@@ -69,7 +70,6 @@ void loop() {           //repeating code
     cyclePeriod = 60000 / bpm / 4;
     bpmOld = bpmPot;      //save bpmPot  in bpmOld
     cyclePeriod = 60000 / bpm / 4;  //set cycle length
-
     Serial.print(" count: ");
     Serial.print(count);
     Serial.print(" bpmPot: ");
@@ -111,8 +111,6 @@ void cycleOff() {
   digitalWrite(OUT_6_PIN, LOW);
   digitalWrite(OUT_7_PIN, LOW);
   digitalWrite(OUT_8_PIN, LOW);
-
-
 
   count++;
 
