@@ -1,4 +1,6 @@
 #include <SimpleTimer.h>
+#include <Wire.h>
+
 //sets pinout
 const int OUT_0_PIN = 2;
 const int OUT_1_PIN = 3;
@@ -10,18 +12,18 @@ const int OUT_6_PIN = 8;
 const int OUT_7_PIN = 9;
 const int OUT_8_PIN = 10;
 //dividers
-const int divider0 = 4;       //led1
+const int divider0 = 1;       //led1
 const int divider1 = 2;       //led2
-const int divider2 = 1;       //led3
+const int divider2 = 4;       //led3
 const int divider3 = 8;      //led4
 const int divider4 = 16;      //led5
-const int divider5 = 3;       //led6
-const int divider6 = 32;       //led7
-const int divider7 = 13;       //led8
-const int divider8 = 7;       //led9
+const int divider5 = 32;       //led6
+const int divider6 = 3;       //led7
+const int divider7 = 7;       //led8
+const int divider8 = 13;       //led9
 
 int bpm = 0;            	  //bpm
-int bpmHi = 240;        	  //max bpm
+int bpmHi = 360;        	  //max bpm
 int bpmLo = 60;				  //min bpm
 int bpmOld = 0;        		  //old bpm
 int bpmPot = 0;     //bpmPot
@@ -33,9 +35,12 @@ SimpleTimer timer;
 
 void cycleOn();           //define cycle function on?
 void cycleOff();          //define cycle function off?
+void rqBpm();             //define i2c request
 
 void setup() {            //sets pinmode I/O
+  Wire.begin(8); // join i2c bus (address optional for master)
   Serial.begin(9600);
+  Wire.onRequest(rqBpm); // register event
   pinMode(OUT_0_PIN, OUTPUT);
   pinMode(OUT_1_PIN, OUTPUT);
   pinMode(OUT_2_PIN, OUTPUT);
@@ -62,15 +67,16 @@ void loop() {           //repeating code
   if (abs(bpmOld - bpmPot) > 5){ 	//bpm update threshold
     bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
     cyclePeriod = 60000 / bpm / 4;
-    bpmOld = bpmPot;      //save bpmPot in bpmOld
+    bpmOld = bpmPot;      //save bpmPot  in bpmOld
     cyclePeriod = 60000 / bpm / 4;  //set cycle length
+
     Serial.print(" count: ");
     Serial.print(count);
     Serial.print(" bpmPot: ");
     Serial.print(bpmPot);
     Serial.print(" bpm: ");
     Serial.println(bpm);
-  }
+   }
   
   timer.run();
 }
@@ -90,6 +96,11 @@ void cycleOn() {
   timer.setTimeout(2, cycleOff);  // 2ms trigger length
 }
 
+void rqBpm() {
+  Wire.write(bpm); // respond with message of 6 bytes
+  // as expected by master
+}
+
 void cycleOff() {
   digitalWrite(OUT_0_PIN, LOW);
   digitalWrite(OUT_1_PIN, LOW);
@@ -100,6 +111,8 @@ void cycleOff() {
   digitalWrite(OUT_6_PIN, LOW);
   digitalWrite(OUT_7_PIN, LOW);
   digitalWrite(OUT_8_PIN, LOW);
+
+
 
   count++;
 
