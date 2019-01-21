@@ -97,7 +97,7 @@ void cycleOn() {
 }
 
 void rqBpm() {
-  Wire.write(bpm); // respond with message of 6 bytes
+  Wire.write("hello "); // respond with message of 6 bytes
   // as expected by master
 }
 
