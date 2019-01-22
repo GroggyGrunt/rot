@@ -24,8 +24,8 @@ const int divider7 = 7;       //led8
 const int divider8 = 13;       //led9
 
 int bpm = 0;            	  //bpm
-int bpmHi = 360;        	  //max bpm
-int bpmLo = 60;				  //min bpm
+int bpmHi = 250;        	  //max bpm
+int bpmLo = 30;				  //min bpm
 int bpmOld = 0;        		  //old bpm
 int bpmPot = 0;     //bpmPot
 int cyclePeriod = 60000 / bpm / 4;  //set cycle length
@@ -97,7 +97,7 @@ void cycleOn() {
 }
 
 void rqBpm() {
-  Wire.write("hello "); // respond with message of 6 bytes
+  Wire.write(bpm); // respond with message of 6 bytes
   // as expected by master
 }
 
