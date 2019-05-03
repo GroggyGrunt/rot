@@ -1,3 +1,4 @@
-# MCD - masterClockDivider
-Eurorack Trigger Clock
+# SysAdm - Eurorack
+*1 NTP - NewTechPunsh
+*2 ???
 
