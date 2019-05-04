@@ -1,4 +1,6 @@
 # SysAdm - Eurorack
-1 NTP - NewTechPunsh
+NTP - NeuralTriggerPusher
+NTP-disp-exp - display expander (to come)
+NTP-mult-exp - active multiple expander (to come)
 
 
