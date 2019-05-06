@@ -1,0 +1,1171 @@
+EESchema Schematic File Version 4
+LIBS:NTP-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5CC88DE6
+P 2400 5900
+F 0 "A1" H 2450 4750 50  0000 R CNN
+F 1 "Arduino_Nano_v3.x" V 2300 6250 50  0000 R CNN
+F 2 "Module:Arduino_Nano_WithMountingHoles" V 2400 6300 50  0000 R CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 2400 4900 50  0001 C CNN
+	1    2400 5900
+	-1   0    0    1   
+$EndComp
+Text GLabel 2900 6300 2    50   Input ~ 0
+Tr1
+Text GLabel 2900 6200 2    50   Input ~ 0
+Tr2
+Text GLabel 2900 6100 2    50   Input ~ 0
+Tr3
+Text GLabel 2900 6000 2    50   Input ~ 0
+Tr4
+Text GLabel 2900 5900 2    50   Input ~ 0
+Tr5
+Text GLabel 2900 5800 2    50   Input ~ 0
+Tr6
+Text GLabel 2900 5700 2    50   Input ~ 0
+Tr7
+Text GLabel 2900 5600 2    50   Input ~ 0
+Tr8
+Text GLabel 2900 5500 2    50   Input ~ 0
+Tr9
+$Comp
+L Device:R_POT_US RV1
+U 1 1 5CC98C10
+P 1650 5900
+F 0 "RV1" V 1537 5900 50  0000 C CNN
+F 1 "R_POT_US" V 1446 5900 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 1650 5900 50  0001 C CNN
+F 3 "~" H 1650 5900 50  0001 C CNN
+	1    1650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5900 1900 5900
+Wire Wire Line
+	1650 6050 1650 6100
+Wire Wire Line
+	1650 6100 1900 6100
+Wire Wire Line
+	2400 4900 2300 4900
+Wire Wire Line
+	2300 4900 1650 4900
+Connection ~ 2300 4900
+Wire Wire Line
+	1650 5750 1650 4900
+Connection ~ 9850 5250
+Wire Wire Line
+	9850 5350 9850 5250
+Text GLabel 1450 2950 3    50   Input ~ 0
+Tr1
+$Comp
+L Diode:1N4006 D10
+U 1 1 5CEE3E98
+P 9150 5450
+F 0 "D10" H 9150 5666 50  0000 C CNN
+F 1 "1N4006" H 9150 5575 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 9150 5275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9150 5450 50  0001 C CNN
+	1    9150 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 7000 2500 6900
+$Comp
+L Device:CP1_Small C8
+U 1 1 5D049E28
+P 8750 5650
+F 0 "C8" H 8841 5696 50  0000 L CNN
+F 1 "22n" H 8841 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8750 5650 50  0001 C CNN
+F 3 "~" H 8750 5650 50  0001 C CNN
+F 4 "" H 8750 5650 50  0001 C CNN "Field4"
+	1    8750 5650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8750 5750 8850 5750
+Wire Wire Line
+	9150 5750 9350 5550
+Connection ~ 8750 5750
+$Comp
+L Diode:1N4006 D11
+U 1 1 5D173F19
+P 9000 5750
+F 0 "D11" H 9000 5966 50  0000 C CNN
+F 1 "1N4006" H 9000 5875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 9000 5575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9000 5750 50  0001 C CNN
+	1    9000 5750
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7400 5250 0    50   Input ~ 0
+GND
+Text GLabel 7400 5450 0    50   Input ~ 0
+12V
+Text GLabel 7400 5750 0    50   Input ~ 0
+5V
+Text GLabel 7400 5550 0    50   Input ~ 0
+GND
+Text GLabel 1650 4900 1    50   Input ~ 0
+GND
+Text GLabel 2500 7000 3    50   Input ~ 0
+12V
+Text GLabel 1250 2950 3    50   Input ~ 0
+5V
+Text GLabel 1650 1900 1    50   Input ~ 0
+GND
+Wire Wire Line
+	8750 5750 8400 5750
+Wire Wire Line
+	8750 5550 8400 5550
+$Comp
+L Device:CP1_Small C7
+U 1 1 5D4DD452
+P 8400 5650
+F 0 "C7" H 8491 5696 50  0000 L CNN
+F 1 "22n" H 8491 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8400 5650 50  0001 C CNN
+F 3 "~" H 8400 5650 50  0001 C CNN
+F 4 "" H 8400 5650 50  0001 C CNN "Field4"
+	1    8400 5650
+	1    0    0    1   
+$EndComp
+Connection ~ 8400 5750
+Wire Wire Line
+	8400 5750 8100 5750
+Connection ~ 8400 5550
+Wire Wire Line
+	8400 5550 8100 5550
+$Comp
+L Device:CP1_Small C6
+U 1 1 5D4DD8D5
+P 8100 5650
+F 0 "C6" H 8191 5696 50  0000 L CNN
+F 1 "22n" H 8191 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8100 5650 50  0001 C CNN
+F 3 "~" H 8100 5650 50  0001 C CNN
+F 4 "" H 8100 5650 50  0001 C CNN "Field4"
+	1    8100 5650
+	1    0    0    1   
+$EndComp
+Connection ~ 8100 5750
+Wire Wire Line
+	8100 5750 7800 5750
+Connection ~ 8100 5550
+Wire Wire Line
+	8100 5550 7800 5550
+$Comp
+L Device:CP1_Small C5
+U 1 1 5D4DDCC6
+P 7800 5650
+F 0 "C5" H 7891 5696 50  0000 L CNN
+F 1 "470n" H 7891 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 7800 5650 50  0001 C CNN
+F 3 "~" H 7800 5650 50  0001 C CNN
+F 4 "" H 7800 5650 50  0001 C CNN "Field4"
+	1    7800 5650
+	1    0    0    1   
+$EndComp
+Connection ~ 7800 5750
+Wire Wire Line
+	7800 5750 7400 5750
+Connection ~ 7800 5550
+Wire Wire Line
+	7800 5550 7400 5550
+Wire Wire Line
+	9000 5450 8750 5450
+Wire Wire Line
+	9850 5250 8750 5250
+$Comp
+L Device:CP1_Small C4
+U 1 1 5D4DDFEE
+P 8750 5350
+F 0 "C4" H 8841 5396 50  0000 L CNN
+F 1 "22n" H 8841 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8750 5350 50  0001 C CNN
+F 3 "~" H 8750 5350 50  0001 C CNN
+F 4 "" H 8750 5350 50  0001 C CNN "Field4"
+	1    8750 5350
+	1    0    0    1   
+$EndComp
+Connection ~ 8750 5450
+Wire Wire Line
+	8750 5450 8400 5450
+Connection ~ 8750 5250
+Wire Wire Line
+	8750 5250 8400 5250
+$Comp
+L Device:CP1_Small C3
+U 1 1 5D4DE3B5
+P 8400 5350
+F 0 "C3" H 8491 5396 50  0000 L CNN
+F 1 "22n" H 8491 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8400 5350 50  0001 C CNN
+F 3 "~" H 8400 5350 50  0001 C CNN
+F 4 "" H 8400 5350 50  0001 C CNN "Field4"
+	1    8400 5350
+	1    0    0    1   
+$EndComp
+Connection ~ 8400 5450
+Wire Wire Line
+	8400 5450 8100 5450
+Connection ~ 8400 5250
+Wire Wire Line
+	8400 5250 8100 5250
+$Comp
+L Device:CP1_Small C2
+U 1 1 5D4DE718
+P 8100 5350
+F 0 "C2" H 8191 5396 50  0000 L CNN
+F 1 "22n" H 8191 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8100 5350 50  0001 C CNN
+F 3 "~" H 8100 5350 50  0001 C CNN
+F 4 "" H 8100 5350 50  0001 C CNN "Field4"
+	1    8100 5350
+	1    0    0    1   
+$EndComp
+Connection ~ 8100 5450
+Wire Wire Line
+	8100 5450 7800 5450
+Connection ~ 8100 5250
+Wire Wire Line
+	8100 5250 7800 5250
+$Comp
+L Device:CP1_Small C1
+U 1 1 5D4DE9E7
+P 7800 5350
+F 0 "C1" H 7891 5396 50  0000 L CNN
+F 1 "470n" H 7891 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 7800 5350 50  0001 C CNN
+F 3 "~" H 7800 5350 50  0001 C CNN
+F 4 "" H 7800 5350 50  0001 C CNN "Field4"
+	1    7800 5350
+	1    0    0    1   
+$EndComp
+Connection ~ 7800 5450
+Wire Wire Line
+	7800 5450 7400 5450
+Connection ~ 7800 5250
+Wire Wire Line
+	7800 5250 7400 5250
+Connection ~ 10000 5550
+Wire Wire Line
+	9350 5550 10000 5550
+Wire Wire Line
+	10000 5550 10700 5550
+Connection ~ 10000 5350
+Connection ~ 10000 5250
+Connection ~ 10000 5450
+Wire Wire Line
+	9300 5450 10000 5450
+Wire Wire Line
+	10000 5450 10700 5450
+Wire Wire Line
+	10000 5350 9850 5350
+Wire Wire Line
+	10700 5350 10000 5350
+Wire Wire Line
+	10000 5250 9850 5250
+Wire Wire Line
+	10000 5250 10700 5250
+Connection ~ 10000 5150
+Wire Wire Line
+	9850 5150 9850 5250
+Wire Wire Line
+	10000 5150 9850 5150
+Wire Wire Line
+	10700 5150 10000 5150
+$Comp
+L Eurorack:PIN_HEADER_2x8 H2
+U 1 1 5CC9F5BF
+P 10350 5400
+F 0 "H2" H 10350 5997 60  0000 C CNN
+F 1 "PIN_HEADER_2x8" H 10350 5891 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 10450 5550 60  0001 C CNN
+F 3 "" H 10450 5550 60  0000 C CNN
+	1    10350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Eurorack:PJ301M-12 J1
+U 1 1 5CD49F47
+P 1150 1450
+F 0 "J1" V 1112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 1203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 1150 1450 50  0001 C CNN
+F 3 "" H 1150 1450 50  0000 C CNN
+	1    1150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Eurorack:PIN_HEADER_2x8 H1
+U 1 1 5D0851C1
+P 5650 5400
+F 0 "H1" H 5650 5997 60  0000 C CNN
+F 1 "Expander" H 5650 5891 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 5750 5550 60  0001 C CNN
+F 3 "" H 5750 5550 60  0000 C CNN
+	1    5650 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 5050 0    50   Input ~ 0
+Tr1
+Text GLabel 6000 5050 2    50   Input ~ 0
+Tr2
+Text GLabel 5300 5150 0    50   Input ~ 0
+Tr3
+Text GLabel 6000 5150 2    50   Input ~ 0
+Tr4
+Text GLabel 5300 5250 0    50   Input ~ 0
+Tr5
+Text GLabel 6000 5250 2    50   Input ~ 0
+Tr6
+Text GLabel 5300 5350 0    50   Input ~ 0
+Tr7
+Text GLabel 6000 5350 2    50   Input ~ 0
+Tr8
+Text GLabel 5300 5450 0    50   Input ~ 0
+Tr9
+Text GLabel 5300 5750 0    50   Input ~ 0
+5V
+Text GLabel 6000 5750 2    50   Input ~ 0
+5V
+Text GLabel 5300 5650 0    50   Input ~ 0
+GND
+Text GLabel 6000 5650 2    50   Input ~ 0
+GND
+Text GLabel 1900 5500 0    50   Input ~ 0
+SDA
+Text GLabel 1900 5400 0    50   Input ~ 0
+SDC
+Text GLabel 6000 5550 2    50   Input ~ 0
+SDC
+Text GLabel 5300 5550 0    50   Input ~ 0
+SDA
+$Comp
+L Device:R_US R11
+U 1 1 5D3A4E3C
+P 1650 2800
+F 0 "R11" V 1445 2800 50  0000 C CNN
+F 1 "200" V 1536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1690 2790 50  0001 C CNN
+F 3 "~" H 1650 2800 50  0001 C CNN
+	1    1650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 5D2D0C2B
+P 1250 2800
+F 0 "R10" V 1045 2800 50  0000 C CNN
+F 1 "2.2k" V 1136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1290 2790 50  0001 C CNN
+F 3 "~" H 1250 2800 50  0001 C CNN
+	1    1250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5CD40BD1
+P 1250 2450
+F 0 "Q1" H 1441 2404 50  0000 L CNN
+F 1 "2N3904" H 1441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1250 2450 50  0001 L CNN
+	1    1250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5CD40BB9
+P 1050 2600
+F 0 "R1" V 845 2600 50  0000 C CNN
+F 1 "6.8k" V 936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1090 2590 50  0001 C CNN
+F 3 "~" H 1050 2600 50  0001 C CNN
+	1    1050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CD40BAD
+P 1650 2500
+F 0 "D1" H 1643 2716 50  0000 C CNN
+F 1 "LED" H 1643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 1650 2500 50  0001 C CNN
+F 3 "~" H 1650 2500 50  0001 C CNN
+	1    1650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 2950 1450 2350
+Wire Wire Line
+	1650 2950 1450 2950
+Wire Wire Line
+	1250 2950 1050 2950
+Wire Wire Line
+	1050 2350 1050 1900
+Connection ~ 1050 2350
+Wire Wire Line
+	1150 1900 1300 1900
+Wire Wire Line
+	1300 1900 1650 1900
+Wire Wire Line
+	1650 1900 1650 2350
+Connection ~ 1300 1900
+Wire Wire Line
+	1050 2350 1050 2450
+Wire Wire Line
+	1050 2950 1050 2750
+Text GLabel 2250 2950 3    50   Input ~ 0
+5V
+Text GLabel 2650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J2
+U 1 1 5CD8CBD8
+P 2150 1450
+F 0 "J2" V 2112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 2203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 2150 1450 50  0001 C CNN
+F 3 "" H 2150 1450 50  0000 C CNN
+	1    2150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R13
+U 1 1 5CD8CBDE
+P 2650 2800
+F 0 "R13" V 2445 2800 50  0000 C CNN
+F 1 "200" V 2536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2690 2790 50  0001 C CNN
+F 3 "~" H 2650 2800 50  0001 C CNN
+	1    2650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R12
+U 1 1 5CD8CBE4
+P 2250 2800
+F 0 "R12" V 2045 2800 50  0000 C CNN
+F 1 "2.2k" V 2136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2290 2790 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5CD8CBEA
+P 2250 2450
+F 0 "Q2" H 2441 2404 50  0000 L CNN
+F 1 "2N3904" H 2441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2250 2450 50  0001 L CNN
+	1    2250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5CD8CBF0
+P 2050 2600
+F 0 "R2" V 1845 2600 50  0000 C CNN
+F 1 "6.8k" V 1936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2090 2590 50  0001 C CNN
+F 3 "~" H 2050 2600 50  0001 C CNN
+	1    2050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5CD8CBF6
+P 2650 2500
+F 0 "D2" H 2643 2716 50  0000 C CNN
+F 1 "LED" H 2643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 2650 2500 50  0001 C CNN
+F 3 "~" H 2650 2500 50  0001 C CNN
+	1    2650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2950 2450 2350
+Wire Wire Line
+	2650 2950 2450 2950
+Wire Wire Line
+	2250 2950 2050 2950
+Wire Wire Line
+	2050 2350 2050 1900
+Connection ~ 2050 2350
+Wire Wire Line
+	2150 1900 2300 1900
+Wire Wire Line
+	2300 1900 2650 1900
+Wire Wire Line
+	2650 1900 2650 2350
+Connection ~ 2300 1900
+Wire Wire Line
+	2050 2350 2050 2450
+Wire Wire Line
+	2050 2950 2050 2750
+Text GLabel 3250 2950 3    50   Input ~ 0
+5V
+Text GLabel 3650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J3
+U 1 1 5CD8F3C1
+P 3150 1450
+F 0 "J3" V 3112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 3203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 3150 1450 50  0001 C CNN
+F 3 "" H 3150 1450 50  0000 C CNN
+	1    3150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R15
+U 1 1 5CD8F3C7
+P 3650 2800
+F 0 "R15" V 3445 2800 50  0000 C CNN
+F 1 "200" V 3536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 2790 50  0001 C CNN
+F 3 "~" H 3650 2800 50  0001 C CNN
+	1    3650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R14
+U 1 1 5CD8F3CD
+P 3250 2800
+F 0 "R14" V 3045 2800 50  0000 C CNN
+F 1 "2.2k" V 3136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3290 2790 50  0001 C CNN
+F 3 "~" H 3250 2800 50  0001 C CNN
+	1    3250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q3
+U 1 1 5CD8F3D3
+P 3250 2450
+F 0 "Q3" H 3441 2404 50  0000 L CNN
+F 1 "2N3904" H 3441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3250 2450 50  0001 L CNN
+	1    3250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5CD8F3D9
+P 3050 2600
+F 0 "R3" V 2845 2600 50  0000 C CNN
+F 1 "6.8k" V 2936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3090 2590 50  0001 C CNN
+F 3 "~" H 3050 2600 50  0001 C CNN
+	1    3050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5CD8F3DF
+P 3650 2500
+F 0 "D3" H 3643 2716 50  0000 C CNN
+F 1 "LED" H 3643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 3650 2500 50  0001 C CNN
+F 3 "~" H 3650 2500 50  0001 C CNN
+	1    3650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2950 3450 2350
+Wire Wire Line
+	3650 2950 3450 2950
+Wire Wire Line
+	3250 2950 3050 2950
+Wire Wire Line
+	3050 2350 3050 1900
+Connection ~ 3050 2350
+Wire Wire Line
+	3150 1900 3300 1900
+Wire Wire Line
+	3300 1900 3650 1900
+Wire Wire Line
+	3650 1900 3650 2350
+Connection ~ 3300 1900
+Wire Wire Line
+	3050 2350 3050 2450
+Wire Wire Line
+	3050 2950 3050 2750
+Text GLabel 4250 2950 3    50   Input ~ 0
+5V
+Text GLabel 4650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J4
+U 1 1 5CD9C52E
+P 4150 1450
+F 0 "J4" V 4112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 4203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 4150 1450 50  0001 C CNN
+F 3 "" H 4150 1450 50  0000 C CNN
+	1    4150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R17
+U 1 1 5CD9C534
+P 4650 2800
+F 0 "R17" V 4445 2800 50  0000 C CNN
+F 1 "200" V 4536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4690 2790 50  0001 C CNN
+F 3 "~" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R16
+U 1 1 5CD9C53A
+P 4250 2800
+F 0 "R16" V 4045 2800 50  0000 C CNN
+F 1 "2.2k" V 4136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4290 2790 50  0001 C CNN
+F 3 "~" H 4250 2800 50  0001 C CNN
+	1    4250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q4
+U 1 1 5CD9C540
+P 4250 2450
+F 0 "Q4" H 4441 2404 50  0000 L CNN
+F 1 "2N3904" H 4441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4250 2450 50  0001 L CNN
+	1    4250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5CD9C546
+P 4050 2600
+F 0 "R4" V 3845 2600 50  0000 C CNN
+F 1 "6.8k" V 3936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4090 2590 50  0001 C CNN
+F 3 "~" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5CD9C54C
+P 4650 2500
+F 0 "D4" H 4643 2716 50  0000 C CNN
+F 1 "LED" H 4643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 4650 2500 50  0001 C CNN
+F 3 "~" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2950 4450 2350
+Wire Wire Line
+	4650 2950 4450 2950
+Wire Wire Line
+	4250 2950 4050 2950
+Wire Wire Line
+	4050 2350 4050 1900
+Connection ~ 4050 2350
+Wire Wire Line
+	4150 1900 4300 1900
+Wire Wire Line
+	4300 1900 4650 1900
+Wire Wire Line
+	4650 1900 4650 2350
+Connection ~ 4300 1900
+Wire Wire Line
+	4050 2350 4050 2450
+Wire Wire Line
+	4050 2950 4050 2750
+Text GLabel 5250 2950 3    50   Input ~ 0
+5V
+Text GLabel 5650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J5
+U 1 1 5CD9C560
+P 5150 1450
+F 0 "J5" V 5112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 5203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 5150 1450 50  0001 C CNN
+F 3 "" H 5150 1450 50  0000 C CNN
+	1    5150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R19
+U 1 1 5CD9C566
+P 5650 2800
+F 0 "R19" V 5445 2800 50  0000 C CNN
+F 1 "200" V 5536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5690 2790 50  0001 C CNN
+F 3 "~" H 5650 2800 50  0001 C CNN
+	1    5650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R18
+U 1 1 5CD9C56C
+P 5250 2800
+F 0 "R18" V 5045 2800 50  0000 C CNN
+F 1 "2.2k" V 5136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5290 2790 50  0001 C CNN
+F 3 "~" H 5250 2800 50  0001 C CNN
+	1    5250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q5
+U 1 1 5CD9C572
+P 5250 2450
+F 0 "Q5" H 5441 2404 50  0000 L CNN
+F 1 "2N3904" H 5441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5250 2450 50  0001 L CNN
+	1    5250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5CD9C578
+P 5050 2600
+F 0 "R5" V 4845 2600 50  0000 C CNN
+F 1 "6.8k" V 4936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5090 2590 50  0001 C CNN
+F 3 "~" H 5050 2600 50  0001 C CNN
+	1    5050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5CD9C57E
+P 5650 2500
+F 0 "D5" H 5643 2716 50  0000 C CNN
+F 1 "LED" H 5643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 5650 2500 50  0001 C CNN
+F 3 "~" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 2950 5450 2350
+Wire Wire Line
+	5650 2950 5450 2950
+Wire Wire Line
+	5250 2950 5050 2950
+Wire Wire Line
+	5050 2350 5050 1900
+Connection ~ 5050 2350
+Wire Wire Line
+	5150 1900 5300 1900
+Wire Wire Line
+	5300 1900 5650 1900
+Wire Wire Line
+	5650 1900 5650 2350
+Connection ~ 5300 1900
+Wire Wire Line
+	5050 2350 5050 2450
+Wire Wire Line
+	5050 2950 5050 2750
+Text GLabel 6250 2950 3    50   Input ~ 0
+5V
+Text GLabel 6650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J6
+U 1 1 5CD9C592
+P 6150 1450
+F 0 "J6" V 6112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 6203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 6150 1450 50  0001 C CNN
+F 3 "" H 6150 1450 50  0000 C CNN
+	1    6150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R21
+U 1 1 5CD9C598
+P 6650 2800
+F 0 "R21" V 6445 2800 50  0000 C CNN
+F 1 "200" V 6536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6690 2790 50  0001 C CNN
+F 3 "~" H 6650 2800 50  0001 C CNN
+	1    6650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R20
+U 1 1 5CD9C59E
+P 6250 2800
+F 0 "R20" V 6045 2800 50  0000 C CNN
+F 1 "2.2k" V 6136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6290 2790 50  0001 C CNN
+F 3 "~" H 6250 2800 50  0001 C CNN
+	1    6250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q6
+U 1 1 5CD9C5A4
+P 6250 2450
+F 0 "Q6" H 6441 2404 50  0000 L CNN
+F 1 "2N3904" H 6441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6250 2450 50  0001 L CNN
+	1    6250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 5CD9C5AA
+P 6050 2600
+F 0 "R6" V 5845 2600 50  0000 C CNN
+F 1 "6.8k" V 5936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6090 2590 50  0001 C CNN
+F 3 "~" H 6050 2600 50  0001 C CNN
+	1    6050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5CD9C5B0
+P 6650 2500
+F 0 "D6" H 6643 2716 50  0000 C CNN
+F 1 "LED" H 6643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 6650 2500 50  0001 C CNN
+F 3 "~" H 6650 2500 50  0001 C CNN
+	1    6650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 2950 6450 2350
+Wire Wire Line
+	6650 2950 6450 2950
+Wire Wire Line
+	6250 2950 6050 2950
+Wire Wire Line
+	6050 2350 6050 1900
+Connection ~ 6050 2350
+Wire Wire Line
+	6150 1900 6300 1900
+Wire Wire Line
+	6300 1900 6650 1900
+Wire Wire Line
+	6650 1900 6650 2350
+Connection ~ 6300 1900
+Wire Wire Line
+	6050 2350 6050 2450
+Wire Wire Line
+	6050 2950 6050 2750
+Text GLabel 7250 2950 3    50   Input ~ 0
+5V
+Text GLabel 7650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J7
+U 1 1 5CDA7457
+P 7150 1450
+F 0 "J7" V 7112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 7203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 7150 1450 50  0001 C CNN
+F 3 "" H 7150 1450 50  0000 C CNN
+	1    7150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R23
+U 1 1 5CDA745D
+P 7650 2800
+F 0 "R23" V 7445 2800 50  0000 C CNN
+F 1 "200" V 7536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7690 2790 50  0001 C CNN
+F 3 "~" H 7650 2800 50  0001 C CNN
+	1    7650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R22
+U 1 1 5CDA7463
+P 7250 2800
+F 0 "R22" V 7045 2800 50  0000 C CNN
+F 1 "2.2k" V 7136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7290 2790 50  0001 C CNN
+F 3 "~" H 7250 2800 50  0001 C CNN
+	1    7250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q7
+U 1 1 5CDA7469
+P 7250 2450
+F 0 "Q7" H 7441 2404 50  0000 L CNN
+F 1 "2N3904" H 7441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7250 2450 50  0001 L CNN
+	1    7250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5CDA746F
+P 7050 2600
+F 0 "R7" V 6845 2600 50  0000 C CNN
+F 1 "6.8k" V 6936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7090 2590 50  0001 C CNN
+F 3 "~" H 7050 2600 50  0001 C CNN
+	1    7050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5CDA7475
+P 7650 2500
+F 0 "D7" H 7643 2716 50  0000 C CNN
+F 1 "LED" H 7643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 7650 2500 50  0001 C CNN
+F 3 "~" H 7650 2500 50  0001 C CNN
+	1    7650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 2950 7450 2350
+Wire Wire Line
+	7650 2950 7450 2950
+Wire Wire Line
+	7250 2950 7050 2950
+Wire Wire Line
+	7050 2350 7050 1900
+Connection ~ 7050 2350
+Wire Wire Line
+	7150 1900 7300 1900
+Wire Wire Line
+	7300 1900 7650 1900
+Wire Wire Line
+	7650 1900 7650 2350
+Connection ~ 7300 1900
+Wire Wire Line
+	7050 2350 7050 2450
+Wire Wire Line
+	7050 2950 7050 2750
+Text GLabel 8250 2950 3    50   Input ~ 0
+5V
+Text GLabel 8650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J8
+U 1 1 5CDA7489
+P 8150 1450
+F 0 "J8" V 8112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 8203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 8150 1450 50  0001 C CNN
+F 3 "" H 8150 1450 50  0000 C CNN
+	1    8150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R25
+U 1 1 5CDA748F
+P 8650 2800
+F 0 "R25" V 8445 2800 50  0000 C CNN
+F 1 "200" V 8536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8690 2790 50  0001 C CNN
+F 3 "~" H 8650 2800 50  0001 C CNN
+	1    8650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R24
+U 1 1 5CDA7495
+P 8250 2800
+F 0 "R24" V 8045 2800 50  0000 C CNN
+F 1 "2.2k" V 8136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8290 2790 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q8
+U 1 1 5CDA749B
+P 8250 2450
+F 0 "Q8" H 8441 2404 50  0000 L CNN
+F 1 "2N3904" H 8441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8250 2450 50  0001 L CNN
+	1    8250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 5CDA74A1
+P 8050 2600
+F 0 "R8" V 7845 2600 50  0000 C CNN
+F 1 "6.8k" V 7936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8090 2590 50  0001 C CNN
+F 3 "~" H 8050 2600 50  0001 C CNN
+	1    8050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5CDA74A7
+P 8650 2500
+F 0 "D8" H 8643 2716 50  0000 C CNN
+F 1 "LED" H 8643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 8650 2500 50  0001 C CNN
+F 3 "~" H 8650 2500 50  0001 C CNN
+	1    8650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 2950 8450 2350
+Wire Wire Line
+	8650 2950 8450 2950
+Wire Wire Line
+	8250 2950 8050 2950
+Wire Wire Line
+	8050 2350 8050 1900
+Connection ~ 8050 2350
+Wire Wire Line
+	8150 1900 8300 1900
+Wire Wire Line
+	8300 1900 8650 1900
+Wire Wire Line
+	8650 1900 8650 2350
+Connection ~ 8300 1900
+Wire Wire Line
+	8050 2350 8050 2450
+Wire Wire Line
+	8050 2950 8050 2750
+Text GLabel 9250 2950 3    50   Input ~ 0
+5V
+Text GLabel 9650 1900 1    50   Input ~ 0
+GND
+$Comp
+L Eurorack:PJ301M-12 J9
+U 1 1 5CDA74BB
+P 9150 1450
+F 0 "J9" V 9112 1688 50  0000 L CNN
+F 1 "PJ301M-12" V 9203 1688 50  0000 L CNN
+F 2 "eurorack:PJ301M-12" H 9150 1450 50  0001 C CNN
+F 3 "" H 9150 1450 50  0000 C CNN
+	1    9150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R27
+U 1 1 5CDA74C1
+P 9650 2800
+F 0 "R27" V 9445 2800 50  0000 C CNN
+F 1 "200" V 9536 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9690 2790 50  0001 C CNN
+F 3 "~" H 9650 2800 50  0001 C CNN
+	1    9650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R26
+U 1 1 5CDA74C7
+P 9250 2800
+F 0 "R26" V 9045 2800 50  0000 C CNN
+F 1 "2.2k" V 9136 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9290 2790 50  0001 C CNN
+F 3 "~" H 9250 2800 50  0001 C CNN
+	1    9250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q9
+U 1 1 5CDA74CD
+P 9250 2450
+F 0 "Q9" H 9441 2404 50  0000 L CNN
+F 1 "2N3904" H 9441 2495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9250 2450 50  0001 L CNN
+	1    9250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 5CDA74D3
+P 9050 2600
+F 0 "R9" V 8845 2600 50  0000 C CNN
+F 1 "6.8k" V 8936 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9090 2590 50  0001 C CNN
+F 3 "~" H 9050 2600 50  0001 C CNN
+	1    9050 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 5CDA74D9
+P 9650 2500
+F 0 "D9" H 9643 2716 50  0000 C CNN
+F 1 "LED" H 9643 2625 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_FlatTop" H 9650 2500 50  0001 C CNN
+F 3 "~" H 9650 2500 50  0001 C CNN
+	1    9650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 2950 9450 2350
+Wire Wire Line
+	9650 2950 9450 2950
+Wire Wire Line
+	9250 2950 9050 2950
+Wire Wire Line
+	9050 2350 9050 1900
+Connection ~ 9050 2350
+Wire Wire Line
+	9150 1900 9300 1900
+Wire Wire Line
+	9300 1900 9650 1900
+Wire Wire Line
+	9650 1900 9650 2350
+Connection ~ 9300 1900
+Wire Wire Line
+	9050 2350 9050 2450
+Wire Wire Line
+	9050 2950 9050 2750
+Text GLabel 2450 2950 3    50   Input ~ 0
+Tr2
+Text GLabel 3450 2950 3    50   Input ~ 0
+Tr3
+Text GLabel 4450 2950 3    50   Input ~ 0
+Tr4
+Text GLabel 5450 2950 3    50   Input ~ 0
+Tr5
+Text GLabel 6450 2950 3    50   Input ~ 0
+Tr6
+Text GLabel 7450 2950 3    50   Input ~ 0
+Tr7
+Text GLabel 8450 2950 3    50   Input ~ 0
+Tr8
+Text GLabel 9450 2950 3    50   Input ~ 0
+Tr9
+$EndSCHEMATC
