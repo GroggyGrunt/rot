@@ -24,7 +24,7 @@ const int divider7 = 7;       //led8
 const int divider8 = 13;       //led9
 
 int bpm = 0;            	  //bpm
-int bpmHi = 240;        	  //max bpm
+int bpmHi = 250;        	  //max bpm
 int bpmLo = 30;				  //min bpm
 int bpmOld = 0;        		  //old bpm
 int bpmPot = 0;     //bpmPot
