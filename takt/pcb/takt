@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>C:\Users\TrplTiT\Documents\GitHub\rot\takt\pcb\takt.sch</h1>
+    <p>05/08/19 01:38:25</p>
+    <p>Eeschema (5.1.2)-1</p>
+    <p><b>Component Count:</b>68</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>A1</td><td>1</td><td>Arduino_Nano_v3.x</td><td>MCU_Module:Arduino_Nano_v3.x</td><td>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</td><td>Arduino Nano v3.x</td><td></td></tr><tr><td>C1, C5</td><td>2</td><td>470n</td><td>Device:CP1_Small</td><td>~</td><td>Polarized capacitor, small US symbol</td><td></td></tr><tr><td>C2, C3, C4, C6, C7, C8</td><td>6</td><td>22n</td><td>Device:CP1_Small</td><td>~</td><td>Polarized capacitor, small US symbol</td><td></td></tr><tr><td>D1, D2, D3, D4, D5, D6, D7, D8, D9</td><td>9</td><td>LED</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>D10, D11</td><td>2</td><td>1N4006</td><td>Diode:1N4006</td><td>http://www.vishay.com/docs/88503/1n4001.pdf</td><td>800V 1A General Purpose Rectifier Diode, DO-41</td><td></td></tr><tr><td>H1</td><td>1</td><td>Expander</td><td>Eurorack:PIN_HEADER_2x8</td><td></td><td></td><td></td></tr><tr><td>H2</td><td>1</td><td>PIN_HEADER_2x8</td><td>Eurorack:PIN_HEADER_2x8</td><td></td><td></td><td></td></tr><tr><td>J1, J2, J3, J4, J5, J6, J7, J8, J9</td><td>9</td><td>PJ301M-12</td><td>Eurorack:PJ301M-12</td><td></td><td></td><td></td></tr><tr><td>Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9</td><td>9</td><td>2N3904</td><td>Transistor_BJT:2N3904</td><td>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</td><td>0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92</td><td></td></tr><tr><td>R1, R2, R3, R4, R5, R6, R7, R8, R9</td><td>9</td><td>6.8k</td><td>Device:R_US</td><td>~</td><td>Resistor, US symbol</td><td></td></tr><tr><td>R10, R12, R14, R16, R18, R20, R22, R24, R26</td><td>9</td><td>2.2k</td><td>Device:R_US</td><td>~</td><td>Resistor, US symbol</td><td></td></tr><tr><td>R11, R13, R15, R17, R19, R21, R23, R25, R27</td><td>9</td><td>200</td><td>Device:R_US</td><td>~</td><td>Resistor, US symbol</td><td></td></tr><tr><td>RV1</td><td>1</td><td>R_POT_US</td><td>Device:R_POT_US</td><td>~</td><td>Potentiometer, US symbol</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
