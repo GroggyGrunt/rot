@@ -6,8 +6,8 @@ easygoing eurorack-modules
 
 ## takt - devided trigger generator
 <p align="center">
-  <img src="https://github.com/GroggyGrunt/rot/blob/master/takt/takt-panel.png" width="250" title="hover text">
-  <img src="https://github.com/GroggyGrunt/rot/blob/master/takt/takt-pcb.png" width="250" title="hover text">
+  <img src="https://github.com/GroggyGrunt/rot/blob/master/takt/takt-panel.png" width="250">
+  <img src="https://github.com/GroggyGrunt/rot/blob/master/takt/takt-pcb.png" width="250">
 </p>
 
 #### takt-ex - expander 
