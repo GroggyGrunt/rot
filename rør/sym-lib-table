@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MLT-rescue)(type Legacy)(uri ${KIPRJMOD}/MLT-rescue.lib)(options "")(descr ""))
+)
