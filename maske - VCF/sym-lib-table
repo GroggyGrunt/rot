@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name maske_-_VCF-eagle-import)(type Legacy)(uri ${KIPRJMOD}/maske_-_VCF-eagle-import.lib)(options "")(descr ""))
+)

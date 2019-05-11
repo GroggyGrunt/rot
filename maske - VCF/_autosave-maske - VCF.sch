@@ -1,0 +1,4879 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr User 27312 19623
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	12000 4800 11800 4800
+Wire Wire Line
+	11800 4800 11800 5100
+Wire Wire Line
+	11800 5100 12100 5100
+Wire Wire Line
+	11800 5100 11800 5400
+Wire Wire Line
+	11800 5400 12100 5400
+Wire Wire Line
+	12100 5700 11800 5700
+Wire Wire Line
+	11800 5700 11800 5400
+Wire Wire Line
+	11800 5900 11800 5700
+Connection ~ 11800 5400
+Connection ~ 11800 5100
+Connection ~ 11800 5700
+Wire Wire Line
+	12800 6700 12800 7100
+Wire Wire Line
+	14300 6700 12800 6700
+Connection ~ 12800 6700
+Wire Wire Line
+	11800 6800 11800 6700
+Text Label 11800 6800 0    10   ~ 0
+GND
+Wire Wire Line
+	6800 1700 6800 1600
+Wire Wire Line
+	8500 1700 8500 1600
+Wire Wire Line
+	8500 1600 8500 1400
+Wire Wire Line
+	6800 1600 7300 1600
+Wire Wire Line
+	7300 1600 7600 1600
+Wire Wire Line
+	7600 1600 7900 1600
+Wire Wire Line
+	7900 1600 8200 1600
+Wire Wire Line
+	8200 1600 8500 1600
+Wire Wire Line
+	7600 1700 7600 1600
+Wire Wire Line
+	7600 1600 7600 1400
+Wire Wire Line
+	8700 1700 8700 1600
+Wire Wire Line
+	8700 1600 8700 1400
+Wire Wire Line
+	8500 1600 8700 1600
+Wire Wire Line
+	8900 1700 8900 1600
+Wire Wire Line
+	8900 1600 8900 1400
+Wire Wire Line
+	9100 1700 9100 1600
+Wire Wire Line
+	9100 1600 9100 1400
+Wire Wire Line
+	8900 1600 9100 1600
+Wire Wire Line
+	8700 1600 8900 1600
+Wire Wire Line
+	7300 1700 7300 1600
+Wire Wire Line
+	7300 1500 7300 1600
+Wire Wire Line
+	8200 1700 8200 1600
+Wire Wire Line
+	8200 1400 8200 1600
+Wire Wire Line
+	7900 1400 7900 1600
+Wire Wire Line
+	7900 1700 7900 1600
+Connection ~ 7600 1600
+Connection ~ 8500 1600
+Connection ~ 8700 1600
+Connection ~ 8900 1600
+Connection ~ 9100 1600
+Connection ~ 7300 1600
+Connection ~ 7900 1600
+Connection ~ 8200 1600
+Text Label 6800 1700 0    10   ~ 0
+GND
+Wire Wire Line
+	10500 7200 10500 7100
+Text Label 10500 7200 0    10   ~ 0
+GND
+Wire Wire Line
+	10300 7800 10300 7700
+Text Label 10300 7800 0    10   ~ 0
+GND
+Wire Wire Line
+	9600 8000 9600 7900
+Wire Wire Line
+	9600 7900 9600 7800
+Wire Wire Line
+	9300 6900 9300 7900
+Wire Wire Line
+	9300 7900 9600 7900
+Connection ~ 9600 7900
+Text Label 9600 8000 0    10   ~ 0
+GND
+Wire Wire Line
+	8800 8100 8800 8000
+Text Label 8800 8100 0    10   ~ 0
+GND
+Wire Wire Line
+	12400 1400 11900 1400
+Wire Wire Line
+	11900 1400 11900 1500
+Wire Wire Line
+	11900 1500 11900 1600
+Wire Wire Line
+	11900 1600 11900 1700
+Wire Wire Line
+	12400 1500 11900 1500
+Wire Wire Line
+	12400 1600 11900 1600
+Connection ~ 11900 1600
+Connection ~ 11900 1500
+Text Label 12400 1400 0    10   ~ 0
+GND
+Wire Wire Line
+	13000 1400 13400 1400
+Wire Wire Line
+	13400 1400 13400 1500
+Wire Wire Line
+	13400 1500 13400 1600
+Wire Wire Line
+	13400 1600 13400 1700
+Wire Wire Line
+	13000 1500 13400 1500
+Wire Wire Line
+	13000 1600 13400 1600
+Connection ~ 13400 1600
+Connection ~ 13400 1500
+Text Label 13000 1400 0    10   ~ 0
+GND
+Wire Wire Line
+	6200 5700 6200 5600
+Wire Wire Line
+	6200 5600 6300 5600
+Text Label 6200 5700 0    10   ~ 0
+GND
+Wire Wire Line
+	4500 5700 4400 5700
+Wire Wire Line
+	4400 5700 4400 6300
+Wire Wire Line
+	4400 6300 4400 6400
+Wire Wire Line
+	4400 6300 4300 6300
+Connection ~ 4400 6300
+Text Label 4500 5700 0    10   ~ 0
+GND
+Wire Wire Line
+	13200 9000 13200 8900
+Wire Wire Line
+	13200 8900 13200 8800
+Wire Wire Line
+	13200 8900 12800 8900
+Wire Wire Line
+	12800 8900 12800 8400
+Connection ~ 13200 8900
+Text Label 13200 9000 0    10   ~ 0
+GND
+Wire Wire Line
+	18900 6500 18900 7000
+Wire Wire Line
+	18900 7000 18900 7100
+Wire Wire Line
+	18600 6600 18600 7000
+Wire Wire Line
+	18600 7000 18900 7000
+Wire Wire Line
+	18300 6900 18300 7000
+Wire Wire Line
+	18300 7000 18600 7000
+Connection ~ 18600 7000
+Connection ~ 18900 7000
+Text Label 18900 6500 0    10   ~ 0
+GND
+Wire Wire Line
+	15800 7300 15800 7200
+Wire Wire Line
+	15800 7200 15100 7200
+Text Label 15800 7300 0    10   ~ 0
+GND
+Wire Wire Line
+	18500 8000 18400 8000
+Wire Wire Line
+	18400 8000 18400 8100
+Text Label 18500 8000 0    10   ~ 0
+GND
+Wire Wire Line
+	15300 10500 15200 10500
+Wire Wire Line
+	15200 10500 15200 10600
+Text Label 15300 10500 0    10   ~ 0
+GND
+Wire Wire Line
+	2900 5600 3000 5600
+Wire Wire Line
+	3000 5600 3000 5700
+Text Label 2900 5600 0    10   ~ 0
+GND
+Wire Wire Line
+	1700 8600 1800 8600
+Wire Wire Line
+	1800 8600 1800 8700
+Text Label 1700 8600 0    10   ~ 0
+GND
+Wire Wire Line
+	1700 7300 1800 7300
+Wire Wire Line
+	1800 7300 1900 7300
+Wire Wire Line
+	1900 7300 1900 7400
+Wire Wire Line
+	1800 7200 1800 7300
+Wire Wire Line
+	1900 7200 1900 7300
+Connection ~ 1800 7300
+Connection ~ 1900 7300
+Text Label 1700 7300 0    10   ~ 0
+GND
+Wire Wire Line
+	5300 10100 5300 10200
+Wire Wire Line
+	5600 10000 5600 10100
+Wire Wire Line
+	5600 10100 5300 10100
+Wire Wire Line
+	5300 10100 5100 10100
+Wire Wire Line
+	5600 10100 5900 10100
+Wire Wire Line
+	5900 10100 5900 10000
+Wire Wire Line
+	5900 10100 6000 10100
+Wire Wire Line
+	6000 10100 6000 10000
+Connection ~ 5300 10100
+Connection ~ 5600 10100
+Connection ~ 5900 10100
+Text Label 5300 10100 0    10   ~ 0
+GND
+Wire Wire Line
+	11900 13900 11900 13800
+Text Label 11900 13900 0    10   ~ 0
+GND
+Wire Wire Line
+	10600 14300 10600 14200
+Text Label 10600 14300 0    10   ~ 0
+GND
+Wire Wire Line
+	10400 14900 10400 14800
+Text Label 10400 14900 0    10   ~ 0
+GND
+Wire Wire Line
+	9700 15100 9700 15000
+Wire Wire Line
+	9700 15000 9700 14900
+Wire Wire Line
+	9400 14000 9400 15000
+Wire Wire Line
+	9400 15000 9700 15000
+Connection ~ 9700 15000
+Text Label 9700 15100 0    10   ~ 0
+GND
+Wire Wire Line
+	8900 15200 8900 15100
+Text Label 8900 15200 0    10   ~ 0
+GND
+Wire Wire Line
+	6200 12900 6200 12800
+Wire Wire Line
+	6200 12800 6300 12800
+Text Label 6200 12900 0    10   ~ 0
+GND
+Wire Wire Line
+	4500 12700 4400 12700
+Wire Wire Line
+	4400 12700 4400 13500
+Wire Wire Line
+	4400 13500 4400 13700
+Wire Wire Line
+	4300 13500 4400 13500
+Connection ~ 4400 13500
+Text Label 4500 12700 0    10   ~ 0
+GND
+Wire Wire Line
+	13300 16100 13300 16000
+Wire Wire Line
+	13300 16000 13300 15900
+Wire Wire Line
+	13300 16000 12900 16000
+Wire Wire Line
+	12900 16000 12900 15500
+Connection ~ 13300 16000
+Text Label 13300 16100 0    10   ~ 0
+GND
+Wire Wire Line
+	18500 13800 18500 14100
+Wire Wire Line
+	18500 14100 18500 14300
+Wire Wire Line
+	18300 13700 18300 14100
+Wire Wire Line
+	18300 14100 18500 14100
+Wire Wire Line
+	18000 14000 18000 14100
+Wire Wire Line
+	18000 14100 18300 14100
+Connection ~ 18500 14100
+Connection ~ 18300 14100
+Text Label 18500 13800 0    10   ~ 0
+GND
+Wire Wire Line
+	16000 14400 16000 14300
+Wire Wire Line
+	16000 14300 15200 14300
+Text Label 16000 14400 0    10   ~ 0
+GND
+Wire Wire Line
+	17600 15100 17500 15100
+Wire Wire Line
+	17500 15100 17500 15200
+Text Label 17600 15100 0    10   ~ 0
+GND
+Wire Wire Line
+	15500 17700 15400 17700
+Wire Wire Line
+	15400 17700 15400 17800
+Text Label 15500 17700 0    10   ~ 0
+GND
+Wire Wire Line
+	2800 12600 2900 12600
+Wire Wire Line
+	2900 12600 2900 12700
+Text Label 2800 12600 0    10   ~ 0
+GND
+Wire Wire Line
+	2500 16100 2500 16200
+Wire Wire Line
+	2500 16100 2400 16100
+Text Label 2500 16100 0    10   ~ 0
+GND
+Wire Wire Line
+	2200 14800 2300 14800
+Wire Wire Line
+	2300 14800 2400 14800
+Wire Wire Line
+	2400 14800 2400 14900
+Wire Wire Line
+	2300 14600 2300 14800
+Wire Wire Line
+	2400 14600 2400 14800
+Connection ~ 2300 14800
+Connection ~ 2400 14800
+Text Label 2200 14800 0    10   ~ 0
+GND
+Wire Wire Line
+	5500 17700 5900 17700
+Wire Wire Line
+	5900 17700 5900 17800
+Wire Wire Line
+	6200 17600 6200 17700
+Wire Wire Line
+	6200 17700 6100 17700
+Wire Wire Line
+	6100 17700 5900 17700
+Wire Wire Line
+	6100 17800 6100 17700
+Wire Wire Line
+	6200 17800 6200 17700
+Connection ~ 5900 17700
+Connection ~ 6100 17700
+Connection ~ 6200 17700
+Text Label 5500 17700 0    10   ~ 0
+GND
+Wire Wire Line
+	15300 16600 15300 16700
+Text Label 15300 16600 0    10   ~ 0
+GND
+Wire Wire Line
+	15200 9400 15200 9500
+Text Label 15200 9400 0    10   ~ 0
+GND
+Wire Wire Line
+	14400 11200 14300 11200
+Wire Wire Line
+	14300 11200 14100 11200
+Wire Wire Line
+	14100 11200 14000 11200
+Wire Wire Line
+	14100 11000 14100 11200
+Wire Wire Line
+	14300 11000 14300 11200
+Connection ~ 14100 11200
+Connection ~ 14300 11200
+Text Label 14400 11200 0    10   ~ 0
+GND
+Wire Wire Line
+	14500 18400 14400 18400
+Wire Wire Line
+	14400 18400 14300 18400
+Wire Wire Line
+	14300 18400 14200 18400
+Wire Wire Line
+	14300 18200 14300 18400
+Wire Wire Line
+	14400 18200 14400 18400
+Connection ~ 14300 18400
+Connection ~ 14400 18400
+Text Label 14500 18400 0    10   ~ 0
+GND
+Wire Wire Line
+	3000 12100 3000 12000
+Wire Wire Line
+	3000 12000 3000 11900
+Wire Wire Line
+	3000 12000 2600 12000
+Wire Wire Line
+	2600 12000 2600 11800
+Wire Wire Line
+	2600 12000 2500 12000
+Wire Wire Line
+	2500 12000 2500 11800
+Connection ~ 2600 12000
+Connection ~ 3000 12000
+Text Label 3000 12100 0    10   ~ 0
+GND
+Wire Wire Line
+	3100 5000 3100 4900
+Wire Wire Line
+	3100 4900 3100 4800
+Wire Wire Line
+	3100 4900 2600 4900
+Wire Wire Line
+	2600 4900 2600 4800
+Wire Wire Line
+	2600 4900 2500 4900
+Wire Wire Line
+	2500 4900 2500 4800
+Connection ~ 2600 4900
+Connection ~ 3100 4900
+Text Label 3100 5000 0    10   ~ 0
+GND
+Wire Wire Line
+	13700 6200 13600 6200
+Wire Wire Line
+	13600 6200 13600 6300
+Text Label 13700 6200 0    10   ~ 0
+GND
+Wire Wire Line
+	13600 13300 13500 13300
+Wire Wire Line
+	13500 13300 13500 13400
+Text Label 13600 13300 0    10   ~ 0
+GND
+Wire Wire Line
+	21500 8500 21300 8500
+Wire Wire Line
+	22400 8500 22100 8500
+Wire Wire Line
+	22400 8600 22100 8600
+Text Label 21300 8500 2    56   ~ 0
+GND
+Text Label 22400 8500 0    56   ~ 0
+GND
+Text Label 22400 8600 0    56   ~ 0
+GND
+Wire Wire Line
+	21500 7900 21300 7900
+Wire Wire Line
+	21300 8000 21500 8000
+Text Label 21300 7900 2    56   ~ 0
+GND
+Text Label 21300 8000 2    56   ~ 0
+GND
+Wire Wire Line
+	22100 7900 22300 7900
+Text Label 22300 7900 0    56   ~ 0
+GND
+Wire Wire Line
+	22100 7400 22300 7400
+Text Label 22300 7400 0    56   ~ 0
+GND
+Wire Wire Line
+	21500 7400 21300 7400
+Text Label 21300 7400 2    56   ~ 0
+GND
+Wire Wire Line
+	24700 7400 24500 7400
+Text Label 24500 7400 2    56   ~ 0
+GND
+Wire Wire Line
+	25300 7400 25500 7400
+Text Label 25500 7400 0    56   ~ 0
+GND
+Wire Wire Line
+	24700 7900 24500 7900
+Text Label 24500 7900 2    56   ~ 0
+GND
+Wire Wire Line
+	25300 7900 25500 7900
+Text Label 25500 7900 0    56   ~ 0
+GND
+Wire Wire Line
+	25300 8000 25500 8000
+Text Label 25500 8000 0    56   ~ 0
+GND
+Wire Wire Line
+	25300 8500 25500 8500
+Text Label 25500 8500 0    56   ~ 0
+GND
+Wire Wire Line
+	24700 8600 24500 8600
+Text Label 24500 8600 2    56   ~ 0
+GND
+Wire Wire Line
+	24700 8500 24500 8500
+Text Label 24500 8500 2    56   ~ 0
+GND
+Wire Wire Line
+	12500 9000 12600 9000
+Wire Wire Line
+	12600 9000 12600 9200
+Wire Wire Line
+	12600 9200 12600 9400
+Wire Wire Line
+	13900 8300 14200 8300
+Wire Wire Line
+	14200 8300 14200 7800
+Wire Wire Line
+	14200 7800 14100 7800
+Wire Wire Line
+	14200 8300 14200 8800
+Wire Wire Line
+	14200 8800 14200 9200
+Wire Wire Line
+	14200 9200 12600 9200
+Wire Wire Line
+	13900 8800 14200 8800
+Connection ~ 12600 9200
+Connection ~ 14200 8300
+Connection ~ 14200 8800
+Wire Wire Line
+	18900 5600 18900 5500
+Text Label 18900 5600 0    10   ~ 0
+V+
+Wire Wire Line
+	10500 3500 10500 3400
+Wire Wire Line
+	10500 3400 8600 3400
+Wire Wire Line
+	8600 3400 8600 3600
+Wire Wire Line
+	11700 3800 11700 3400
+Wire Wire Line
+	11700 3400 10500 3400
+Wire Wire Line
+	11700 3400 11900 3400
+Connection ~ 11700 3400
+Connection ~ 10500 3400
+Text Label 10500 3500 0    10   ~ 0
+V+
+Wire Wire Line
+	3100 4100 3100 4200
+Text Label 3100 4100 0    10   ~ 0
+V+
+Wire Wire Line
+	18500 12800 18500 12600
+Text Label 18500 12800 0    10   ~ 0
+V+
+Wire Wire Line
+	10600 10600 10600 10500
+Wire Wire Line
+	10600 10500 8700 10500
+Wire Wire Line
+	8700 10500 8700 10700
+Wire Wire Line
+	11800 10900 11800 10500
+Wire Wire Line
+	11800 10500 10600 10500
+Wire Wire Line
+	11800 10500 12000 10500
+Connection ~ 11800 10500
+Connection ~ 10600 10500
+Text Label 10600 10600 0    10   ~ 0
+V+
+Wire Wire Line
+	3000 11200 3000 11300
+Text Label 3000 11200 0    10   ~ 0
+V+
+Wire Wire Line
+	6500 1000 7300 1000
+Wire Wire Line
+	7300 1000 7600 1000
+Wire Wire Line
+	7600 1000 7900 1000
+Wire Wire Line
+	7900 1000 8200 1000
+Wire Wire Line
+	8200 1000 8500 1000
+Wire Wire Line
+	8500 1000 8700 1000
+Wire Wire Line
+	9600 1000 9800 1000
+Wire Wire Line
+	9800 1000 10000 1000
+Wire Wire Line
+	10000 1000 10200 1000
+Wire Wire Line
+	10200 1000 10400 1000
+Wire Wire Line
+	10400 1000 10800 1000
+Wire Wire Line
+	7600 1100 7600 1000
+Wire Wire Line
+	8500 1100 8500 1000
+Wire Wire Line
+	9800 1300 9800 1000
+Wire Wire Line
+	10200 1300 10200 1000
+Wire Wire Line
+	9100 1100 9100 1000
+Wire Wire Line
+	8900 1100 8900 1000
+Wire Wire Line
+	8700 1100 8700 1000
+Wire Wire Line
+	8700 1000 8900 1000
+Wire Wire Line
+	8900 1000 9100 1000
+Wire Wire Line
+	9100 1000 9400 1000
+Wire Wire Line
+	9400 1000 9600 1000
+Wire Wire Line
+	9800 1000 10200 1000
+Wire Wire Line
+	7300 1200 7300 1000
+Wire Wire Line
+	9600 1300 9600 1000
+Wire Wire Line
+	9400 1300 9400 1000
+Wire Wire Line
+	10400 1300 10400 1000
+Wire Wire Line
+	8200 1100 8200 1000
+Wire Wire Line
+	7900 1100 7900 1000
+Connection ~ 7600 1000
+Connection ~ 8500 1000
+Connection ~ 9800 1000
+Connection ~ 10200 1000
+Connection ~ 8700 1000
+Connection ~ 8900 1000
+Connection ~ 9100 1000
+Connection ~ 7300 1000
+Connection ~ 9400 1000
+Connection ~ 9600 1000
+Connection ~ 10400 1000
+Connection ~ 8200 1000
+Connection ~ 7900 1000
+Text Label 6500 1000 0    10   ~ 0
+V+
+Wire Wire Line
+	15100 18400 15200 18400
+Text Label 15100 18400 0    10   ~ 0
+V+
+Wire Wire Line
+	15000 11200 15100 11200
+Text Label 15000 11200 0    10   ~ 0
+V+
+Wire Wire Line
+	21500 7100 21300 7100
+Text Label 21300 7100 2    56   ~ 0
+V+
+Wire Wire Line
+	22100 7100 22300 7100
+Text Label 22300 7100 0    56   ~ 0
+V+
+Wire Wire Line
+	24700 7100 24500 7100
+Text Label 24500 7100 2    56   ~ 0
+V+
+Wire Wire Line
+	25300 7100 25500 7100
+Text Label 25500 7100 0    56   ~ 0
+V+
+Wire Wire Line
+	11100 6700 11000 6700
+Text Label 11100 6700 0    10   ~ 0
+V-
+Wire Wire Line
+	3900 6300 3800 6300
+Text Label 3900 6300 0    10   ~ 0
+V-
+Wire Wire Line
+	11200 13800 11100 13800
+Text Label 11200 13800 0    10   ~ 0
+V-
+Wire Wire Line
+	3900 13500 3800 13500
+Text Label 3900 13500 0    10   ~ 0
+V-
+Wire Wire Line
+	6500 2100 7300 2100
+Wire Wire Line
+	7300 2100 7600 2100
+Wire Wire Line
+	7600 2100 7900 2100
+Wire Wire Line
+	7900 2100 8200 2100
+Wire Wire Line
+	8200 2100 8500 2100
+Wire Wire Line
+	8500 2100 8700 2100
+Wire Wire Line
+	9600 2100 9800 2100
+Wire Wire Line
+	9800 2100 10000 2100
+Wire Wire Line
+	10000 2100 10200 2100
+Wire Wire Line
+	10200 2100 10400 2100
+Wire Wire Line
+	10400 2100 10800 2100
+Wire Wire Line
+	9800 1900 9800 2100
+Wire Wire Line
+	8500 2000 8500 2100
+Wire Wire Line
+	7600 2000 7600 2100
+Wire Wire Line
+	10200 1900 10200 2100
+Wire Wire Line
+	8700 2000 8700 2100
+Wire Wire Line
+	8900 2000 8900 2100
+Wire Wire Line
+	9100 2000 9100 2100
+Wire Wire Line
+	8700 2100 8900 2100
+Wire Wire Line
+	8900 2100 9100 2100
+Wire Wire Line
+	9100 2100 9400 2100
+Wire Wire Line
+	9400 2100 9600 2100
+Wire Wire Line
+	9800 2100 10200 2100
+Wire Wire Line
+	7300 2000 7300 2100
+Wire Wire Line
+	9600 1900 9600 2100
+Wire Wire Line
+	9400 1900 9400 2100
+Wire Wire Line
+	10400 1900 10400 2100
+Wire Wire Line
+	7900 2000 7900 2100
+Wire Wire Line
+	8200 2000 8200 2100
+Connection ~ 9800 2100
+Connection ~ 8500 2100
+Connection ~ 7600 2100
+Connection ~ 10200 2100
+Connection ~ 8700 2100
+Connection ~ 8900 2100
+Connection ~ 9100 2100
+Connection ~ 7300 2100
+Connection ~ 9600 2100
+Connection ~ 9400 2100
+Connection ~ 10400 2100
+Connection ~ 8200 2100
+Connection ~ 7900 2100
+Text Label 6500 2100 0    10   ~ 0
+V-
+Wire Wire Line
+	21500 7200 21300 7200
+Text Label 21300 7200 2    56   ~ 0
+V-
+Wire Wire Line
+	22100 7200 22300 7200
+Text Label 22300 7200 0    56   ~ 0
+V-
+Wire Wire Line
+	24700 7200 24500 7200
+Text Label 24500 7200 2    56   ~ 0
+V-
+Wire Wire Line
+	25300 7200 25500 7200
+Text Label 25500 7200 0    56   ~ 0
+V-
+Wire Wire Line
+	15500 7500 15400 7500
+Text Label 15500 7500 0    10   ~ 0
+V-
+Wire Wire Line
+	15500 14600 15600 14600
+Text Label 15500 14600 0    10   ~ 0
+V-
+Wire Wire Line
+	12000 1000 12200 1000
+Wire Wire Line
+	12200 1000 13200 1000
+Wire Wire Line
+	13200 1000 13200 1300
+Wire Wire Line
+	13200 1300 13000 1300
+Wire Wire Line
+	12400 1300 12200 1300
+Wire Wire Line
+	12200 1300 12200 1000
+Connection ~ 12200 1000
+Wire Wire Line
+	12000 2100 12200 2100
+Wire Wire Line
+	12200 2100 13200 2100
+Wire Wire Line
+	13200 2100 13200 1700
+Wire Wire Line
+	13200 1700 13000 1700
+Wire Wire Line
+	12400 1700 12200 1700
+Wire Wire Line
+	12200 1700 12200 2100
+Connection ~ 12200 2100
+Wire Wire Line
+	12800 4700 12600 4700
+Wire Wire Line
+	12400 5100 12800 5100
+Wire Wire Line
+	12800 5100 12800 4700
+Wire Wire Line
+	12400 5400 12800 5400
+Wire Wire Line
+	12800 5400 12800 5100
+Wire Wire Line
+	12800 5700 12800 5400
+Wire Wire Line
+	12500 5700 12800 5700
+Wire Wire Line
+	12800 5900 12800 5700
+Connection ~ 12800 5100
+Connection ~ 12800 5400
+Connection ~ 12800 5700
+Wire Wire Line
+	14200 6500 14200 6200
+Wire Wire Line
+	14200 6200 14400 6200
+Wire Wire Line
+	14500 5900 14200 5900
+Wire Wire Line
+	14200 5900 14200 6200
+Wire Wire Line
+	14300 6500 14200 6500
+Wire Wire Line
+	14100 6200 14200 6200
+Connection ~ 14200 6200
+Wire Wire Line
+	12200 9000 12100 9000
+Wire Wire Line
+	12100 9000 12100 9200
+Wire Wire Line
+	12100 9200 12100 9400
+Wire Wire Line
+	12100 9400 12200 9400
+Wire Wire Line
+	12100 9200 9100 9200
+Wire Wire Line
+	9100 9200 9100 6400
+Wire Wire Line
+	9600 6400 9600 6000
+Wire Wire Line
+	9300 6400 9600 6400
+Wire Wire Line
+	9300 6500 9300 6400
+Wire Wire Line
+	9100 6400 9300 6400
+Connection ~ 9300 6400
+Connection ~ 12100 9200
+Wire Wire Line
+	11800 6200 11800 6300
+Wire Wire Line
+	10000 7300 10000 7200
+Wire Wire Line
+	10000 7200 10000 7100
+Wire Wire Line
+	10300 7300 10300 7200
+Wire Wire Line
+	10300 7200 10000 7200
+Connection ~ 10000 7200
+Wire Wire Line
+	9600 7400 9600 7300
+Wire Wire Line
+	9600 7300 9600 7200
+Wire Wire Line
+	9600 7300 8700 7300
+Wire Wire Line
+	8700 7300 8700 5200
+Connection ~ 9600 7300
+Wire Wire Line
+	10000 7700 10000 9800
+Wire Wire Line
+	10000 9800 8400 9800
+Text Label 8450 9800 2    70   ~ 0
+HI_PASS_IN_1
+Wire Wire Line
+	24700 7800 24500 7800
+Text Label 24500 7800 2    56   ~ 0
+HI_PASS_IN_1
+Wire Wire Line
+	8800 7600 8800 7500
+Wire Wire Line
+	8800 7500 8400 7500
+Wire Wire Line
+	8400 7700 8400 7500
+Wire Wire Line
+	8400 7500 8400 5500
+Wire Wire Line
+	8400 5500 9000 5500
+Connection ~ 8400 7500
+Wire Wire Line
+	4100 6100 4100 6000
+Wire Wire Line
+	3900 4500 4100 4500
+Wire Wire Line
+	4100 4500 4100 5500
+Wire Wire Line
+	3900 5500 4100 5500
+Wire Wire Line
+	4100 5500 4100 5600
+Wire Wire Line
+	4500 5500 4400 5500
+Wire Wire Line
+	4400 5500 4100 5500
+Wire Wire Line
+	4600 5000 4400 5000
+Wire Wire Line
+	4400 5000 4400 5500
+Wire Wire Line
+	4600 4700 4400 4700
+Wire Wire Line
+	4400 4700 4400 5000
+Connection ~ 4100 5500
+Connection ~ 4400 5000
+Connection ~ 4400 5500
+Wire Wire Line
+	6300 5400 6100 5400
+Wire Wire Line
+	6100 5400 6100 5600
+Wire Wire Line
+	6100 5600 5900 5600
+Wire Wire Line
+	6400 5100 5900 5100
+Wire Wire Line
+	5900 5100 5900 5600
+Wire Wire Line
+	5900 5600 5700 5600
+Wire Wire Line
+	4900 7300 5900 7300
+Wire Wire Line
+	5900 7300 5900 5600
+Connection ~ 5900 5600
+Wire Wire Line
+	6800 5100 7000 5100
+Wire Wire Line
+	7000 5100 7000 5500
+Wire Wire Line
+	7000 5500 6900 5500
+Wire Wire Line
+	7000 5500 7200 5500
+Connection ~ 7000 5500
+Text Label 7200 5500 0    56   ~ 0
+TO_CV_CUTOFF_1
+Wire Wire Line
+	22300 7000 22100 7000
+Text Label 22300 7000 0    56   ~ 0
+TO_CV_CUTOFF_1
+Wire Wire Line
+	9600 5700 9600 5500
+Wire Wire Line
+	9600 5500 9600 5000
+Wire Wire Line
+	9400 5500 9600 5500
+Connection ~ 9600 5500
+Wire Wire Line
+	8200 4800 8200 4600
+Wire Wire Line
+	8200 4600 8200 4400
+Wire Wire Line
+	8200 4400 8400 4400
+Wire Wire Line
+	8700 4800 8700 4600
+Wire Wire Line
+	8700 4600 8200 4600
+Connection ~ 8200 4600
+Wire Wire Line
+	8600 4000 8600 4100
+Wire Wire Line
+	8600 4100 8600 4200
+Wire Wire Line
+	9200 4100 9200 4800
+Wire Wire Line
+	9200 4800 9400 4800
+Wire Wire Line
+	8600 4100 9200 4100
+Wire Wire Line
+	9200 5300 9200 4800
+Connection ~ 8600 4100
+Connection ~ 9200 4800
+Wire Wire Line
+	10500 4900 10500 4600
+Wire Wire Line
+	10500 4600 10500 4500
+Wire Wire Line
+	11100 4600 10500 4600
+Connection ~ 10500 4600
+Wire Wire Line
+	10500 3900 10500 4000
+Wire Wire Line
+	10500 4000 10500 4100
+Wire Wire Line
+	11500 4000 10500 4000
+Connection ~ 10500 4000
+Wire Wire Line
+	9600 4600 9600 4300
+Wire Wire Line
+	10200 4300 10000 4300
+Wire Wire Line
+	10000 4300 9600 4300
+Wire Wire Line
+	10000 6800 10000 4300
+Connection ~ 10000 4300
+Wire Wire Line
+	11500 4600 11700 4600
+Wire Wire Line
+	11700 4600 11700 4200
+Wire Wire Line
+	12000 4600 11700 4600
+Connection ~ 11700 4600
+Wire Wire Line
+	10500 6700 10600 6700
+Wire Wire Line
+	10500 6800 10500 6700
+Wire Wire Line
+	10500 6700 9600 6700
+Wire Wire Line
+	9600 6700 9600 6800
+Wire Wire Line
+	10500 5300 10500 6700
+Connection ~ 10500 6700
+Wire Wire Line
+	25300 7800 25500 7800
+Text Label 25500 7800 0    56   ~ 0
+OUT_1_TO_LINK_&_PEAK
+Wire Wire Line
+	16200 6600 16100 6600
+Wire Wire Line
+	4200 16200 4200 18700
+Wire Wire Line
+	4200 18700 19500 18700
+Wire Wire Line
+	19500 18700 19500 8600
+Wire Wire Line
+	19500 8600 16100 8600
+Wire Wire Line
+	16100 8600 16100 6600
+Wire Wire Line
+	4200 16200 4500 16200
+Wire Wire Line
+	14800 6200 15100 6200
+Wire Wire Line
+	15100 6200 15100 6600
+Wire Wire Line
+	14800 5900 15100 5900
+Wire Wire Line
+	15100 5900 15100 6200
+Wire Wire Line
+	14900 6600 15100 6600
+Text Label 4500 16200 0    70   ~ 0
+OUT_1_TO_LINK_&_PEAK
+Text Label 16200 6600 0    70   ~ 0
+OUT_1_TO_LINK_&_PEAK
+Connection ~ 15100 6200
+Connection ~ 15100 6600
+Connection ~ 16100 6600
+Wire Wire Line
+	5300 5600 5200 5600
+Wire Wire Line
+	5200 5600 5100 5600
+Wire Wire Line
+	5000 5000 5200 5000
+Wire Wire Line
+	5200 5000 5200 5600
+Wire Wire Line
+	4900 4700 5200 4700
+Wire Wire Line
+	5200 4700 5200 5000
+Connection ~ 5200 5000
+Connection ~ 5200 5600
+Wire Wire Line
+	13200 8400 13200 8300
+Wire Wire Line
+	13200 8300 13200 7900
+Wire Wire Line
+	13200 7900 13300 7900
+Wire Wire Line
+	13500 8300 13400 8300
+Wire Wire Line
+	13400 8300 13200 8300
+Wire Wire Line
+	13600 8800 13400 8800
+Wire Wire Line
+	13400 8800 13400 8300
+Connection ~ 13200 8300
+Connection ~ 13400 8300
+Wire Wire Line
+	12800 7500 12800 7700
+Wire Wire Line
+	12800 7700 13300 7700
+Wire Wire Line
+	12800 8000 12800 7700
+Connection ~ 12800 7700
+Wire Wire Line
+	14600 7200 14700 7200
+Wire Wire Line
+	14200 7200 13900 7200
+Wire Wire Line
+	13900 7200 13900 7500
+Wire Wire Line
+	14700 9000 14700 8700
+Wire Wire Line
+	14700 8700 15000 8700
+Wire Wire Line
+	15100 8800 15000 8700
+Text Label 15000 8700 1    56   ~ 0
+TO_CV_RES_1
+Wire Wire Line
+	22300 7300 22100 7300
+Text Label 22300 7300 0    56   ~ 0
+TO_CV_RES_1
+Wire Wire Line
+	14900 7600 14900 7500
+Wire Wire Line
+	14900 7500 14900 7400
+Wire Wire Line
+	15000 7500 14900 7500
+Connection ~ 14900 7500
+Wire Wire Line
+	15000 9700 15000 9500
+Wire Wire Line
+	14700 9300 14700 9500
+Wire Wire Line
+	14700 9500 15000 9500
+Wire Wire Line
+	14700 9700 14700 9500
+Wire Wire Line
+	15000 9400 15000 9500
+Connection ~ 14700 9500
+Connection ~ 15000 9500
+Wire Wire Line
+	2900 7200 2600 7200
+Wire Wire Line
+	3200 6700 2900 6700
+Wire Wire Line
+	2900 6700 2900 7200
+Wire Wire Line
+	2700 6700 2900 6700
+Wire Wire Line
+	3200 7200 2900 7200
+Connection ~ 2900 6700
+Connection ~ 2900 7200
+Wire Wire Line
+	2600 8500 3100 8500
+Wire Wire Line
+	3100 8500 3100 7800
+Wire Wire Line
+	3100 7800 3100 7400
+Wire Wire Line
+	3200 7400 3100 7400
+Wire Wire Line
+	1500 7600 1500 7800
+Wire Wire Line
+	1500 7800 3100 7800
+Connection ~ 3100 7800
+Wire Wire Line
+	3600 6700 4200 6700
+Wire Wire Line
+	4200 6700 4200 7300
+Wire Wire Line
+	4500 7300 4200 7300
+Wire Wire Line
+	3800 7300 4200 7300
+Connection ~ 4200 7300
+Wire Wire Line
+	8400 9500 8400 8100
+Text Label 8400 9500 2    70   ~ 0
+LO_PASS_IN_1
+Wire Wire Line
+	24700 8000 24500 8000
+Text Label 24500 8000 2    56   ~ 0
+LO_PASS_IN_1
+Wire Wire Line
+	12100 11900 11900 11900
+Wire Wire Line
+	11900 11900 11900 12200
+Wire Wire Line
+	11900 12200 12200 12200
+Wire Wire Line
+	11900 12200 11900 12500
+Wire Wire Line
+	11900 12500 12200 12500
+Wire Wire Line
+	12200 12800 11900 12800
+Wire Wire Line
+	11900 12800 11900 12500
+Wire Wire Line
+	11900 13000 11900 12800
+Connection ~ 11900 12500
+Connection ~ 11900 12200
+Connection ~ 11900 12800
+Wire Wire Line
+	12900 13800 12900 14200
+Wire Wire Line
+	14200 13800 12900 13800
+Connection ~ 12900 13800
+Wire Wire Line
+	12600 16100 12700 16100
+Wire Wire Line
+	12700 16100 12700 16300
+Wire Wire Line
+	12700 16300 12700 16500
+Wire Wire Line
+	14000 15400 14300 15400
+Wire Wire Line
+	14300 15400 14300 14900
+Wire Wire Line
+	14300 14900 14200 14900
+Wire Wire Line
+	14300 15400 14300 15900
+Wire Wire Line
+	14300 15900 14300 16300
+Wire Wire Line
+	14300 16300 12700 16300
+Wire Wire Line
+	14000 15900 14300 15900
+Connection ~ 12700 16300
+Connection ~ 14300 15400
+Connection ~ 14300 15900
+Wire Wire Line
+	12900 11800 12700 11800
+Wire Wire Line
+	12500 12200 12900 12200
+Wire Wire Line
+	12900 12200 12900 11800
+Wire Wire Line
+	12500 12500 12900 12500
+Wire Wire Line
+	12900 12500 12900 12200
+Wire Wire Line
+	12900 12800 12900 12500
+Wire Wire Line
+	12600 12800 12900 12800
+Wire Wire Line
+	12900 13000 12900 12800
+Connection ~ 12900 12200
+Connection ~ 12900 12500
+Connection ~ 12900 12800
+Wire Wire Line
+	14100 13600 14100 13300
+Wire Wire Line
+	14100 13300 14300 13300
+Wire Wire Line
+	14400 13000 14100 13000
+Wire Wire Line
+	14100 13000 14100 13300
+Wire Wire Line
+	14200 13600 14100 13600
+Wire Wire Line
+	14000 13300 14100 13300
+Connection ~ 14100 13300
+Wire Wire Line
+	12300 16100 12200 16100
+Wire Wire Line
+	12200 16100 12200 16300
+Wire Wire Line
+	12200 16300 12200 16500
+Wire Wire Line
+	12200 16500 12300 16500
+Wire Wire Line
+	12200 16300 9200 16300
+Wire Wire Line
+	9200 16300 9200 13500
+Wire Wire Line
+	9700 13500 9700 13100
+Wire Wire Line
+	9400 13500 9700 13500
+Wire Wire Line
+	9400 13600 9400 13500
+Wire Wire Line
+	9200 13500 9400 13500
+Connection ~ 9400 13500
+Connection ~ 12200 16300
+Wire Wire Line
+	11900 13300 11900 13400
+Wire Wire Line
+	10100 14400 10100 14300
+Wire Wire Line
+	10100 14300 10100 14200
+Wire Wire Line
+	10400 14400 10400 14300
+Wire Wire Line
+	10400 14300 10100 14300
+Connection ~ 10100 14300
+Wire Wire Line
+	9700 14500 9700 14400
+Wire Wire Line
+	9700 14400 9700 14300
+Wire Wire Line
+	9700 14400 8800 14400
+Wire Wire Line
+	8800 14400 8800 12300
+Connection ~ 9700 14400
+Wire Wire Line
+	10100 14800 10100 17700
+Wire Wire Line
+	10100 17700 8400 17700
+Wire Wire Line
+	25300 8400 25500 8400
+Text Label 8400 17700 2    70   ~ 0
+HI_PASS_IN_2
+Text Label 25500 8400 0    56   ~ 0
+HI_PASS_IN_2
+Wire Wire Line
+	8900 14700 8900 14600
+Wire Wire Line
+	8900 14600 8500 14600
+Wire Wire Line
+	8500 14800 8500 14600
+Wire Wire Line
+	8500 14600 8500 12600
+Wire Wire Line
+	8500 12600 9100 12600
+Connection ~ 8500 14600
+Wire Wire Line
+	4100 13300 4100 13200
+Wire Wire Line
+	3900 11600 4100 11600
+Wire Wire Line
+	4100 11600 4100 12500
+Wire Wire Line
+	3800 12500 4100 12500
+Wire Wire Line
+	4100 12500 4100 12800
+Wire Wire Line
+	4500 12500 4400 12500
+Wire Wire Line
+	4400 12500 4100 12500
+Wire Wire Line
+	4600 12200 4400 12200
+Wire Wire Line
+	4400 12200 4400 12500
+Wire Wire Line
+	4600 11900 4400 11900
+Wire Wire Line
+	4400 11900 4400 12200
+Connection ~ 4100 12500
+Connection ~ 4400 12200
+Connection ~ 4400 12500
+Wire Wire Line
+	6300 12600 5900 12600
+Wire Wire Line
+	6400 12300 5900 12300
+Wire Wire Line
+	5900 12300 5900 12600
+Wire Wire Line
+	5900 12600 5700 12600
+Wire Wire Line
+	5400 14800 5900 14800
+Wire Wire Line
+	5900 14800 5900 12600
+Connection ~ 5900 12600
+Wire Wire Line
+	6800 12300 7000 12300
+Wire Wire Line
+	7000 12300 7000 12700
+Wire Wire Line
+	7000 12700 6900 12700
+Wire Wire Line
+	7000 12700 7200 12700
+Connection ~ 7000 12700
+Text Label 7200 12700 0    56   ~ 0
+TO_CV_CUTOFF_2
+Wire Wire Line
+	21300 7000 21500 7000
+Text Label 21300 7000 2    56   ~ 0
+TO_CV_CUTOFF_2
+Wire Wire Line
+	9700 12800 9700 12600
+Wire Wire Line
+	9700 12600 9700 12100
+Wire Wire Line
+	9500 12600 9700 12600
+Connection ~ 9700 12600
+Wire Wire Line
+	8300 11900 8300 11700
+Wire Wire Line
+	8300 11700 8300 11500
+Wire Wire Line
+	8300 11500 8500 11500
+Wire Wire Line
+	8800 11900 8800 11700
+Wire Wire Line
+	8800 11700 8300 11700
+Connection ~ 8300 11700
+Wire Wire Line
+	8700 11100 8700 11200
+Wire Wire Line
+	8700 11200 8700 11300
+Wire Wire Line
+	9300 11200 9300 11900
+Wire Wire Line
+	9300 11900 9500 11900
+Wire Wire Line
+	8700 11200 9300 11200
+Wire Wire Line
+	9300 12400 9300 11900
+Connection ~ 8700 11200
+Connection ~ 9300 11900
+Wire Wire Line
+	10600 12000 10600 11700
+Wire Wire Line
+	10600 11700 10600 11600
+Wire Wire Line
+	11200 11700 10600 11700
+Connection ~ 10600 11700
+Wire Wire Line
+	10600 11000 10600 11100
+Wire Wire Line
+	10600 11100 10600 11200
+Wire Wire Line
+	11600 11100 10600 11100
+Connection ~ 10600 11100
+Wire Wire Line
+	9700 11700 9700 11400
+Wire Wire Line
+	10300 11400 10100 11400
+Wire Wire Line
+	10100 11400 9700 11400
+Wire Wire Line
+	10100 13900 10100 11400
+Connection ~ 10100 11400
+Wire Wire Line
+	11600 11700 11800 11700
+Wire Wire Line
+	11800 11700 11800 11300
+Wire Wire Line
+	12100 11700 11800 11700
+Connection ~ 11800 11700
+Wire Wire Line
+	10600 13800 10700 13800
+Wire Wire Line
+	10600 13900 10600 13800
+Wire Wire Line
+	10600 13800 9700 13800
+Wire Wire Line
+	9700 13800 9700 13900
+Wire Wire Line
+	10600 12400 10600 13800
+Connection ~ 10600 13800
+Wire Wire Line
+	24500 8400 24700 8400
+Text Label 24500 8400 2    56   ~ 0
+OUT_2_TO_PEAK
+Wire Wire Line
+	14700 13300 15000 13300
+Wire Wire Line
+	15000 13300 15000 13700
+Wire Wire Line
+	14700 13000 15000 13000
+Wire Wire Line
+	15000 13000 15000 13300
+Wire Wire Line
+	14800 13700 15000 13700
+Text Label 16000 13700 0    70   ~ 0
+OUT_2_TO_PEAK
+Connection ~ 15000 13300
+Connection ~ 15000 13700
+Wire Wire Line
+	5300 12600 5200 12600
+Wire Wire Line
+	5200 12600 5100 12600
+Wire Wire Line
+	5000 12200 5200 12200
+Wire Wire Line
+	5200 12200 5200 12600
+Wire Wire Line
+	4900 11900 5200 11900
+Wire Wire Line
+	5200 11900 5200 12200
+Connection ~ 5200 12200
+Connection ~ 5200 12600
+Wire Wire Line
+	13300 15500 13300 15400
+Wire Wire Line
+	13300 15400 13300 15000
+Wire Wire Line
+	13300 15000 13400 15000
+Wire Wire Line
+	13600 15400 13500 15400
+Wire Wire Line
+	13500 15400 13300 15400
+Wire Wire Line
+	13700 15900 13500 15900
+Wire Wire Line
+	13500 15900 13500 15400
+Connection ~ 13300 15400
+Connection ~ 13500 15400
+Wire Wire Line
+	12900 14600 12900 14800
+Wire Wire Line
+	12900 14800 13400 14800
+Wire Wire Line
+	12900 15100 12900 14800
+Connection ~ 12900 14800
+Wire Wire Line
+	14700 14300 14800 14300
+Wire Wire Line
+	14300 14300 14000 14300
+Wire Wire Line
+	14000 14300 14000 14600
+Wire Wire Line
+	14800 16300 14800 15900
+Wire Wire Line
+	14800 15900 15200 15900
+Wire Wire Line
+	15200 16000 15200 15900
+Text Label 15200 15900 1    56   ~ 0
+TO_CV_RES_2
+Wire Wire Line
+	21500 7300 21300 7300
+Text Label 21300 7300 2    56   ~ 0
+TO_CV_RES_2
+Wire Wire Line
+	15000 14700 15000 14600
+Wire Wire Line
+	15000 14600 15000 14500
+Wire Wire Line
+	15100 14600 15000 14600
+Connection ~ 15000 14600
+Wire Wire Line
+	15100 16900 15100 16700
+Wire Wire Line
+	14800 16600 14800 16700
+Wire Wire Line
+	14800 16700 15100 16700
+Wire Wire Line
+	14800 16900 14800 16700
+Wire Wire Line
+	15100 16600 15100 16700
+Connection ~ 14800 16700
+Connection ~ 15100 16700
+Wire Wire Line
+	3400 14700 3100 14700
+Wire Wire Line
+	3700 14200 3400 14200
+Wire Wire Line
+	3400 14200 3400 14700
+Wire Wire Line
+	3200 14200 3400 14200
+Wire Wire Line
+	3700 14700 3400 14700
+Connection ~ 3400 14200
+Connection ~ 3400 14700
+Wire Wire Line
+	3100 16000 3600 16000
+Wire Wire Line
+	3600 15300 3600 14900
+Wire Wire Line
+	3600 14900 3700 14900
+Wire Wire Line
+	2000 15100 2000 15300
+Wire Wire Line
+	2000 15300 3600 15300
+Connection ~ 3600 15300
+Wire Wire Line
+	4100 14200 4700 14200
+Wire Wire Line
+	4700 14200 4700 14800
+Wire Wire Line
+	5000 14800 4700 14800
+Wire Wire Line
+	4300 14800 4700 14800
+Connection ~ 4700 14800
+Wire Wire Line
+	8500 16900 8500 15200
+Wire Wire Line
+	8500 16900 8400 16900
+Wire Wire Line
+	25300 8600 25500 8600
+Text Label 8400 16900 2    70   ~ 0
+LO_PASS_IN_2
+Text Label 25500 8600 0    56   ~ 0
+LO_PASS_IN_2
+Wire Wire Line
+	5800 9700 5900 9700
+Wire Wire Line
+	5200 10000 5200 9300
+Wire Wire Line
+	5200 9300 5600 9300
+Wire Wire Line
+	5600 9300 5600 9400
+Wire Wire Line
+	5200 10000 5100 10000
+Wire Wire Line
+	6400 17300 6600 17300
+Wire Wire Line
+	6100 16500 6200 16500
+Wire Wire Line
+	6200 16500 6200 17000
+Wire Wire Line
+	5500 17600 5600 17600
+Wire Wire Line
+	5600 17600 5600 16600
+Wire Wire Line
+	5700 16600 5600 16600
+Wire Wire Line
+	7000 17200 7100 17200
+Text Label 7100 17200 0    70   ~ 0
+LO_PASS_SEL_2
+Wire Wire Line
+	21300 8600 21500 8600
+Text Label 21300 8600 2    70   ~ 0
+LO_PASS_SEL_2
+Wire Wire Line
+	7000 17400 7100 17400
+Text Label 7100 17400 0    70   ~ 0
+HI_PASS_SEL_2
+Wire Wire Line
+	21300 8400 21500 8400
+Text Label 21300 8400 2    70   ~ 0
+HI_PASS_SEL_2
+Wire Wire Line
+	6300 9800 6400 9800
+Text Label 6400 9800 0    70   ~ 0
+HI_PASS_SEL_1
+Wire Wire Line
+	22300 7800 22100 7800
+Text Label 22300 7800 0    70   ~ 0
+HI_PASS_SEL_1
+Wire Wire Line
+	6300 9600 6400 9600
+Text Label 6400 9600 0    70   ~ 0
+LO_PASS_SEL_1
+Wire Wire Line
+	22300 8000 22100 8000
+Text Label 22300 8000 0    70   ~ 0
+LO_PASS_SEL_1
+Wire Wire Line
+	17800 6400 17700 6400
+Wire Wire Line
+	17700 6400 17400 6400
+Wire Wire Line
+	17700 7900 17700 6400
+Text Label 17400 6400 2    70   ~ 0
+TO_OUT_1_TO_LINK_&_PEAK
+Connection ~ 17700 6400
+Wire Wire Line
+	5700 16400 5500 16400
+Text Label 5500 16400 2    70   ~ 0
+TO_OUT_1_TO_LINK_&_PEAK
+Wire Wire Line
+	21300 7800 21500 7800
+Text Label 21300 7800 2    70   ~ 0
+TO_OUT_1_TO_LINK_&_PEAK
+Wire Wire Line
+	17500 13500 17400 13500
+Wire Wire Line
+	17400 13500 17200 13500
+Wire Wire Line
+	17400 14400 17400 13500
+Text Label 17200 13500 2    70   ~ 0
+TO_OUT_2_TO_PEAK
+Connection ~ 17400 13500
+Wire Wire Line
+	22400 8400 22100 8400
+Text Label 22400 8400 0    70   ~ 0
+TO_OUT_2_TO_PEAK
+Wire Wire Line
+	18500 13500 18500 13300
+Wire Wire Line
+	18500 13300 18500 13200
+Wire Wire Line
+	18300 13300 18500 13300
+Connection ~ 18500 13300
+Wire Wire Line
+	18100 13500 18000 13500
+Wire Wire Line
+	18000 13500 17900 13500
+Wire Wire Line
+	18000 13600 18000 13500
+Connection ~ 18000 13500
+Wire Wire Line
+	18900 6200 18900 6100
+Wire Wire Line
+	18900 6100 18900 6000
+Wire Wire Line
+	18600 6200 18600 6100
+Wire Wire Line
+	18600 6100 18900 6100
+Connection ~ 18900 6100
+Wire Wire Line
+	18400 6400 18300 6400
+Wire Wire Line
+	18300 6400 18200 6400
+Wire Wire Line
+	18300 6500 18300 6400
+Connection ~ 18300 6400
+Wire Wire Line
+	2200 7200 2100 7200
+Wire Wire Line
+	2100 7200 2100 8500
+Wire Wire Line
+	2100 8500 2200 8500
+Wire Wire Line
+	2100 8500 1700 8500
+Connection ~ 2100 8500
+Wire Wire Line
+	2300 6700 1500 6700
+Wire Wire Line
+	1500 6700 1500 7000
+Wire Wire Line
+	2700 14700 2600 14700
+Wire Wire Line
+	2600 14700 2600 16000
+Wire Wire Line
+	2600 16000 2700 16000
+Wire Wire Line
+	2600 16000 2400 16000
+Connection ~ 2600 16000
+Wire Wire Line
+	2800 14200 2000 14200
+Wire Wire Line
+	2000 14200 2000 14500
+Wire Wire Line
+	3200 11600 3500 11600
+Wire Wire Line
+	2800 12500 3400 12500
+Wire Wire Line
+	3300 4500 3500 4500
+Wire Wire Line
+	2900 5500 3500 5500
+Wire Wire Line
+	15500 17600 15100 17600
+Wire Wire Line
+	15100 17600 15100 17300
+Wire Wire Line
+	14800 17300 14800 18200
+Wire Wire Line
+	15300 10400 15000 10400
+Wire Wire Line
+	15000 10400 15000 10100
+Wire Wire Line
+	14700 10100 14700 11000
+Wire Wire Line
+	8200 5200 8200 5400
+Wire Wire Line
+	8200 5400 8000 5400
+Text Label 8000 5400 2    56   ~ 0
+CV_CUTOFF_1
+Wire Wire Line
+	24700 7000 24500 7000
+Text Label 24500 7000 2    56   ~ 0
+CV_CUTOFF_1
+Wire Wire Line
+	8300 12300 8300 12600
+Wire Wire Line
+	8300 12600 8000 12600
+Text Label 8000 12600 2    56   ~ 0
+CV_CUTOFF_2
+Wire Wire Line
+	25300 7000 25500 7000
+Text Label 25500 7000 0    56   ~ 0
+CV_CUTOFF_2
+Wire Wire Line
+	14900 8000 14900 8100
+Text Label 14900 8100 3    56   ~ 0
+CV_RES_1
+Wire Wire Line
+	24700 7300 24500 7300
+Text Label 24500 7300 2    56   ~ 0
+CV_RES_1
+Wire Wire Line
+	15000 15100 15000 15200
+Text Label 15000 15200 3    56   ~ 0
+CV_RES_2
+Wire Wire Line
+	25300 7300 25500 7300
+Text Label 25500 7300 0    56   ~ 0
+CV_RES_2
+Wire Wire Line
+	18300 7900 18500 7900
+Wire Wire Line
+	17600 15000 17400 15000
+Wire Wire Line
+	17400 15000 17400 14800
+$Comp
+L maske_-_VCF-eagle-import:TL072P IC1
+U 1 1 47CFF286
+P 12300 4700
+F 0 "IC1" H 12400 4825 59  0001 L BNN
+F 1 "NE5532" H 12400 4500 59  0001 L BNN
+F 2 "maske - VCF:DIL08" H 12300 4700 50  0001 C CNN
+F 3 "" H 12300 4700 50  0001 C CNN
+	1    12300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL072P IC1
+U 3 1 47CFF28E
+P 9800 1600
+F 0 "IC1" H 9900 1725 59  0001 L BNN
+F 1 "NE5532" H 9900 1400 59  0001 L BNN
+F 2 "maske - VCF:DIL08" H 9800 1600 50  0001 C CNN
+F 3 "" H 9800 1600 50  0001 C CNN
+	3    9800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:1N4148-2 D7
+U 1 1 11F28FEE
+P 12300 5100
+F 0 "D7" H 12160 5179 70  0000 L BNN
+F 1 "1N4148-2" H 12130 4959 70  0000 L BNN
+F 2 "maske - VCF:DO35-2" H 12300 5100 50  0001 C CNN
+F 3 "" H 12300 5100 50  0001 C CNN
+	1    12300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:1N4148-2 D5
+U 1 1 A8F36FED
+P 12200 5400
+F 0 "D5" H 12060 5479 70  0000 L BNN
+F 1 "1N4148-2" H 12030 5259 70  0000 L BNN
+F 2 "maske - VCF:DO35-2" H 12200 5400 50  0001 C CNN
+F 3 "" H 12200 5400 50  0001 C CNN
+	1    12200 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2.5-5 C7
+U 1 1 8AD01514
+P 11800 6000
+F 0 "C7" H 11845 6019 59  0000 L BNN
+F 1 "10uF" H 11845 5819 59  0000 L BNN
+F 2 "maske - VCF:E2,5-5" H 11800 6000 50  0001 C CNN
+F 3 "" H 11800 6000 50  0001 C CNN
+	1    11800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-TRIMM64X CUTOFF_INIT_A
+U 1 1 86BB5D49
+P 4100 6300
+F 0 "CUTOFF_INIT_A" V 3865 6150 59  0000 L BNN
+F 1 "100k" V 3950 6150 59  0000 L BNN
+F 2 "maske - VCF:RTRIM64X" H 4100 6300 50  0001 C CNN
+F 3 "" H 4100 6300 50  0001 C CNN
+	1    4100 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R19
+U 1 1 298E134D
+P 12300 5700
+F 0 "R19" H 12150 5759 59  0000 L BNN
+F 1 "270k" H 12150 5570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12300 5700 50  0001 C CNN
+F 3 "" H 12300 5700 50  0001 C CNN
+	1    12300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2.5-6 C13
+U 1 1 3FDC6AE3
+P 12800 6000
+F 0 "C13" H 12845 6019 59  0000 L BNN
+F 1 "33uF audio" H 12845 5819 59  0000 L BNN
+F 2 "maske - VCF:E2,5-6" H 12800 6000 50  0001 C CNN
+F 3 "" H 12800 6000 50  0001 C CNN
+	1    12800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R12
+U 1 1 4D8F047E
+P 11800 6500
+F 0 "R12" H 11650 6559 59  0000 L BNN
+F 1 "4.7k" H 11650 6370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 11800 6500 50  0001 C CNN
+F 3 "" H 11800 6500 50  0001 C CNN
+	1    11800 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND2
+U 1 1 4877C9E2
+P 11800 6900
+F 0 "#GND2" H 11800 6900 50  0001 C CNN
+F 1 "GND" H 11700 6800 59  0000 L BNN
+F 2 "" H 11800 6900 50  0001 C CNN
+F 3 "" H 11800 6900 50  0001 C CNN
+	1    11800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C22
+U 1 1 C86C6B94
+P 12300 9000
+F 0 "C22" H 12360 9015 59  0000 L BNN
+F 1 "1nF poliester" H 12360 8815 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 12300 9000 50  0001 C CNN
+F 3 "" H 12300 9000 50  0001 C CNN
+	1    12300 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R47
+U 1 1 04030FEF
+P 12400 9400
+F 0 "R47" H 12250 9459 59  0000 L BNN
+F 1 "5.6k" H 12250 9270 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12400 9400 50  0001 C CNN
+F 3 "" H 12400 9400 50  0001 C CNN
+	1    12400 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R133
+U 1 1 E5E18CC5
+P 3700 4500
+F 0 "R133" H 3550 4559 59  0000 L BNN
+F 1 "100k" H 3550 4370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3700 4500 50  0001 C CNN
+F 3 "" H 3700 4500 50  0001 C CNN
+	1    3700 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+3
+U 1 1 48C2C5DB
+P 3100 4000
+F 0 "#P+3" H 3100 4000 50  0001 C CNN
+F 1 "+15V" V 3000 3800 59  0000 L BNN
+F 2 "" H 3100 4000 50  0001 C CNN
+F 3 "" H 3100 4000 50  0001 C CNN
+	1    3100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R8
+U 1 1 3097C624
+P 8400 7900
+F 0 "R8" H 8250 7959 59  0000 L BNN
+F 1 "10k" H 8250 7770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8400 7900 50  0001 C CNN
+F 3 "" H 8400 7900 50  0001 C CNN
+	1    8400 7900
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 FERRITE+
+U 1 1 DD6B14A6
+P 11000 1000
+F 0 "FERRITE+" H 10850 1059 59  0000 L BNN
+F 1 "self" H 10850 870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 11000 1000 50  0001 C CNN
+F 3 "" H 11000 1000 50  0001 C CNN
+	1    11000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 FERRITE-
+U 1 1 76640DAD
+P 11000 2100
+F 0 "FERRITE-" H 10850 2159 59  0000 L BNN
+F 1 "self" H 10850 1970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 11000 2100 50  0001 C CNN
+F 3 "" H 11000 2100 50  0001 C CNN
+	1    11000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+7
+U 1 1 FAFE20BD
+P 6400 1000
+F 0 "#P+7" H 6400 1000 50  0001 C CNN
+F 1 "+15V" V 6300 800 59  0000 L BNN
+F 2 "" H 6400 1000 50  0001 C CNN
+F 3 "" H 6400 1000 50  0001 C CNN
+	1    6400 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-7
+U 1 1 92DF2AF3
+P 6400 2100
+F 0 "#P-7" H 6400 2100 50  0001 C CNN
+F 1 "-15V" V 6300 2000 59  0000 L BNN
+F 2 "" H 6400 2100 50  0001 C CNN
+F 3 "" H 6400 2100 50  0001 C CNN
+	1    6400 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2-4 C4
+U 1 1 487BCAB4
+P 7300 1300
+F 0 "C4" H 7345 1319 59  0000 L BNN
+F 1 "10uF" H 7345 1119 59  0000 L BNN
+F 2 "maske - VCF:E2-4" H 7300 1300 50  0001 C CNN
+F 3 "" H 7300 1300 50  0001 C CNN
+	1    7300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2-4 C3
+U 1 1 C3EA450F
+P 7300 1800
+F 0 "C3" H 7345 1819 59  0000 L BNN
+F 1 "10uF" H 7345 1619 59  0000 L BNN
+F 2 "maske - VCF:E2-4" H 7300 1800 50  0001 C CNN
+F 3 "" H 7300 1800 50  0001 C CNN
+	1    7300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND21
+U 1 1 FF2A2D77
+P 6800 1800
+F 0 "#GND21" H 6800 1800 50  0001 C CNN
+F 1 "GND" H 6700 1700 59  0000 L BNN
+F 2 "" H 6800 1800 50  0001 C CNN
+F 3 "" H 6800 1800 50  0001 C CNN
+	1    6800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C2
+U 1 1 AEC71D01
+P 7600 1300
+F 0 "C2" H 7660 1315 59  0000 L BNN
+F 1 "100n" H 7660 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 7600 1300 50  0001 C CNN
+F 3 "" H 7600 1300 50  0001 C CNN
+	1    7600 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C1
+U 1 1 CA43AFB1
+P 7600 1900
+F 0 "C1" H 7660 1915 59  0000 L BNN
+F 1 "100n" H 7660 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 7600 1900 50  0001 C CNN
+F 3 "" H 7600 1900 50  0001 C CNN
+	1    7600 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C15
+U 1 1 A041F231
+P 8500 1300
+F 0 "C15" H 8560 1315 59  0000 L BNN
+F 1 "100n" H 8560 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8500 1300 50  0001 C CNN
+F 3 "" H 8500 1300 50  0001 C CNN
+	1    8500 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C18
+U 1 1 FB4E6B42
+P 8500 1900
+F 0 "C18" H 8560 1915 59  0000 L BNN
+F 1 "100n" H 8560 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8500 1900 50  0001 C CNN
+F 3 "" H 8500 1900 50  0001 C CNN
+	1    8500 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R45
+U 1 1 D0577876
+P 14600 6200
+F 0 "R45" H 14450 6259 59  0000 L BNN
+F 1 "82k" H 14450 6070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14600 6200 50  0001 C CNN
+F 3 "" H 14600 6200 50  0001 C CNN
+	1    14600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R43
+U 1 1 EF85F26F
+P 13900 6200
+F 0 "R43" H 13750 6259 59  0000 L BNN
+F 1 "4.7k" H 13750 6070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 13900 6200 50  0001 C CNN
+F 3 "" H 13900 6200 50  0001 C CNN
+	1    13900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND23
+U 1 1 D027D65F
+P 13600 6400
+F 0 "#GND23" H 13600 6400 50  0001 C CNN
+F 1 "GND" H 13500 6300 59  0000 L BNN
+F 2 "" H 13600 6400 50  0001 C CNN
+F 3 "" H 13600 6400 50  0001 C CNN
+	1    13600 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C105
+U 1 1 1C48C91D
+P 8700 1300
+F 0 "C105" H 8760 1315 59  0000 L BNN
+F 1 "100n" H 8760 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8700 1300 50  0001 C CNN
+F 3 "" H 8700 1300 50  0001 C CNN
+	1    8700 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C101
+U 1 1 907DB711
+P 8700 1900
+F 0 "C101" H 8760 1915 59  0000 L BNN
+F 1 "100n" H 8760 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8700 1900 50  0001 C CNN
+F 3 "" H 8700 1900 50  0001 C CNN
+	1    8700 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R105
+U 1 1 C7500FA2
+P 3700 5500
+F 0 "R105" H 3550 5559 59  0000 L BNN
+F 1 "100k" H 3550 5370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3700 5500 50  0001 C CNN
+F 3 "" H 3700 5500 50  0001 C CNN
+	1    3700 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C19
+U 1 1 424B497F
+P 14600 5900
+F 0 "C19" H 14660 5915 59  0000 L BNN
+F 1 "220pF" H 14660 5715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 14600 5900 50  0001 C CNN
+F 3 "" H 14600 5900 50  0001 C CNN
+	1    14600 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+2
+U 1 1 637B3A6A
+P 12000 3400
+F 0 "#P+2" H 12000 3400 50  0001 C CNN
+F 1 "+15V" V 11900 3200 59  0000 L BNN
+F 2 "" H 12000 3400 50  0001 C CNN
+F 3 "" H 12000 3400 50  0001 C CNN
+	1    12000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-2
+U 1 1 BDEAD289
+P 11200 6700
+F 0 "#P-2" H 11200 6700 50  0001 C CNN
+F 1 "-15V" V 11100 6600 59  0000 L BNN
+F 2 "" H 11200 6700 50  0001 C CNN
+F 3 "" H 11200 6700 50  0001 C CNN
+	1    11200 6700
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R42
+U 1 1 425F1EE2
+P 10800 6700
+F 0 "R42" H 10650 6759 59  0000 L BNN
+F 1 "470  Ohm" H 10650 6570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10800 6700 50  0001 C CNN
+F 3 "" H 10800 6700 50  0001 C CNN
+	1    10800 6700
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2.5-7 C11
+U 1 1 25B17DDB
+P 10500 7000
+F 0 "C11" H 10545 7019 59  0000 L BNN
+F 1 "220uF" H 10545 6819 59  0000 L BNN
+F 2 "maske - VCF:E2,5-7" H 10500 7000 50  0001 C CNN
+F 3 "" H 10500 7000 50  0001 C CNN
+	1    10500 7000
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND1
+U 1 1 8DA2BB24
+P 10500 7300
+F 0 "#GND1" H 10500 7300 50  0001 C CNN
+F 1 "GND" H 10400 7200 59  0000 L BNN
+F 2 "" H 10500 7300 50  0001 C CNN
+F 3 "" H 10500 7300 50  0001 C CNN
+	1    10500 7300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C10
+U 1 1 A32FFDF7
+P 10000 6900
+F 0 "C10" H 10060 6915 59  0000 L BNN
+F 1 "1nF poliester" H 10060 6715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 10000 6900 50  0001 C CNN
+F 3 "" H 10000 6900 50  0001 C CNN
+	1    10000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R21
+U 1 1 0DDF1F5D
+P 10000 7500
+F 0 "R21" H 9850 7559 59  0000 L BNN
+F 1 "10k" H 9850 7370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10000 7500 50  0001 C CNN
+F 3 "" H 10000 7500 50  0001 C CNN
+	1    10000 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R25
+U 1 1 4ED0E5BE
+P 10300 7500
+F 0 "R25" H 10150 7559 59  0000 L BNN
+F 1 "47  Ohm" H 10150 7370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10300 7500 50  0001 C CNN
+F 3 "" H 10300 7500 50  0001 C CNN
+	1    10300 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND4
+U 1 1 12C122FD
+P 10300 7900
+F 0 "#GND4" H 10300 7900 50  0001 C CNN
+F 1 "GND" H 10200 7800 59  0000 L BNN
+F 2 "" H 10300 7900 50  0001 C CNN
+F 3 "" H 10300 7900 50  0001 C CNN
+	1    10300 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C5
+U 1 1 90BE05AE
+P 9600 5800
+F 0 "C5" H 9660 5815 59  0000 L BNN
+F 1 "3.3nF poliester" H 9660 5615 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 9600 5800 50  0001 C CNN
+F 3 "" H 9600 5800 50  0001 C CNN
+	1    9600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R3
+U 1 1 F80A1254
+P 9300 6700
+F 0 "R3" H 9150 6759 59  0000 L BNN
+F 1 "220  Ohm" H 9150 6570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 9300 6700 50  0001 C CNN
+F 3 "" H 9300 6700 50  0001 C CNN
+	1    9300 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R39
+U 1 1 668CE9EA
+P 9600 7600
+F 0 "R39" H 9450 7659 59  0000 L BNN
+F 1 "220  Ohm" H 9450 7470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 9600 7600 50  0001 C CNN
+F 3 "" H 9600 7600 50  0001 C CNN
+	1    9600 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R33
+U 1 1 261149F5
+P 9600 7000
+F 0 "R33" H 9450 7059 59  0000 L BNN
+F 1 "15k" H 9450 6870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 9600 7000 50  0001 C CNN
+F 3 "" H 9600 7000 50  0001 C CNN
+	1    9600 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND8
+U 1 1 E3161DBF
+P 9600 8100
+F 0 "#GND8" H 9600 8100 50  0001 C CNN
+F 1 "GND" H 9500 8000 59  0000 L BNN
+F 2 "" H 9600 8100 50  0001 C CNN
+F 3 "" H 9600 8100 50  0001 C CNN
+	1    9600 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-4
+U 1 1 3D31ADC8
+P 3700 6300
+F 0 "#P-4" H 3700 6300 50  0001 C CNN
+F 1 "-15V" V 3600 6200 59  0000 L BNN
+F 2 "" H 3700 6300 50  0001 C CNN
+F 3 "" H 3700 6300 50  0001 C CNN
+	1    3700 6300
+	0    1    -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R1
+U 1 1 DB39F680
+P 8800 7800
+F 0 "R1" H 8650 7859 59  0000 L BNN
+F 1 "47  Ohm" H 8650 7670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8800 7800 50  0001 C CNN
+F 3 "" H 8800 7800 50  0001 C CNN
+	1    8800 7800
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND7
+U 1 1 C2693486
+P 8800 8200
+F 0 "#GND7" H 8800 8200 50  0001 C CNN
+F 1 "GND" H 8700 8100 59  0000 L BNN
+F 2 "" H 8800 8200 50  0001 C CNN
+F 3 "" H 8800 8200 50  0001 C CNN
+	1    8800 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R131
+U 1 1 DD91C22A
+P 4100 5800
+F 0 "R131" H 3950 5859 59  0000 L BNN
+F 1 "47k" H 3950 5670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 4100 5800 50  0001 C CNN
+F 3 "" H 4100 5800 50  0001 C CNN
+	1    4100 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND26
+U 1 1 3890F70B
+P 6200 5800
+F 0 "#GND26" H 6200 5800 50  0001 C CNN
+F 1 "GND" H 6100 5700 59  0000 L BNN
+F 2 "" H 6200 5800 50  0001 C CNN
+F 3 "" H 6200 5800 50  0001 C CNN
+	1    6200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R129
+U 1 1 EC688F72
+P 6600 5100
+F 0 "R129" H 6450 5159 59  0000 L BNN
+F 1 "10k" H 6450 4970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 6600 5100 50  0001 C CNN
+F 3 "" H 6600 5100 50  0001 C CNN
+	1    6600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:LED3MM LED1
+U 1 1 7DC8C285
+P 18900 6400
+F 0 "LED1" H 18820 6260 59  0000 L BNN
+F 1 "LED3MM" H 18820 6175 59  0000 L BNN
+F 2 "maske - VCF:LED3MM" H 18900 6400 50  0001 C CNN
+F 3 "" H 18900 6400 50  0001 C CNN
+	1    18900 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R103
+U 1 1 FE734E18
+P 18900 5800
+F 0 "R103" H 18750 5859 59  0000 L BNN
+F 1 "1k" H 18750 5670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 18900 5800 50  0001 C CNN
+F 3 "" H 18900 5800 50  0001 C CNN
+	1    18900 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND6
+U 1 1 F6847280
+P 18900 7200
+F 0 "#GND6" H 18900 7200 50  0001 C CNN
+F 1 "GND" H 18800 7100 59  0000 L BNN
+F 2 "" H 18900 7200 50  0001 C CNN
+F 3 "" H 18900 7200 50  0001 C CNN
+	1    18900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+5
+U 1 1 57F4DC09
+P 18900 5400
+F 0 "#P+5" H 18900 5400 50  0001 C CNN
+F 1 "+15V" V 18800 5200 59  0000 L BNN
+F 2 "" H 18900 5400 50  0001 C CNN
+F 3 "" H 18900 5400 50  0001 C CNN
+	1    18900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R119
+U 1 1 4E353337
+P 18000 6400
+F 0 "R119" H 17850 6459 59  0000 L BNN
+F 1 "15k" H 17850 6270 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 18000 6400 50  0001 C CNN
+F 3 "" H 18000 6400 50  0001 C CNN
+	1    18000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:LOGOBEFACOCONLETRAS U$100
+U 1 1 1B0C7F6A
+P 5600 1400
+F 0 "U$100" H 5600 1400 50  0001 C CNN
+F 1 "LOGOBEFACOCONLETRAS" H 5600 1400 50  0001 C CNN
+F 2 "maske - VCF:LOGOBEFACOCONLETRAS" H 5600 1400 50  0001 C CNN
+F 3 "" H 5600 1400 50  0001 C CNN
+	1    5600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2N3819 Q8
+U 1 1 2D2CC871
+P 10400 4300
+F 0 "Q8" H 10600 4300 59  0000 L BNN
+F 1 "2N3819" H 10600 4200 59  0000 L BNN
+F 2 "maske - VCF:TO92F" H 10400 4300 50  0001 C CNN
+F 3 "" H 10400 4300 50  0001 C CNN
+	1    10400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-PNP-TO92-EBC Q10
+U 1 1 7EAFBB32
+P 11600 4000
+F 0 "Q10" H 11200 4300 59  0000 L BNN
+F 1 "2N3906" H 11200 4200 59  0000 L BNN
+F 2 "maske - VCF:TO92-EBC" H 11600 4000 50  0001 C CNN
+F 3 "" H 11600 4000 50  0001 C CNN
+	1    11600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2SC1623 Q5
+U 1 1 A335FF6A
+P 9500 4800
+F 0 "Q5" H 9100 5100 59  0000 L BNN
+F 1 "2SC1623" H 9100 5000 59  0000 L BNN
+F 2 "maske - VCF:SOT-23" H 9500 4800 50  0001 C CNN
+F 3 "" H 9500 4800 50  0001 C CNN
+	1    9500 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2SC1623 Q3
+U 1 1 9A1C1EBA
+P 9200 5400
+F 0 "Q3" H 8800 5700 59  0000 L BNN
+F 1 "2SC1623" H 8800 5600 59  0000 L BNN
+F 2 "maske - VCF:SOT-23" H 9200 5400 50  0001 C CNN
+F 3 "" H 9200 5400 50  0001 C CNN
+	1    9200 5400
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2SC1623 Q1
+U 1 1 22BC07EB
+P 8600 4300
+F 0 "Q1" H 8200 4600 59  0000 L BNN
+F 1 "2SC1623" H 8200 4500 59  0000 L BNN
+F 2 "maske - VCF:SOT-23" H 8600 4300 50  0001 C CNN
+F 3 "" H 8600 4300 50  0001 C CNN
+	1    8600 4300
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R5
+U 1 1 300F7297
+P 8600 3800
+F 0 "R5" H 8450 3859 59  0000 L BNN
+F 1 "470k" H 8450 3670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8600 3800 50  0001 C CNN
+F 3 "" H 8600 3800 50  0001 C CNN
+	1    8600 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R7
+U 1 1 39A5056F
+P 8200 5000
+F 0 "R7" H 8050 5059 59  0000 L BNN
+F 1 "47k" H 8050 4870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8200 5000 50  0001 C CNN
+F 3 "" H 8200 5000 50  0001 C CNN
+	1    8200 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R31
+U 1 1 097B16FA
+P 8700 5000
+F 0 "R31" H 8550 5059 59  0000 L BNN
+F 1 "680  Ohm" H 8550 4870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8700 5000 50  0001 C CNN
+F 3 "" H 8700 5000 50  0001 C CNN
+	1    8700 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R18
+U 1 1 3D2E9ECA
+P 10500 3700
+F 0 "R18" H 10350 3759 59  0000 L BNN
+F 1 "10k" H 10350 3570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10500 3700 50  0001 C CNN
+F 3 "" H 10500 3700 50  0001 C CNN
+	1    10500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R23
+U 1 1 593AF3FC
+P 10500 5100
+F 0 "R23" H 10350 5159 59  0000 L BNN
+F 1 "10k" H 10350 4970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10500 5100 50  0001 C CNN
+F 3 "" H 10500 5100 50  0001 C CNN
+	1    10500 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R27
+U 1 1 108350BD
+P 11300 4600
+F 0 "R27" H 11150 4659 59  0000 L BNN
+F 1 "820  Ohm" H 11150 4470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 11300 4600 50  0001 C CNN
+F 3 "" H 11300 4600 50  0001 C CNN
+	1    11300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R101
+U 1 1 78F464E3
+P 18100 7900
+F 0 "R101" H 17950 7959 59  0000 L BNN
+F 1 "1k" H 17950 7770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 18100 7900 50  0001 C CNN
+F 3 "" H 18100 7900 50  0001 C CNN
+	1    18100 7900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C21
+U 1 1 4E8A384D
+P 8900 1300
+F 0 "C21" H 8960 1315 59  0000 L BNN
+F 1 "100n" H 8960 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8900 1300 50  0001 C CNN
+F 3 "" H 8900 1300 50  0001 C CNN
+	1    8900 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C24
+U 1 1 B4BCC975
+P 8900 1900
+F 0 "C24" H 8960 1915 59  0000 L BNN
+F 1 "100n" H 8960 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8900 1900 50  0001 C CNN
+F 3 "" H 8900 1900 50  0001 C CNN
+	1    8900 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C106
+U 1 1 B59270D5
+P 9100 1300
+F 0 "C106" H 9160 1315 59  0000 L BNN
+F 1 "100n" H 9160 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 9100 1300 50  0001 C CNN
+F 3 "" H 9100 1300 50  0001 C CNN
+	1    9100 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C104
+U 1 1 148A259C
+P 9100 1900
+F 0 "C104" H 9160 1915 59  0000 L BNN
+F 1 "100n" H 9160 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 9100 1900 50  0001 C CNN
+F 3 "" H 9100 1900 50  0001 C CNN
+	1    9100 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND28
+U 1 1 D1DF28FE
+P 11900 1800
+F 0 "#GND28" H 11900 1800 50  0001 C CNN
+F 1 "GND" H 11800 1700 59  0000 L BNN
+F 2 "" H 11900 1800 50  0001 C CNN
+F 3 "" H 11900 1800 50  0001 C CNN
+	1    11900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND29
+U 1 1 B0E7A0AF
+P 13400 1800
+F 0 "#GND29" H 13400 1800 50  0001 C CNN
+F 1 "GND" H 13300 1700 59  0000 L BNN
+F 2 "" H 13400 1800 50  0001 C CNN
+F 3 "" H 13400 1800 50  0001 C CNN
+	1    13400 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC101
+U 3 1 45AE73DD
+P 6600 5500
+F 0 "IC101" H 6700 5625 59  0001 L BNN
+F 1 "TL074P" H 6700 5300 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 6600 5500 50  0001 C CNN
+F 3 "" H 6600 5500 50  0001 C CNN
+	3    6600 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC101
+U 2 1 45AE73D9
+P 4800 5600
+F 0 "IC101" H 4900 5725 59  0001 L BNN
+F 1 "TL074P" H 4900 5400 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 4800 5600 50  0001 C CNN
+F 3 "" H 4800 5600 50  0001 C CNN
+	2    4800 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R121
+U 1 1 790654C4
+P 5500 5600
+F 0 "R121" H 5350 5659 59  0000 L BNN
+F 1 "10k" H 5350 5470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 5500 5600 50  0001 C CNN
+F 3 "" H 5500 5600 50  0001 C CNN
+	1    5500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND31
+U 1 1 01958B23
+P 4400 6500
+F 0 "#GND31" H 4400 6500 50  0001 C CNN
+F 1 "GND" H 4300 6400 59  0000 L BNN
+F 2 "" H 4400 6500 50  0001 C CNN
+F 3 "" H 4400 6500 50  0001 C CNN
+	1    4400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R111
+U 1 1 E1FC294B
+P 4800 5000
+F 0 "R111" H 4650 5059 59  0000 L BNN
+F 1 "100k" H 4650 4870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 4800 5000 50  0001 C CNN
+F 3 "" H 4800 5000 50  0001 C CNN
+	1    4800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C103
+U 1 1 6648E207
+P 4700 4700
+F 0 "C103" H 4760 4715 59  0000 L BNN
+F 1 "1nF poliester" H 4760 4515 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 4700 4700 50  0001 C CNN
+F 3 "" H 4700 4700 50  0001 C CNN
+	1    4700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC101
+U 5 1 45AE73C5
+P 10200 1600
+F 0 "IC101" H 10300 1725 59  0001 L BNN
+F 1 "TL074P" H 10300 1400 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 10200 1600 50  0001 C CNN
+F 3 "" H 10200 1600 50  0001 C CNN
+	5    10200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:LM13700N IC3
+U 1 1 B686635D
+P 13600 7800
+F 0 "IC3" H 13800 7900 59  0001 L BNN
+F 1 "LM13700N" H 13800 7800 59  0001 L BNN
+F 2 "maske - VCF:DIL16" H 13600 7800 50  0001 C CNN
+F 3 "" H 13600 7800 50  0001 C CNN
+	1    13600 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND3
+U 1 1 21137572
+P 13200 9100
+F 0 "#GND3" H 13200 9100 50  0001 C CNN
+F 1 "GND" H 13100 9000 59  0000 L BNN
+F 2 "" H 13200 9100 50  0001 C CNN
+F 3 "" H 13200 9100 50  0001 C CNN
+	1    13200 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R51
+U 1 1 F5D26F99
+P 13200 8600
+F 0 "R51" H 13050 8659 59  0000 L BNN
+F 1 "3k" H 13050 8470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 13200 8600 50  0001 C CNN
+F 3 "" H 13200 8600 50  0001 C CNN
+	1    13200 8600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R35
+U 1 1 BBFEA45A
+P 12800 7300
+F 0 "R35" H 12650 7359 59  0000 L BNN
+F 1 "7.3k" H 12650 7170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12800 7300 50  0001 C CNN
+F 3 "" H 12800 7300 50  0001 C CNN
+	1    12800 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R48
+U 1 1 A3B10D68
+P 13700 8300
+F 0 "R48" H 13550 8359 59  0000 L BNN
+F 1 "27k" H 13550 8170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 13700 8300 50  0001 C CNN
+F 3 "" H 13700 8300 50  0001 C CNN
+	1    13700 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R36
+U 1 1 31B1F47F
+P 12800 8200
+F 0 "R36" H 12650 8259 59  0000 L BNN
+F 1 "3k" H 12650 8070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12800 8200 50  0001 C CNN
+F 3 "" H 12800 8200 50  0001 C CNN
+	1    12800 8200
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-PNP-TO92-EBC T1
+U 1 1 20EFE28E
+P 14900 7300
+F 0 "T1" V 15100 7500 59  0000 R TNN
+F 1 "2N3906" V 15200 7500 59  0000 R TNN
+F 2 "maske - VCF:TO92-EBC" H 14900 7300 50  0001 C CNN
+F 3 "" H 14900 7300 50  0001 C CNN
+	1    14900 7300
+	0    1    -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND10
+U 1 1 0087CD10
+P 15800 7400
+F 0 "#GND10" H 15800 7400 50  0001 C CNN
+F 1 "GND" H 15700 7300 59  0000 L BNN
+F 2 "" H 15800 7400 50  0001 C CNN
+F 3 "" H 15800 7400 50  0001 C CNN
+	1    15800 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R30
+U 1 1 E60BDCA2
+P 14400 7200
+F 0 "R30" H 14250 7259 59  0000 L BNN
+F 1 "33k" H 14250 7070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14400 7200 50  0001 C CNN
+F 3 "" H 14400 7200 50  0001 C CNN
+	1    14400 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R13
+U 1 1 5685369C
+P 14900 7800
+F 0 "R13" H 14750 7859 59  0000 L BNN
+F 1 "10k" H 14750 7670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14900 7800 50  0001 C CNN
+F 3 "" H 14900 7800 50  0001 C CNN
+	1    14900 7800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R123
+U 1 1 0F102393
+P 15000 9900
+F 0 "R123" H 14850 9959 59  0000 L BNN
+F 1 "100k" H 14850 9770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 15000 9900 50  0001 C CNN
+F 3 "" H 15000 9900 50  0001 C CNN
+	1    15000 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND11
+U 1 1 5518330F
+P 15200 9600
+F 0 "#GND11" H 15200 9600 50  0001 C CNN
+F 1 "GND" H 15100 9500 59  0000 L BNN
+F 2 "" H 15200 9600 50  0001 C CNN
+F 3 "" H 15200 9600 50  0001 C CNN
+	1    15200 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R127
+U 1 1 D4D2BF96
+P 14700 9900
+F 0 "R127" H 14550 9959 59  0000 L BNN
+F 1 "100k" H 14550 9770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14700 9900 50  0001 C CNN
+F 3 "" H 14700 9900 50  0001 C CNN
+	1    14700 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND12
+U 1 1 8C4C494A
+P 18400 8200
+F 0 "#GND12" H 18400 8200 50  0001 C CNN
+F 1 "GND" H 18300 8100 59  0000 L BNN
+F 2 "" H 18400 8200 50  0001 C CNN
+F 3 "" H 18400 8200 50  0001 C CNN
+	1    18400 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND13
+U 1 1 85B66688
+P 15200 10700
+F 0 "#GND13" H 15200 10700 50  0001 C CNN
+F 1 "GND" H 15100 10600 59  0000 L BNN
+F 2 "" H 15200 10700 50  0001 C CNN
+F 3 "" H 15200 10700 50  0001 C CNN
+	1    15200 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND14
+U 1 1 B9C9B342
+P 13900 11200
+F 0 "#GND14" H 13900 11200 50  0001 C CNN
+F 1 "GND" H 13800 11100 59  0000 L BNN
+F 2 "" H 13900 11200 50  0001 C CNN
+F 3 "" H 13900 11200 50  0001 C CNN
+	1    13900 11200
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+4
+U 1 1 459FCD94
+P 15200 11200
+F 0 "#P+4" H 15200 11200 50  0001 C CNN
+F 1 "+15V" V 15100 11000 59  0000 L BNN
+F 2 "" H 15200 11200 50  0001 C CNN
+F 3 "" H 15200 11200 50  0001 C CNN
+	1    15200 11200
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND15
+U 1 1 7499CEA7
+P 3000 5800
+F 0 "#GND15" H 3000 5800 50  0001 C CNN
+F 1 "GND" H 2900 5700 59  0000 L BNN
+F 2 "" H 3000 5800 50  0001 C CNN
+F 3 "" H 3000 5800 50  0001 C CNN
+	1    3000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R115
+U 1 1 1CD5E9BA
+P 3400 6700
+F 0 "R115" H 3250 6759 59  0000 L BNN
+F 1 "100k" H 3250 6570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3400 6700 50  0001 C CNN
+F 3 "" H 3400 6700 50  0001 C CNN
+	1    3400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R109
+U 1 1 E0F97254
+P 2400 7200
+F 0 "R109" H 2250 7259 59  0000 L BNN
+F 1 "100k" H 2250 7070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 2400 7200 50  0001 C CNN
+F 3 "" H 2400 7200 50  0001 C CNN
+	1    2400 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R113
+U 1 1 137CAE49
+P 2400 8500
+F 0 "R113" H 2250 8559 59  0000 L BNN
+F 1 "100k" H 2250 8370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 2400 8500 50  0001 C CNN
+F 3 "" H 2400 8500 50  0001 C CNN
+	1    2400 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R107
+U 1 1 A0AD394C
+P 2500 6700
+F 0 "R107" H 2350 6759 59  0000 L BNN
+F 1 "43k" H 2350 6570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 2500 6700 50  0001 C CNN
+F 3 "" H 2500 6700 50  0001 C CNN
+	1    2500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND16
+U 1 1 12C6E2A1
+P 1800 8800
+F 0 "#GND16" H 1800 8800 50  0001 C CNN
+F 1 "GND" H 1700 8700 59  0000 L BNN
+F 2 "" H 1800 8800 50  0001 C CNN
+F 3 "" H 1800 8800 50  0001 C CNN
+	1    1800 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND17
+U 1 1 CBB20165
+P 1900 7500
+F 0 "#GND17" H 1900 7500 50  0001 C CNN
+F 1 "GND" H 1800 7400 59  0000 L BNN
+F 2 "" H 1900 7500 50  0001 C CNN
+F 3 "" H 1900 7500 50  0001 C CNN
+	1    1900 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC101
+U 1 1 45AE73D5
+P 3500 7300
+F 0 "IC101" H 3600 7425 59  0001 L BNN
+F 1 "TL074P" H 3600 7100 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 3500 7300 50  0001 C CNN
+F 3 "" H 3500 7300 50  0001 C CNN
+	1    3500 7300
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R125
+U 1 1 9C52F009
+P 4700 7300
+F 0 "R125" H 4550 7359 59  0000 L BNN
+F 1 "10k" H 4550 7170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 4700 7300 50  0001 C CNN
+F 3 "" H 4700 7300 50  0001 C CNN
+	1    4700 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC101
+U 4 1 45AE73C1
+P 15100 9100
+F 0 "IC101" H 15200 9225 59  0001 L BNN
+F 1 "TL074P" H 15200 8900 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 15100 9100 50  0001 C CNN
+F 3 "" H 15100 9100 50  0001 C CNN
+	4    15100 9100
+	0    1    -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL072P IC1
+U 2 1 47CFF28A
+P 14600 6600
+F 0 "IC1" H 14700 6725 59  0001 L BNN
+F 1 "NE5532" H 14700 6400 59  0001 L BNN
+F 2 "maske - VCF:DIL08" H 14600 6600 50  0001 C CNN
+F 3 "" H 14600 6600 50  0001 C CNN
+	2    14600 6600
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:M9040P LO-HI_SELECT_1
+U 1 1 6D329E02
+P 6100 9600
+F 0 "LO-HI_SELECT_1" V 5850 9525 59  0000 L BNN
+F 1 "M9040P" V 5950 9700 59  0000 L BNN
+F 2 "maske - VCF:M9040P" H 6100 9600 50  0001 C CNN
+F 3 "" H 6100 9600 50  0001 C CNN
+	1    6100 9600
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND18
+U 1 1 195191A6
+P 5300 10300
+F 0 "#GND18" H 5300 10300 50  0001 C CNN
+F 1 "GND" H 5200 10200 59  0000 L BNN
+F 2 "" H 5300 10300 50  0001 C CNN
+F 3 "" H 5300 10300 50  0001 C CNN
+	1    5300 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:LM13700N IC3
+U 5 1 B686634D
+P 10400 1600
+F 0 "IC3" H 10600 1700 59  0001 L BNN
+F 1 "LM13700N" H 10600 1600 59  0001 L BNN
+F 2 "maske - VCF:DIL16" H 10400 1600 50  0001 C CNN
+F 3 "" H 10400 1600 50  0001 C CNN
+	5    10400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL072P IC2
+U 2 1 D90C5C32
+P 12400 11800
+F 0 "IC2" H 12500 11925 59  0001 L BNN
+F 1 "NE5532" H 12500 11600 59  0001 L BNN
+F 2 "maske - VCF:DIL08" H 12400 11800 50  0001 C CNN
+F 3 "" H 12400 11800 50  0001 C CNN
+	2    12400 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:1N4148-2 D8
+U 1 1 54B076E9
+P 12400 12200
+F 0 "D8" H 12260 12279 70  0000 L BNN
+F 1 "1N4148-2" H 12230 12059 70  0000 L BNN
+F 2 "maske - VCF:DO35-2" H 12400 12200 50  0001 C CNN
+F 3 "" H 12400 12200 50  0001 C CNN
+	1    12400 12200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:1N4148-2 D6
+U 1 1 8D7F21E8
+P 12300 12500
+F 0 "D6" H 12160 12579 70  0000 L BNN
+F 1 "1N4148-2" H 12130 12359 70  0000 L BNN
+F 2 "maske - VCF:DO35-2" H 12300 12500 50  0001 C CNN
+F 3 "" H 12300 12500 50  0001 C CNN
+	1    12300 12500
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2.5-5 C8
+U 1 1 EC6A4D83
+P 11900 13100
+F 0 "C8" H 11945 13119 59  0000 L BNN
+F 1 "10uF" H 11945 12919 59  0000 L BNN
+F 2 "maske - VCF:E2,5-5" H 11900 13100 50  0001 C CNN
+F 3 "" H 11900 13100 50  0001 C CNN
+	1    11900 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-TRIMM64X CUTOFF_INIT_B
+U 1 1 AD9ECD4D
+P 4100 13500
+F 0 "CUTOFF_INIT_B" V 3865 13350 59  0000 L BNN
+F 1 "100k" V 3950 13350 59  0000 L BNN
+F 2 "maske - VCF:RTRIM64X" H 4100 13500 50  0001 C CNN
+F 3 "" H 4100 13500 50  0001 C CNN
+	1    4100 13500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R20
+U 1 1 37B668A8
+P 12400 12800
+F 0 "R20" H 12250 12859 59  0000 L BNN
+F 1 "270k" H 12250 12670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12400 12800 50  0001 C CNN
+F 3 "" H 12400 12800 50  0001 C CNN
+	1    12400 12800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2.5-6 C14
+U 1 1 43D9E4D3
+P 12900 13100
+F 0 "C14" H 12945 13119 59  0000 L BNN
+F 1 "33uF audio" H 12945 12919 59  0000 L BNN
+F 2 "maske - VCF:E2,5-6" H 12900 13100 50  0001 C CNN
+F 3 "" H 12900 13100 50  0001 C CNN
+	1    12900 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R11
+U 1 1 82D11F35
+P 11900 13600
+F 0 "R11" H 11750 13659 59  0000 L BNN
+F 1 "4.7k" H 11750 13470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 11900 13600 50  0001 C CNN
+F 3 "" H 11900 13600 50  0001 C CNN
+	1    11900 13600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND19
+U 1 1 F278BC0E
+P 11900 14000
+F 0 "#GND19" H 11900 14000 50  0001 C CNN
+F 1 "GND" H 11800 13900 59  0000 L BNN
+F 2 "" H 11900 14000 50  0001 C CNN
+F 3 "" H 11900 14000 50  0001 C CNN
+	1    11900 14000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C25
+U 1 1 376D3A09
+P 12400 16100
+F 0 "C25" H 12460 16115 59  0000 L BNN
+F 1 "1nF poliester" H 12460 15915 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 12400 16100 50  0001 C CNN
+F 3 "" H 12400 16100 50  0001 C CNN
+	1    12400 16100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R49
+U 1 1 AC5F96E3
+P 12500 16500
+F 0 "R49" H 12350 16559 59  0000 L BNN
+F 1 "5.6k" H 12350 16370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12500 16500 50  0001 C CNN
+F 3 "" H 12500 16500 50  0001 C CNN
+	1    12500 16500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R132
+U 1 1 84C6B296
+P 3700 11600
+F 0 "R132" H 3550 11659 59  0000 L BNN
+F 1 "100k" H 3550 11470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3700 11600 50  0001 C CNN
+F 3 "" H 3700 11600 50  0001 C CNN
+	1    3700 11600
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+8
+U 1 1 E32DC4A8
+P 3000 11100
+F 0 "#P+8" H 3000 11100 50  0001 C CNN
+F 1 "+15V" V 2900 10900 59  0000 L BNN
+F 2 "" H 3000 11100 50  0001 C CNN
+F 3 "" H 3000 11100 50  0001 C CNN
+	1    3000 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R9
+U 1 1 22FF1DF3
+P 8500 15000
+F 0 "R9" H 8350 15059 59  0000 L BNN
+F 1 "10k" H 8350 14870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8500 15000 50  0001 C CNN
+F 3 "" H 8500 15000 50  0001 C CNN
+	1    8500 15000
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R46
+U 1 1 37C8B84B
+P 14500 13300
+F 0 "R46" H 14350 13359 59  0000 L BNN
+F 1 "82k" H 14350 13170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14500 13300 50  0001 C CNN
+F 3 "" H 14500 13300 50  0001 C CNN
+	1    14500 13300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R44
+U 1 1 C79CEE93
+P 13800 13300
+F 0 "R44" H 13650 13359 59  0000 L BNN
+F 1 "4.7k" H 13650 13170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 13800 13300 50  0001 C CNN
+F 3 "" H 13800 13300 50  0001 C CNN
+	1    13800 13300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND20
+U 1 1 E53A484A
+P 13500 13500
+F 0 "#GND20" H 13500 13500 50  0001 C CNN
+F 1 "GND" H 13400 13400 59  0000 L BNN
+F 2 "" H 13500 13500 50  0001 C CNN
+F 3 "" H 13500 13500 50  0001 C CNN
+	1    13500 13500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R104
+U 1 1 F9AE4B93
+P 3600 12500
+F 0 "R104" H 3450 12559 59  0000 L BNN
+F 1 "100k" H 3450 12370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3600 12500 50  0001 C CNN
+F 3 "" H 3600 12500 50  0001 C CNN
+	1    3600 12500
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C20
+U 1 1 00E60083
+P 14500 13000
+F 0 "C20" H 14560 13015 59  0000 L BNN
+F 1 "220pF" H 14560 12815 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 14500 13000 50  0001 C CNN
+F 3 "" H 14500 13000 50  0001 C CNN
+	1    14500 13000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+9
+U 1 1 DD8F0AB4
+P 12100 10500
+F 0 "#P+9" H 12100 10500 50  0001 C CNN
+F 1 "+15V" V 12000 10300 59  0000 L BNN
+F 2 "" H 12100 10500 50  0001 C CNN
+F 3 "" H 12100 10500 50  0001 C CNN
+	1    12100 10500
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-5
+U 1 1 1DC4E20E
+P 11300 13800
+F 0 "#P-5" H 11300 13800 50  0001 C CNN
+F 1 "-15V" V 11200 13700 59  0000 L BNN
+F 2 "" H 11300 13800 50  0001 C CNN
+F 3 "" H 11300 13800 50  0001 C CNN
+	1    11300 13800
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R41
+U 1 1 3528EC55
+P 10900 13800
+F 0 "R41" H 10750 13859 59  0000 L BNN
+F 1 "470  Ohm" H 10750 13670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10900 13800 50  0001 C CNN
+F 3 "" H 10900 13800 50  0001 C CNN
+	1    10900 13800
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:CPOL-EUE2.5-7 C12
+U 1 1 3068D65D
+P 10600 14100
+F 0 "C12" H 10645 14119 59  0000 L BNN
+F 1 "220uF" H 10645 13919 59  0000 L BNN
+F 2 "maske - VCF:E2,5-7" H 10600 14100 50  0001 C CNN
+F 3 "" H 10600 14100 50  0001 C CNN
+	1    10600 14100
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND25
+U 1 1 F212C7DE
+P 10600 14400
+F 0 "#GND25" H 10600 14400 50  0001 C CNN
+F 1 "GND" H 10500 14300 59  0000 L BNN
+F 2 "" H 10600 14400 50  0001 C CNN
+F 3 "" H 10600 14400 50  0001 C CNN
+	1    10600 14400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C9
+U 1 1 382DD330
+P 10100 14000
+F 0 "C9" H 10160 14015 59  0000 L BNN
+F 1 "1nF poliester" H 10160 13815 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 10100 14000 50  0001 C CNN
+F 3 "" H 10100 14000 50  0001 C CNN
+	1    10100 14000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R22
+U 1 1 A75775E5
+P 10100 14600
+F 0 "R22" H 9950 14659 59  0000 L BNN
+F 1 "10k" H 9950 14470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10100 14600 50  0001 C CNN
+F 3 "" H 10100 14600 50  0001 C CNN
+	1    10100 14600
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R26
+U 1 1 DC48A2EE
+P 10400 14600
+F 0 "R26" H 10250 14659 59  0000 L BNN
+F 1 "47  Ohm" H 10250 14470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10400 14600 50  0001 C CNN
+F 3 "" H 10400 14600 50  0001 C CNN
+	1    10400 14600
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND27
+U 1 1 F8638A93
+P 10400 15000
+F 0 "#GND27" H 10400 15000 50  0001 C CNN
+F 1 "GND" H 10300 14900 59  0000 L BNN
+F 2 "" H 10400 15000 50  0001 C CNN
+F 3 "" H 10400 15000 50  0001 C CNN
+	1    10400 15000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C6
+U 1 1 3F1F5D5C
+P 9700 12900
+F 0 "C6" H 9760 12915 59  0000 L BNN
+F 1 "3.3nF poliester" H 9760 12715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 9700 12900 50  0001 C CNN
+F 3 "" H 9700 12900 50  0001 C CNN
+	1    9700 12900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R4
+U 1 1 E29E9988
+P 9400 13800
+F 0 "R4" H 9250 13859 59  0000 L BNN
+F 1 "220  Ohm" H 9250 13670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 9400 13800 50  0001 C CNN
+F 3 "" H 9400 13800 50  0001 C CNN
+	1    9400 13800
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R40
+U 1 1 2BFCF338
+P 9700 14700
+F 0 "R40" H 9550 14759 59  0000 L BNN
+F 1 "220  Ohm" H 9550 14570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 9700 14700 50  0001 C CNN
+F 3 "" H 9700 14700 50  0001 C CNN
+	1    9700 14700
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R34
+U 1 1 CC4CF6FD
+P 9700 14100
+F 0 "R34" H 9550 14159 59  0000 L BNN
+F 1 "15k" H 9550 13970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 9700 14100 50  0001 C CNN
+F 3 "" H 9700 14100 50  0001 C CNN
+	1    9700 14100
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND32
+U 1 1 FD501343
+P 9700 15200
+F 0 "#GND32" H 9700 15200 50  0001 C CNN
+F 1 "GND" H 9600 15100 59  0000 L BNN
+F 2 "" H 9700 15200 50  0001 C CNN
+F 3 "" H 9700 15200 50  0001 C CNN
+	1    9700 15200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-6
+U 1 1 1696430B
+P 3700 13500
+F 0 "#P-6" H 3700 13500 50  0001 C CNN
+F 1 "-15V" V 3600 13400 59  0000 L BNN
+F 2 "" H 3700 13500 50  0001 C CNN
+F 3 "" H 3700 13500 50  0001 C CNN
+	1    3700 13500
+	0    1    -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R2
+U 1 1 0A01113D
+P 8900 14900
+F 0 "R2" H 8750 14959 59  0000 L BNN
+F 1 "47  Ohm" H 8750 14770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8900 14900 50  0001 C CNN
+F 3 "" H 8900 14900 50  0001 C CNN
+	1    8900 14900
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND33
+U 1 1 C5585B8D
+P 8900 15300
+F 0 "#GND33" H 8900 15300 50  0001 C CNN
+F 1 "GND" H 8800 15200 59  0000 L BNN
+F 2 "" H 8900 15300 50  0001 C CNN
+F 3 "" H 8900 15300 50  0001 C CNN
+	1    8900 15300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R130
+U 1 1 C4C25080
+P 4100 13000
+F 0 "R130" H 3950 13059 59  0000 L BNN
+F 1 "47k" H 3950 12870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 4100 13000 50  0001 C CNN
+F 3 "" H 4100 13000 50  0001 C CNN
+	1    4100 13000
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND34
+U 1 1 85A992D2
+P 6200 13000
+F 0 "#GND34" H 6200 13000 50  0001 C CNN
+F 1 "GND" H 6100 12900 59  0000 L BNN
+F 2 "" H 6200 13000 50  0001 C CNN
+F 3 "" H 6200 13000 50  0001 C CNN
+	1    6200 13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R128
+U 1 1 44277A10
+P 6600 12300
+F 0 "R128" H 6450 12359 59  0000 L BNN
+F 1 "10k" H 6450 12170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 6600 12300 50  0001 C CNN
+F 3 "" H 6600 12300 50  0001 C CNN
+	1    6600 12300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:LED3MM LED2
+U 1 1 221661FE
+P 18500 13700
+F 0 "LED2" H 18420 13560 59  0000 L BNN
+F 1 "LED3MM" H 18420 13475 59  0000 L BNN
+F 2 "maske - VCF:LED3MM" H 18500 13700 50  0001 C CNN
+F 3 "" H 18500 13700 50  0001 C CNN
+	1    18500 13700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R102
+U 1 1 F4748077
+P 18500 13000
+F 0 "R102" H 18350 13059 59  0000 L BNN
+F 1 "1k" H 18350 12870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 18500 13000 50  0001 C CNN
+F 3 "" H 18500 13000 50  0001 C CNN
+	1    18500 13000
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND35
+U 1 1 A522C48C
+P 18500 14400
+F 0 "#GND35" H 18500 14400 50  0001 C CNN
+F 1 "GND" H 18400 14300 59  0000 L BNN
+F 2 "" H 18500 14400 50  0001 C CNN
+F 3 "" H 18500 14400 50  0001 C CNN
+	1    18500 14400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+10
+U 1 1 6665561A
+P 18500 12500
+F 0 "#P+10" H 18500 12500 50  0001 C CNN
+F 1 "+15V" V 18400 12300 59  0000 L BNN
+F 2 "" H 18500 12500 50  0001 C CNN
+F 3 "" H 18500 12500 50  0001 C CNN
+	1    18500 12500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R116
+U 1 1 B810C7D9
+P 17700 13500
+F 0 "R116" H 17550 13559 59  0000 L BNN
+F 1 "15k" H 17550 13370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 17700 13500 50  0001 C CNN
+F 3 "" H 17700 13500 50  0001 C CNN
+	1    17700 13500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2N3819 Q7
+U 1 1 6A33A87D
+P 10500 11400
+F 0 "Q7" H 10700 11400 59  0000 L BNN
+F 1 "2N3819" H 10700 11300 59  0000 L BNN
+F 2 "maske - VCF:TO92F" H 10500 11400 50  0001 C CNN
+F 3 "" H 10500 11400 50  0001 C CNN
+	1    10500 11400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-PNP-TO92-EBC Q9
+U 1 1 77BBABC1
+P 11700 11100
+F 0 "Q9" H 11300 11400 59  0000 L BNN
+F 1 "2N3906" H 11300 11300 59  0000 L BNN
+F 2 "maske - VCF:TO92-EBC" H 11700 11100 50  0001 C CNN
+F 3 "" H 11700 11100 50  0001 C CNN
+	1    11700 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2SC1623 Q6
+U 1 1 97620144
+P 9600 11900
+F 0 "Q6" H 9200 12200 59  0000 L BNN
+F 1 "2SC1623" H 9200 12100 59  0000 L BNN
+F 2 "maske - VCF:SOT-23" H 9600 11900 50  0001 C CNN
+F 3 "" H 9600 11900 50  0001 C CNN
+	1    9600 11900
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2SC1623 Q4
+U 1 1 22452E8B
+P 9300 12500
+F 0 "Q4" H 8900 12800 59  0000 L BNN
+F 1 "2SC1623" H 8900 12700 59  0000 L BNN
+F 2 "maske - VCF:SOT-23" H 9300 12500 50  0001 C CNN
+F 3 "" H 9300 12500 50  0001 C CNN
+	1    9300 12500
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:2SC1623 Q2
+U 1 1 FC4D4FCD
+P 8700 11400
+F 0 "Q2" H 8300 11700 59  0000 L BNN
+F 1 "2SC1623" H 8300 11600 59  0000 L BNN
+F 2 "maske - VCF:SOT-23" H 8700 11400 50  0001 C CNN
+F 3 "" H 8700 11400 50  0001 C CNN
+	1    8700 11400
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R6
+U 1 1 E10C1AAD
+P 8700 10900
+F 0 "R6" H 8550 10959 59  0000 L BNN
+F 1 "470k" H 8550 10770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8700 10900 50  0001 C CNN
+F 3 "" H 8700 10900 50  0001 C CNN
+	1    8700 10900
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R10
+U 1 1 14CD020A
+P 8300 12100
+F 0 "R10" H 8150 12159 59  0000 L BNN
+F 1 "47k" H 8150 11970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8300 12100 50  0001 C CNN
+F 3 "" H 8300 12100 50  0001 C CNN
+	1    8300 12100
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R32
+U 1 1 36ACB3C3
+P 8800 12100
+F 0 "R32" H 8650 12159 59  0000 L BNN
+F 1 "680  Ohm" H 8650 11970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 8800 12100 50  0001 C CNN
+F 3 "" H 8800 12100 50  0001 C CNN
+	1    8800 12100
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R17
+U 1 1 AC3F9421
+P 10600 10800
+F 0 "R17" H 10450 10859 59  0000 L BNN
+F 1 "10k" H 10450 10670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10600 10800 50  0001 C CNN
+F 3 "" H 10600 10800 50  0001 C CNN
+	1    10600 10800
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R24
+U 1 1 710310B2
+P 10600 12200
+F 0 "R24" H 10450 12259 59  0000 L BNN
+F 1 "10k" H 10450 12070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 10600 12200 50  0001 C CNN
+F 3 "" H 10600 12200 50  0001 C CNN
+	1    10600 12200
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R28
+U 1 1 EC35FF96
+P 11400 11700
+F 0 "R28" H 11250 11759 59  0000 L BNN
+F 1 "820  Ohm" H 11250 11570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 11400 11700 50  0001 C CNN
+F 3 "" H 11400 11700 50  0001 C CNN
+	1    11400 11700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R100
+U 1 1 D9A52A5A
+P 17400 14600
+F 0 "R100" H 17250 14659 59  0000 L BNN
+F 1 "1k" H 17250 14470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 17400 14600 50  0001 C CNN
+F 3 "" H 17400 14600 50  0001 C CNN
+	1    17400 14600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC100
+U 2 1 A845568F
+P 6600 12700
+F 0 "IC100" H 6700 12825 59  0001 L BNN
+F 1 "TL074P" H 6700 12500 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 6600 12700 50  0001 C CNN
+F 3 "" H 6600 12700 50  0001 C CNN
+	2    6600 12700
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC100
+U 3 1 A845568B
+P 4800 12600
+F 0 "IC100" H 4900 12725 59  0001 L BNN
+F 1 "TL074P" H 4900 12400 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 4800 12600 50  0001 C CNN
+F 3 "" H 4800 12600 50  0001 C CNN
+	3    4800 12600
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R120
+U 1 1 132CF496
+P 5500 12600
+F 0 "R120" H 5350 12659 59  0000 L BNN
+F 1 "10k" H 5350 12470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 5500 12600 50  0001 C CNN
+F 3 "" H 5500 12600 50  0001 C CNN
+	1    5500 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND37
+U 1 1 A56E8B01
+P 4400 13800
+F 0 "#GND37" H 4400 13800 50  0001 C CNN
+F 1 "GND" H 4300 13700 59  0000 L BNN
+F 2 "" H 4400 13800 50  0001 C CNN
+F 3 "" H 4400 13800 50  0001 C CNN
+	1    4400 13800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R110
+U 1 1 8ED9165E
+P 4800 12200
+F 0 "R110" H 4650 12259 59  0000 L BNN
+F 1 "100k" H 4650 12070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 4800 12200 50  0001 C CNN
+F 3 "" H 4800 12200 50  0001 C CNN
+	1    4800 12200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C102
+U 1 1 FEDACF42
+P 4700 11900
+F 0 "C102" H 4760 11915 59  0000 L BNN
+F 1 "1nF poliester" H 4760 11715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 4700 11900 50  0001 C CNN
+F 3 "" H 4700 11900 50  0001 C CNN
+	1    4700 11900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND38
+U 1 1 35D5721E
+P 13300 16200
+F 0 "#GND38" H 13300 16200 50  0001 C CNN
+F 1 "GND" H 13200 16100 59  0000 L BNN
+F 2 "" H 13300 16200 50  0001 C CNN
+F 3 "" H 13300 16200 50  0001 C CNN
+	1    13300 16200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R52
+U 1 1 8CCB0A8E
+P 13300 15700
+F 0 "R52" H 13150 15759 59  0000 L BNN
+F 1 "3k" H 13150 15570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 13300 15700 50  0001 C CNN
+F 3 "" H 13300 15700 50  0001 C CNN
+	1    13300 15700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R38
+U 1 1 DDE0B515
+P 12900 14400
+F 0 "R38" H 12750 14459 59  0000 L BNN
+F 1 "7.3k" H 12750 14270 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12900 14400 50  0001 C CNN
+F 3 "" H 12900 14400 50  0001 C CNN
+	1    12900 14400
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R50
+U 1 1 AC66745D
+P 13800 15400
+F 0 "R50" H 13650 15459 59  0000 L BNN
+F 1 "27k" H 13650 15270 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 13800 15400 50  0001 C CNN
+F 3 "" H 13800 15400 50  0001 C CNN
+	1    13800 15400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R37
+U 1 1 2422134B
+P 12900 15300
+F 0 "R37" H 12750 15359 59  0000 L BNN
+F 1 "3k" H 12750 15170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 12900 15300 50  0001 C CNN
+F 3 "" H 12900 15300 50  0001 C CNN
+	1    12900 15300
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-PNP-TO92-EBC T2
+U 1 1 A9F24569
+P 15000 14400
+F 0 "T2" V 15200 14600 59  0000 R TNN
+F 1 "2N3906" V 15300 14600 59  0000 R TNN
+F 2 "maske - VCF:TO92-EBC" H 15000 14400 50  0001 C CNN
+F 3 "" H 15000 14400 50  0001 C CNN
+	1    15000 14400
+	0    1    -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND39
+U 1 1 76CA36D4
+P 16000 14500
+F 0 "#GND39" H 16000 14500 50  0001 C CNN
+F 1 "GND" H 15900 14400 59  0000 L BNN
+F 2 "" H 16000 14500 50  0001 C CNN
+F 3 "" H 16000 14500 50  0001 C CNN
+	1    16000 14500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R29
+U 1 1 8B26DD86
+P 14500 14300
+F 0 "R29" H 14350 14359 59  0000 L BNN
+F 1 "33k" H 14350 14170 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14500 14300 50  0001 C CNN
+F 3 "" H 14500 14300 50  0001 C CNN
+	1    14500 14300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R14
+U 1 1 5915D5B8
+P 15000 14900
+F 0 "R14" H 14850 14959 59  0000 L BNN
+F 1 "10k" H 14850 14770 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 15000 14900 50  0001 C CNN
+F 3 "" H 15000 14900 50  0001 C CNN
+	1    15000 14900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R122
+U 1 1 18CE2260
+P 15100 17100
+F 0 "R122" H 14950 17159 59  0000 L BNN
+F 1 "100k" H 14950 16970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 15100 17100 50  0001 C CNN
+F 3 "" H 15100 17100 50  0001 C CNN
+	1    15100 17100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND40
+U 1 1 2B74A96F
+P 15300 16800
+F 0 "#GND40" H 15300 16800 50  0001 C CNN
+F 1 "GND" H 15200 16700 59  0000 L BNN
+F 2 "" H 15300 16800 50  0001 C CNN
+F 3 "" H 15300 16800 50  0001 C CNN
+	1    15300 16800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R126
+U 1 1 034EB7AB
+P 14800 17100
+F 0 "R126" H 14650 17159 59  0000 L BNN
+F 1 "100k" H 14650 16970 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 14800 17100 50  0001 C CNN
+F 3 "" H 14800 17100 50  0001 C CNN
+	1    14800 17100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND41
+U 1 1 057C4BD5
+P 17500 15300
+F 0 "#GND41" H 17500 15300 50  0001 C CNN
+F 1 "GND" H 17400 15200 59  0000 L BNN
+F 2 "" H 17500 15300 50  0001 C CNN
+F 3 "" H 17500 15300 50  0001 C CNN
+	1    17500 15300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND42
+U 1 1 6D21A43A
+P 15400 17900
+F 0 "#GND42" H 15400 17900 50  0001 C CNN
+F 1 "GND" H 15300 17800 59  0000 L BNN
+F 2 "" H 15400 17900 50  0001 C CNN
+F 3 "" H 15400 17900 50  0001 C CNN
+	1    15400 17900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND43
+U 1 1 7A046983
+P 14100 18400
+F 0 "#GND43" H 14100 18400 50  0001 C CNN
+F 1 "GND" H 14000 18300 59  0000 L BNN
+F 2 "" H 14100 18400 50  0001 C CNN
+F 3 "" H 14100 18400 50  0001 C CNN
+	1    14100 18400
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:+15V #P+11
+U 1 1 4D46F757
+P 15300 18400
+F 0 "#P+11" H 15300 18400 50  0001 C CNN
+F 1 "+15V" V 15200 18200 59  0000 L BNN
+F 2 "" H 15300 18400 50  0001 C CNN
+F 3 "" H 15300 18400 50  0001 C CNN
+	1    15300 18400
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND44
+U 1 1 87F2849F
+P 2900 12800
+F 0 "#GND44" H 2900 12800 50  0001 C CNN
+F 1 "GND" H 2800 12700 59  0000 L BNN
+F 2 "" H 2900 12800 50  0001 C CNN
+F 3 "" H 2900 12800 50  0001 C CNN
+	1    2900 12800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R114
+U 1 1 32655398
+P 3900 14200
+F 0 "R114" H 3750 14259 59  0000 L BNN
+F 1 "100k" H 3750 14070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3900 14200 50  0001 C CNN
+F 3 "" H 3900 14200 50  0001 C CNN
+	1    3900 14200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R108
+U 1 1 42FE963A
+P 2900 14700
+F 0 "R108" H 2750 14759 59  0000 L BNN
+F 1 "100k" H 2750 14570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 2900 14700 50  0001 C CNN
+F 3 "" H 2900 14700 50  0001 C CNN
+	1    2900 14700
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R112
+U 1 1 BFA9B788
+P 2900 16000
+F 0 "R112" H 2750 16059 59  0000 L BNN
+F 1 "100k" H 2750 15870 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 2900 16000 50  0001 C CNN
+F 3 "" H 2900 16000 50  0001 C CNN
+	1    2900 16000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R106
+U 1 1 57083997
+P 3000 14200
+F 0 "R106" H 2850 14259 59  0000 L BNN
+F 1 "43k" H 2850 14070 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 3000 14200 50  0001 C CNN
+F 3 "" H 3000 14200 50  0001 C CNN
+	1    3000 14200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND45
+U 1 1 5123C17D
+P 2500 16300
+F 0 "#GND45" H 2500 16300 50  0001 C CNN
+F 1 "GND" H 2400 16200 59  0000 L BNN
+F 2 "" H 2500 16300 50  0001 C CNN
+F 3 "" H 2500 16300 50  0001 C CNN
+	1    2500 16300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND46
+U 1 1 6BBB6AA2
+P 2400 15000
+F 0 "#GND46" H 2400 15000 50  0001 C CNN
+F 1 "GND" H 2300 14900 59  0000 L BNN
+F 2 "" H 2400 15000 50  0001 C CNN
+F 3 "" H 2400 15000 50  0001 C CNN
+	1    2400 15000
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC100
+U 4 1 A8455697
+P 4000 14800
+F 0 "IC100" H 4100 14925 59  0001 L BNN
+F 1 "TL074P" H 4100 14600 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 4000 14800 50  0001 C CNN
+F 3 "" H 4000 14800 50  0001 C CNN
+	4    4000 14800
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R124
+U 1 1 49699480
+P 5200 14800
+F 0 "R124" H 5050 14859 59  0000 L BNN
+F 1 "10k" H 5050 14670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 5200 14800 50  0001 C CNN
+F 3 "" H 5200 14800 50  0001 C CNN
+	1    5200 14800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC100
+U 1 1 A8455683
+P 15200 16300
+F 0 "IC100" H 15300 16425 59  0001 L BNN
+F 1 "TL074P" H 15300 16100 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 15200 16300 50  0001 C CNN
+F 3 "" H 15200 16300 50  0001 C CNN
+	1    15200 16300
+	0    1    -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL072P IC2
+U 1 1 D90C5C3E
+P 14500 13700
+F 0 "IC2" H 14600 13825 59  0001 L BNN
+F 1 "NE5532" H 14600 13500 59  0001 L BNN
+F 2 "maske - VCF:DIL08" H 14500 13700 50  0001 C CNN
+F 3 "" H 14500 13700 50  0001 C CNN
+	1    14500 13700
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:M9040P LO-HI_SELECT_2
+U 1 1 51824709
+P 6800 17200
+F 0 "LO-HI_SELECT_2" V 6550 17125 59  0000 L BNN
+F 1 "M9040P" V 6650 17300 59  0000 L BNN
+F 2 "maske - VCF:M9040P" H 6800 17200 50  0001 C CNN
+F 3 "" H 6800 17200 50  0001 C CNN
+	1    6800 17200
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND47
+U 1 1 E3D3C258
+P 5900 17900
+F 0 "#GND47" H 5900 17900 50  0001 C CNN
+F 1 "GND" H 5800 17800 59  0000 L BNN
+F 2 "" H 5900 17900 50  0001 C CNN
+F 3 "" H 5900 17900 50  0001 C CNN
+	1    5900 17900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL072P IC2
+U 3 1 D90C5C36
+P 9600 1600
+F 0 "IC2" H 9700 1725 59  0001 L BNN
+F 1 "NE5532" H 9700 1400 59  0001 L BNN
+F 2 "maske - VCF:DIL08" H 9600 1600 50  0001 C CNN
+F 3 "" H 9600 1600 50  0001 C CNN
+	3    9600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:TL074P IC100
+U 5 1 A8455693
+P 9400 1600
+F 0 "IC100" H 9500 1725 59  0001 L BNN
+F 1 "TL074P" H 9500 1400 59  0001 L BNN
+F 2 "maske - VCF:DIL14" H 9400 1600 50  0001 C CNN
+F 3 "" H 9400 1600 50  0001 C CNN
+	5    9400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:LM13700N IC3
+U 3 1 B6866355
+P 13700 14900
+F 0 "IC3" H 13900 15000 59  0001 L BNN
+F 1 "LM13700N" H 13900 14900 59  0001 L BNN
+F 2 "maske - VCF:DIL16" H 13700 14900 50  0001 C CNN
+F 3 "" H 13700 14900 50  0001 C CNN
+	3    13700 14900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C16
+U 1 1 3BF359D1
+P 8200 1300
+F 0 "C16" H 8260 1315 59  0000 L BNN
+F 1 "100n" H 8260 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8200 1300 50  0001 C CNN
+F 3 "" H 8200 1300 50  0001 C CNN
+	1    8200 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C100
+U 1 1 78FB91F5
+P 7900 1300
+F 0 "C100" H 7960 1315 59  0000 L BNN
+F 1 "100n" H 7960 1115 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 7900 1300 50  0001 C CNN
+F 3 "" H 7900 1300 50  0001 C CNN
+	1    7900 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C17
+U 1 1 20F00162
+P 8200 1900
+F 0 "C17" H 8260 1915 59  0000 L BNN
+F 1 "100n" H 8260 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 8200 1900 50  0001 C CNN
+F 3 "" H 8200 1900 50  0001 C CNN
+	1    8200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C107
+U 1 1 E278C145
+P 7900 1900
+F 0 "C107" H 7960 1915 59  0000 L BNN
+F 1 "100n" H 7960 1715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 7900 1900 50  0001 C CNN
+F 3 "" H 7900 1900 50  0001 C CNN
+	1    7900 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:M9040P LINK
+U 1 1 4E695CA4
+P 5900 16600
+F 0 "LINK" V 6150 16425 59  0000 L BNN
+F 1 "M9040P" V 5750 16700 59  0000 L BNN
+F 2 "maske - VCF:M9040P" H 5900 16600 50  0001 C CNN
+F 3 "" H 5900 16600 50  0001 C CNN
+	1    5900 16600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C23
+U 1 1 421D0A3D
+P 13700 8800
+F 0 "C23" H 13760 8815 59  0000 L BNN
+F 1 "220pF" H 13760 8615 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 13700 8800 50  0001 C CNN
+F 3 "" H 13700 8800 50  0001 C CNN
+	1    13700 8800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:C-EU050-025X075 C26
+U 1 1 DF1CBA89
+P 13800 15900
+F 0 "C26" H 13860 15915 59  0000 L BNN
+F 1 "220pF" H 13860 15715 59  0000 L BNN
+F 2 "maske - VCF:C050-025X075" H 13800 15900 50  0001 C CNN
+F 3 "" H 13800 15900 50  0001 C CNN
+	1    13800 15900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND52
+U 1 1 6E5BE941
+P 3000 12200
+F 0 "#GND52" H 3000 12200 50  0001 C CNN
+F 1 "GND" H 2900 12100 59  0000 L BNN
+F 2 "" H 3000 12200 50  0001 C CNN
+F 3 "" H 3000 12200 50  0001 C CNN
+	1    3000 12200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:GND #GND53
+U 1 1 F36FBA54
+P 3100 5100
+F 0 "#GND53" H 3100 5100 50  0001 C CNN
+F 1 "GND" H 3000 5000 59  0000 L BNN
+F 2 "" H 3100 5100 50  0001 C CNN
+F 3 "" H 3100 5100 50  0001 C CNN
+	1    3100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-PNP-TO92-EBC T100
+U 1 1 D5EF1D38
+P 18200 13500
+F 0 "T100" H 17800 13800 59  0000 L BNN
+F 1 "2N3906" H 17800 13700 59  0000 L BNN
+F 2 "maske - VCF:TO92-EBC" H 18200 13500 50  0001 C CNN
+F 3 "" H 18200 13500 50  0001 C CNN
+	1    18200 13500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R117
+U 1 1 662FF82B
+P 18000 13800
+F 0 "R117" H 17850 13859 59  0000 L BNN
+F 1 "10k" H 17850 13670 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 18000 13800 50  0001 C CNN
+F 3 "" H 18000 13800 50  0001 C CNN
+	1    18000 13800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-PNP-TO92-EBC T101
+U 1 1 5516273D
+P 18500 6400
+F 0 "T101" H 18100 6700 59  0000 L BNN
+F 1 "2N3906" H 18100 6600 59  0000 L BNN
+F 2 "maske - VCF:TO92-EBC" H 18500 6400 50  0001 C CNN
+F 3 "" H 18500 6400 50  0001 C CNN
+	1    18500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R118
+U 1 1 3FEBB6F2
+P 18300 6700
+F 0 "R118" H 18150 6759 59  0000 L BNN
+F 1 "10k" H 18150 6570 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 18300 6700 50  0001 C CNN
+F 3 "" H 18300 6700 50  0001 C CNN
+	1    18300 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM CV_IN_CUTOFF_ATT_2
+U 1 1 4DA99193
+P 2200 15900
+F 0 "CV_IN_CUTOFF_ATT_2" H 2100 15450 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 2000 15600 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 2200 15900 50  0001 C CNN
+F 3 "" H 2200 15900 50  0001 C CNN
+	1    2200 15900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES RES_INIT_B
+U 1 1 105F4260
+P 14800 18400
+F 0 "RES_INIT_B" H 14700 18600 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 14700 18500 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 14800 18400 50  0001 C CNN
+F 3 "" H 14800 18400 50  0001 C CNN
+	1    14800 18400
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES RES_INIT_A
+U 1 1 BFDD4369
+P 14700 11200
+F 0 "RES_INIT_A" H 14600 11400 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 14600 11300 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 14700 11200 50  0001 C CNN
+F 3 "" H 14700 11200 50  0001 C CNN
+	1    14700 11200
+	1    0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_ATT_A
+U 1 1 B964B91B
+P 1500 7300
+F 0 "CUTOFF_ATT_A" H 900 7500 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 900 7400 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 1500 7300 50  0001 C CNN
+F 3 "" H 1500 7300 50  0001 C CNN
+	1    1500 7300
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_ATT_B
+U 1 1 FC92231A
+P 2000 14800
+F 0 "CUTOFF_ATT_B" H 1900 15000 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 1900 14900 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2000 14800 50  0001 C CNN
+F 3 "" H 2000 14800 50  0001 C CNN
+	1    2000 14800
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_A
+U 1 1 D0ACC920
+P 3100 4500
+F 0 "CUTOFF_A" H 3000 4700 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 3000 4600 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 3100 4500 50  0001 C CNN
+F 3 "" H 3100 4500 50  0001 C CNN
+	1    3100 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_B
+U 1 1 34B41973
+P 3000 11600
+F 0 "CUTOFF_B" H 2900 11800 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2900 11700 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 3000 11600 50  0001 C CNN
+F 3 "" H 3000 11600 50  0001 C CNN
+	1    3000 11600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES VOL_IN_2
+U 1 1 1C2A388C
+P 6200 17300
+F 0 "VOL_IN_2" H 6200 17500 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 6200 17400 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 6200 17300 50  0001 C CNN
+F 3 "" H 6200 17300 50  0001 C CNN
+	1    6200 17300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES VOL_IN_1
+U 1 1 453F7F0E
+P 5600 9700
+F 0 "VOL_IN_1" H 5700 10000 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 5700 9900 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 5600 9700 50  0001 C CNN
+F 3 "" H 5600 9700 50  0001 C CNN
+	1    5600 9700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM CV_IN_CUTOFF_ATT_1
+U 1 1 CE167D5C
+P 1500 8400
+F 0 "CV_IN_CUTOFF_ATT_1" H 1400 8650 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 1600 7800 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 1500 8400 50  0001 C CNN
+F 3 "" H 1500 8400 50  0001 C CNN
+	1    1500 8400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM RES_CV_IN_2
+U 1 1 9B794556
+P 15700 17500
+F 0 "RES_CV_IN_2" H 15600 17750 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 15800 16900 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 15700 17500 50  0001 C CNN
+F 3 "" H 15700 17500 50  0001 C CNN
+	1    15700 17500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM RES_CV_IN_1
+U 1 1 2FBD8149
+P 15500 10300
+F 0 "RES_CV_IN_1" H 15400 10550 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 15600 9700 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 15500 10300 50  0001 C CNN
+F 3 "" H 15500 10300 50  0001 C CNN
+	1    15500 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM CV_IN_CUTOFF_2
+U 1 1 7F05BA41
+P 2600 12400
+F 0 "CV_IN_CUTOFF_2" H 2400 12650 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 2600 11800 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 2600 12400 50  0001 C CNN
+F 3 "" H 2600 12400 50  0001 C CNN
+	1    2600 12400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM CV_IN_CUTOFF_1
+U 1 1 47B4D5EA
+P 2700 5400
+F 0 "CV_IN_CUTOFF_1" H 2500 5650 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 2600 4900 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 2700 5400 50  0001 C CNN
+F 3 "" H 2700 5400 50  0001 C CNN
+	1    2700 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM AUDIO_OUT_1
+U 1 1 BBA96BCA
+P 18700 7800
+F 0 "AUDIO_OUT_1" H 18600 8050 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 18800 7200 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 18700 7800 50  0001 C CNN
+F 3 "" H 18700 7800 50  0001 C CNN
+	1    18700 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM AUDIO_IN_2
+U 1 1 5F9771D1
+P 5300 17500
+F 0 "AUDIO_IN_2" H 4900 17750 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 5100 16900 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 5300 17500 50  0001 C CNN
+F 3 "" H 5300 17500 50  0001 C CNN
+	1    5300 17500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM AUDIO_IN_1
+U 1 1 5098944D
+P 4900 9900
+F 0 "AUDIO_IN_1" H 4800 10150 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 5000 9300 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 4900 9900 50  0001 C CNN
+F 3 "" H 4900 9900 50  0001 C CNN
+	1    4900 9900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:WQP-PJ301BM AUDIO_OUT_2
+U 1 1 6417515C
+P 17800 14900
+F 0 "AUDIO_OUT_2" H 17800 15250 59  0000 L BNN
+F 1 "WQP-PJ301BM" H 18000 14400 59  0000 L BNN
+F 2 "maske - VCF:WQP-PJ301BM" H 17800 14900 50  0001 C CNN
+F 3 "" H 17800 14900 50  0001 C CNN
+	1    17800 14900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:OSHW_LOGO_FILLX0200-NT LOGO100
+U 1 1 2B0A7D93
+P 4200 1600
+F 0 "LOGO100" H 4200 1600 50  0001 C CNN
+F 1 "OSHW_LOGO_FILLX0200-NT" H 4200 1600 50  0001 C CNN
+F 2 "maske - VCF:OSHW_FILLX200_NOTEXT" H 4200 1600 50  0001 C CNN
+F 3 "" H 4200 1600 50  0001 C CNN
+	1    4200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R16
+U 1 1 BCC8E3F0
+P 15300 14600
+F 0 "R16" H 15150 14659 59  0000 L BNN
+F 1 "910k" H 15150 14470 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 15300 14600 50  0001 C CNN
+F 3 "" H 15300 14600 50  0001 C CNN
+	1    15300 14600
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-3
+U 1 1 8B22421F
+P 15700 14600
+F 0 "#P-3" H 15700 14600 50  0001 C CNN
+F 1 "-15V" V 15600 14500 59  0000 L BNN
+F 2 "" H 15700 14600 50  0001 C CNN
+F 3 "" H 15700 14600 50  0001 C CNN
+	1    15700 14600
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R-EU_0204_5 R15
+U 1 1 C7B81CA8
+P 15200 7500
+F 0 "R15" H 15050 7559 59  0000 L BNN
+F 1 "910k" H 15050 7370 59  0000 L BNN
+F 2 "maske - VCF:0204_5" H 15200 7500 50  0001 C CNN
+F 3 "" H 15200 7500 50  0001 C CNN
+	1    15200 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:-15V #P-8
+U 1 1 43BA873A
+P 15600 7500
+F 0 "#P-8" H 15600 7500 50  0001 C CNN
+F 1 "-15V" V 15500 7400 59  0000 L BNN
+F 2 "" H 15600 7500 50  0001 C CNN
+F 3 "" H 15600 7500 50  0001 C CNN
+	1    15600 7500
+	0    -1   1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:MA03-2 SV3
+U 1 1 39D8666C
+P 21800 7900
+F 0 "SV3" H 21650 8130 59  0000 L BNN
+F 1 "MA03-2" H 21650 7600 59  0000 L BNN
+F 2 "maske - VCF:MA03-2" H 21800 7900 50  0001 C CNN
+F 3 "" H 21800 7900 50  0001 C CNN
+	1    21800 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:MA03-2 SV4
+U 1 1 52E1D252
+P 21800 8500
+F 0 "SV4" H 21650 8730 59  0000 L BNN
+F 1 "MA03-2" H 21650 8200 59  0000 L BNN
+F 2 "maske - VCF:MA03-2" H 21800 8500 50  0001 C CNN
+F 3 "" H 21800 8500 50  0001 C CNN
+	1    21800 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:MA05-2T SV1
+U 1 1 1FCB83CC
+P 21800 7200
+F 0 "SV1" H 21650 7530 59  0000 L BNN
+F 1 "MA05-2T" H 21650 6800 59  0000 L BNN
+F 2 "maske - VCF:MA05-2" H 21800 7200 50  0001 C CNN
+F 3 "" H 21800 7200 50  0001 C CNN
+	1    21800 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:MA05-2T SV2
+U 1 1 3E7D897A
+P 25000 7200
+F 0 "SV2" H 24850 7530 59  0000 L BNN
+F 1 "MA05-2T" H 24850 6800 59  0000 L BNN
+F 2 "maske - VCF:MA05-2" H 25000 7200 50  0001 C CNN
+F 3 "" H 25000 7200 50  0001 C CNN
+	1    25000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:MA03-2 SV5
+U 1 1 3073C240
+P 25000 7900
+F 0 "SV5" H 24850 8130 59  0000 L BNN
+F 1 "MA03-2" H 24850 7600 59  0000 L BNN
+F 2 "maske - VCF:MA03-2" H 25000 7900 50  0001 C CNN
+F 3 "" H 25000 7900 50  0001 C CNN
+	1    25000 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:MA03-2 SV6
+U 1 1 33EFED1E
+P 25000 8500
+F 0 "SV6" H 24850 8730 59  0000 L BNN
+F 1 "MA03-2" H 24850 8200 59  0000 L BNN
+F 2 "maske - VCF:MA03-2" H 25000 8500 50  0001 C CNN
+F 3 "" H 25000 8500 50  0001 C CNN
+	1    25000 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:M05X2RAF POWER_IN
+U 1 1 3FF5D202
+P 12700 1500
+F 0 "POWER_IN" H 12600 1830 59  0000 L BNN
+F 1 "IDC_2X5_Acodado" H 12600 1100 59  0000 L BNN
+F 2 "maske - VCF:2X5-RAF" H 12700 1500 50  0001 C CNN
+F 3 "" H 12700 1500 50  0001 C CNN
+	1    12700 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES RES_INIT_A
+U 2 1 BFDD4365
+P 14100 10900
+F 0 "RES_INIT_A" H 14000 11100 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 14000 11000 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 14100 10900 50  0001 C CNN
+F 3 "" H 14100 10900 50  0001 C CNN
+	2    14100 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES RES_INIT_A
+U 3 1 BFDD4361
+P 14300 10900
+F 0 "RES_INIT_A" H 14200 11100 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 14200 11000 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 14300 10900 50  0001 C CNN
+F 3 "" H 14300 10900 50  0001 C CNN
+	3    14300 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES RES_INIT_B
+U 2 1 105F426C
+P 14300 18100
+F 0 "RES_INIT_B" H 14200 18300 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 14200 18200 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 14300 18100 50  0001 C CNN
+F 3 "" H 14300 18100 50  0001 C CNN
+	2    14300 18100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES RES_INIT_B
+U 3 1 105F4268
+P 14400 18100
+F 0 "RES_INIT_B" H 14300 18300 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 14300 18200 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 14400 18100 50  0001 C CNN
+F 3 "" H 14400 18100 50  0001 C CNN
+	3    14400 18100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES VOL_IN_2
+U 2 1 1C2A3880
+P 6100 17900
+F 0 "VOL_IN_2" H 6000 18100 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 6000 18000 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 6100 17900 50  0001 C CNN
+F 3 "" H 6100 17900 50  0001 C CNN
+	2    6100 17900
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES VOL_IN_2
+U 3 1 1C2A3884
+P 6200 17900
+F 0 "VOL_IN_2" H 6100 18100 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 6100 18000 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 6200 17900 50  0001 C CNN
+F 3 "" H 6200 17900 50  0001 C CNN
+	3    6200 17900
+	0    1    1    0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_ATT_B
+U 2 1 FC922316
+P 2300 14500
+F 0 "CUTOFF_ATT_B" H 2200 14700 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2200 14600 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2300 14500 50  0001 C CNN
+F 3 "" H 2300 14500 50  0001 C CNN
+	2    2300 14500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_ATT_B
+U 3 1 FC922312
+P 2400 14500
+F 0 "CUTOFF_ATT_B" H 2300 14700 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2300 14600 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2400 14500 50  0001 C CNN
+F 3 "" H 2400 14500 50  0001 C CNN
+	3    2400 14500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_B
+U 2 1 34B4197F
+P 2500 11700
+F 0 "CUTOFF_B" H 2400 11900 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2400 11800 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2500 11700 50  0001 C CNN
+F 3 "" H 2500 11700 50  0001 C CNN
+	2    2500 11700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_B
+U 3 1 34B4197B
+P 2600 11700
+F 0 "CUTOFF_B" H 2500 11900 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2500 11800 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2600 11700 50  0001 C CNN
+F 3 "" H 2600 11700 50  0001 C CNN
+	3    2600 11700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES VOL_IN_1
+U 2 1 453F7F02
+P 5900 9900
+F 0 "VOL_IN_1" H 5800 10100 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 5800 10000 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 5900 9900 50  0001 C CNN
+F 3 "" H 5900 9900 50  0001 C CNN
+	2    5900 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES VOL_IN_1
+U 3 1 453F7F06
+P 6000 9900
+F 0 "VOL_IN_1" H 5900 10100 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 5900 10000 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 6000 9900 50  0001 C CNN
+F 3 "" H 6000 9900 50  0001 C CNN
+	3    6000 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_ATT_A
+U 2 1 B964B917
+P 1800 7100
+F 0 "CUTOFF_ATT_A" H 1700 7300 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 1700 7200 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 1800 7100 50  0001 C CNN
+F 3 "" H 1800 7100 50  0001 C CNN
+	2    1800 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_ATT_A
+U 3 1 B964B913
+P 1900 7100
+F 0 "CUTOFF_ATT_A" H 1800 7300 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 1800 7200 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 1900 7100 50  0001 C CNN
+F 3 "" H 1900 7100 50  0001 C CNN
+	3    1900 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_A
+U 2 1 D0ACC92C
+P 2500 4700
+F 0 "CUTOFF_A" H 2400 4900 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2400 4800 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2500 4700 50  0001 C CNN
+F 3 "" H 2500 4700 50  0001 C CNN
+	2    2500 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:R1212NPADS_GRANDES CUTOFF_A
+U 3 1 D0ACC928
+P 2600 4700
+F 0 "CUTOFF_A" H 2500 4900 59  0001 L BNN
+F 1 "R1212NPADS_GRANDES" H 2500 4800 59  0001 L BNN
+F 2 "maske - VCF:R121N" H 2600 4700 50  0001 C CNN
+F 3 "" H 2600 4700 50  0001 C CNN
+	3    2600 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:SCHOTTKY-DIODEDO35-7 D4
+U 1 1 D1302267
+P 11900 1000
+F 0 "D4" H 11810 1075 59  0000 L BNN
+F 1 "1N5817" H 11810 865 59  0000 L BNN
+F 2 "maske - VCF:DO35-7" H 11900 1000 50  0001 C CNN
+F 3 "" H 11900 1000 50  0001 C CNN
+	1    11900 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:SCHOTTKY-DIODEDO35-7 D3
+U 1 1 46F8742F
+P 11900 2100
+F 0 "D3" H 11810 2175 59  0000 L BNN
+F 1 "1N5817" H 11810 1965 59  0000 L BNN
+F 2 "maske - VCF:DO35-7" H 11900 2100 50  0001 C CNN
+F 3 "" H 11900 2100 50  0001 C CNN
+	1    11900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:1N4148-2 D1
+U 1 1 C78C3FBD
+P 14700 9100
+F 0 "D1" H 14560 9179 70  0000 L BNN
+F 1 "1N4148-2" H 14530 8959 70  0000 L BNN
+F 2 "maske - VCF:DO35-2" H 14700 9100 50  0001 C CNN
+F 3 "" H 14700 9100 50  0001 C CNN
+	1    14700 9100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L maske_-_VCF-eagle-import:1N4148-2 D2
+U 1 1 0CADE672
+P 14800 16400
+F 0 "D2" H 14660 16479 70  0000 L BNN
+F 1 "1N4148-2" H 14630 16259 70  0000 L BNN
+F 2 "maske - VCF:DO35-2" H 14800 16400 50  0001 C CNN
+F 3 "" H 14800 16400 50  0001 C CNN
+	1    14800 16400
+	0    -1   -1   0   
+$EndComp
+Text Notes 9400 8600 0    59   ~ 0
+hi_pass_in_1
+Text Notes 16200 7500 0    59   ~ 0
+out_1
+Text Notes 7800 8900 0    59   ~ 0
+lo_pass_in_1
+Text Notes 18800 6800 0    59   ~ 0
+Peak
+Text Notes 15100 10200 0    59   ~ 0
+res_cv_1
+Text Notes 9500 15700 0    59   ~ 0
+hi_pass_in_1
+Text Notes 16600 14500 0    59   ~ 0
+out_1
+Text Notes 7900 16000 0    59   ~ 0
+lo_pass_in_1
+Text Notes 18700 13800 0    59   ~ 0
+Peak
+Text Notes 15200 17400 0    59   ~ 0
+res_cv_1
+Text Notes 13800 16900 0    59   ~ 0
+0.28V-p--->
+Text Notes 13600 16900 0    59   ~ 0
+res=max
+Text Notes 13700 16900 0    59   ~ 0
+sine=
+Text Notes 11900 16900 0    59   ~ 0
+10mV-p--->
+Text Notes 11700 16900 0    59   ~ 0
+res=max
+Text Notes 11800 16900 0    59   ~ 0
+sine=
+Text Notes 5000 6100 0    59   ~ 0
++6V<-->-6V
+Text Notes 7000 5800 0    59   ~ 0
++6V<-->-6V
+Text Notes 7700 4600 0    59   ~ 0
+-30mV<-->-250mV
+Wire Wire Line
+	12800 6200 12800 6700
+Wire Wire Line
+	15100 6600 16100 6600
+Wire Wire Line
+	12900 13300 12900 13800
+Wire Wire Line
+	15000 13700 16000 13700
+Wire Wire Line
+	3600 15300 3600 16000
+Wire Wire Line
+	17700 7900 17900 7900
+Wire Wire Line
+	11200 2100 11800 2100
+Wire Wire Line
+	11200 1000 11800 1000
+$EndSCHEMATC
