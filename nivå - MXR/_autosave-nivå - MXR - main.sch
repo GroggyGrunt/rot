@@ -1,0 +1,437 @@
+EESchema Schematic File Version 4
+LIBS:nivå - MXR - main-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL074 U?
+U 1 1 5CD87353
+P 3800 1800
+F 0 "U?" H 3800 2167 50  0000 C CNN
+F 1 "TL074" H 3800 2076 50  0000 C CNN
+F 2 "" H 3750 1900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3850 2000 50  0001 C CNN
+	1    3800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 2 1 5CD87DE3
+P 2300 3400
+F 0 "U?" H 2300 3767 50  0000 C CNN
+F 1 "TL074" H 2300 3676 50  0000 C CNN
+F 2 "" H 2250 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 3600 50  0001 C CNN
+	2    2300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 4 1 5CD88C84
+P -1200 4500
+F 0 "U?" H -1200 4867 50  0000 C CNN
+F 1 "TL074" H -1200 4776 50  0000 C CNN
+F 2 "" H -1250 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H -1150 4700 50  0001 C CNN
+	4    -1200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 3 1 5CD89C43
+P -1150 3650
+F 0 "U?" H -1150 4017 50  0000 C CNN
+F 1 "TL074" H -1150 3926 50  0000 C CNN
+F 2 "" H -1200 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H -1100 3850 50  0001 C CNN
+	3    -1150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 5 1 5CD8AF82
+P -1050 5400
+F 0 "U?" H -1092 5446 50  0000 L CNN
+F 1 "TL074" H -1092 5355 50  0000 L CNN
+F 2 "" H -1100 5500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H -1000 5600 50  0001 C CNN
+	5    -1050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5CD90E54
+P 9650 900
+F 0 "R?" H 9718 946 50  0000 L CNN
+F 1 "R_US" H 9718 855 50  0000 L CNN
+F 2 "" V 9690 890 50  0001 C CNN
+F 3 "~" H 9650 900 50  0001 C CNN
+	1    9650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5CD91575
+P 10250 900
+F 0 "C?" H 10341 946 50  0000 L CNN
+F 1 "CP1_Small" H 10341 855 50  0000 L CNN
+F 2 "" H 10250 900 50  0001 C CNN
+F 3 "~" H 10250 900 50  0001 C CNN
+	1    10250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5CD92271
+P 9600 2050
+F 0 "RV?" H 9533 2096 50  0000 R CNN
+F 1 "R_POT_US" H 9533 2005 50  0000 R CNN
+F 2 "" H 9600 2050 50  0001 C CNN
+F 3 "~" H 9600 2050 50  0001 C CNN
+	1    9600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5CD93A6F
+P 10100 1950
+F 0 "#PWR?" H 10100 1700 50  0001 C CNN
+F 1 "Earth" H 10100 1800 50  0001 C CNN
+F 2 "" H 10100 1950 50  0001 C CNN
+F 3 "~" H 10100 1950 50  0001 C CNN
+	1    10100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5CD95754
+P 10600 1450
+F 0 "#PWR?" H 10600 1300 50  0001 C CNN
+F 1 "+12V" H 10615 1623 50  0000 C CNN
+F 2 "" H 10600 1450 50  0001 C CNN
+F 3 "" H 10600 1450 50  0001 C CNN
+	1    10600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CD969EF
+P 10600 1950
+F 0 "#PWR?" H 10600 2050 50  0001 C CNN
+F 1 "-12V" H 10615 2123 50  0000 C CNN
+F 2 "" H 10600 1950 50  0001 C CNN
+F 3 "" H 10600 1950 50  0001 C CNN
+	1    10600 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM13600 U?
+U 2 1 5CDA0350
+P -2500 2800
+F 0 "U?" H -2600 3148 50  0000 C CNN
+F 1 "LM13600" H -2600 3057 50  0000 C CNN
+F 2 "" H -2800 2825 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS007980.PDF" H -2800 2825 50  0001 C CNN
+	2    -2500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13600 U?
+U 3 1 5CDA22F3
+P -2400 3900
+F 0 "U?" H -2400 4267 50  0000 C CNN
+F 1 "LM13600" H -2400 4176 50  0000 C CNN
+F 2 "" H -2700 3925 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS007980.PDF" H -2700 3925 50  0001 C CNN
+	3    -2400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13600 U?
+U 4 1 5CDA340C
+P -2350 4650
+F 0 "U?" H -2450 4998 50  0000 C CNN
+F 1 "LM13600" H -2450 4907 50  0000 C CNN
+F 2 "" H -2650 4675 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS007980.PDF" H -2650 4675 50  0001 C CNN
+	4    -2350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13600 U?
+U 5 1 5CDA465B
+P -2500 5250
+F 0 "U?" H -2542 5296 50  0000 L CNN
+F 1 "LM13600" H -2542 5205 50  0000 L CNN
+F 2 "" H -2800 5275 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS007980.PDF" H -2800 5275 50  0001 C CNN
+	5    -2500 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 2000 0    50   Input ~ 0
+IN1
+Text GLabel 9750 1550 0    50   Input ~ 0
+IN1
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5CDDB119
+P 2150 1000
+F 0 "RV?" V 1945 1000 50  0000 C CNN
+F 1 "R_POT_US" V 2036 1000 50  0000 C CNN
+F 2 "" H 2150 1000 50  0001 C CNN
+F 3 "~" H 2150 1000 50  0001 C CNN
+	1    2150 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5CDE392D
+P 1650 1500
+F 0 "R?" V 1445 1500 50  0000 C CNN
+F 1 "R_US" V 1536 1500 50  0000 C CNN
+F 2 "" V 1690 1490 50  0001 C CNN
+F 3 "~" H 1650 1500 50  0001 C CNN
+	1    1650 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5CDE5051
+P 1650 2000
+F 0 "R?" V 1445 2000 50  0000 C CNN
+F 1 "R_US" V 1536 2000 50  0000 C CNN
+F 2 "" V 1690 1990 50  0001 C CNN
+F 3 "~" H 1650 2000 50  0001 C CNN
+	1    1650 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5CDE5926
+P 2000 2150
+F 0 "R?" H 1932 2104 50  0000 R CNN
+F 1 "R_US" H 1932 2195 50  0000 R CNN
+F 2 "" V 2040 2140 50  0001 C CNN
+F 3 "~" H 2000 2150 50  0001 C CNN
+	1    2000 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 2000 1500 2000
+Wire Wire Line
+	1800 2000 2000 2000
+$Comp
+L power:Earth #PWR?
+U 1 1 5CE67DF6
+P 2000 2750
+F 0 "#PWR?" H 2000 2500 50  0001 C CNN
+F 1 "Earth" H 2000 2600 50  0001 C CNN
+F 2 "" H 2000 2750 50  0001 C CNN
+F 3 "~" H 2000 2750 50  0001 C CNN
+	1    2000 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Amplifier_Operational:LM13600 U?
+U 1 1 5CE69AB1
+P 2800 1900
+F 0 "U?" H 2800 2267 50  0000 C CNN
+F 1 "LM13600" H 2800 2176 50  0000 C CNN
+F 2 "" H 2500 1925 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS007980.PDF" H 2500 1925 50  0001 C CNN
+	1    2800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2000 2500 2000
+Connection ~ 2000 2000
+Wire Wire Line
+	2500 1900 2500 1850
+Wire Wire Line
+	2500 1850 2000 1850
+Wire Wire Line
+	2000 1850 2000 1500
+Wire Wire Line
+	2000 1500 1800 1500
+$Comp
+L power:+12V #PWR?
+U 1 1 5CE6CDDB
+P 1500 1000
+F 0 "#PWR?" H 1500 850 50  0001 C CNN
+F 1 "+12V" H 1515 1173 50  0000 C CNN
+F 2 "" H 1500 1000 50  0001 C CNN
+F 3 "" H 1500 1000 50  0001 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1500 1500 1000
+Wire Wire Line
+	2500 1800 2150 1800
+Wire Wire Line
+	2150 1800 2150 1500
+$Comp
+L Device:R_US R?
+U 1 1 5CE700AE
+P 2650 1500
+F 0 "R?" V 2445 1500 50  0000 C CNN
+F 1 "R_US" V 2536 1500 50  0000 C CNN
+F 2 "" V 2690 1490 50  0001 C CNN
+F 3 "~" H 2650 1500 50  0001 C CNN
+	1    2650 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 1500 2150 1500
+$Comp
+L power:Earth #PWR?
+U 1 1 5CE7143E
+P 3000 1500
+F 0 "#PWR?" H 3000 1250 50  0001 C CNN
+F 1 "Earth" H 3000 1350 50  0001 C CNN
+F 2 "" H 3000 1500 50  0001 C CNN
+F 3 "~" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 1500 2800 1500
+$Comp
+L Device:R_US R?
+U 1 1 5CE7A4F2
+P 2150 1350
+F 0 "R?" H 2082 1304 50  0000 R CNN
+F 1 "R_US" H 2082 1395 50  0000 R CNN
+F 2 "" V 2190 1340 50  0001 C CNN
+F 3 "~" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	-1   0    0    1   
+$EndComp
+Connection ~ 2150 1500
+Wire Wire Line
+	2150 1200 2150 1150
+$Comp
+L power:-12V #PWR?
+U 1 1 5CE7C517
+P 1900 1100
+F 0 "#PWR?" H 1900 1200 50  0001 C CNN
+F 1 "-12V" H 1915 1273 50  0000 C CNN
+F 2 "" H 1900 1100 50  0001 C CNN
+F 3 "" H 1900 1100 50  0001 C CNN
+	1    1900 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5CE7E45A
+P 2400 900
+F 0 "#PWR?" H 2400 750 50  0001 C CNN
+F 1 "+12V" H 2415 1073 50  0000 C CNN
+F 2 "" H 2400 900 50  0001 C CNN
+F 3 "" H 2400 900 50  0001 C CNN
+	1    2400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1100 1900 1000
+Wire Wire Line
+	1900 1000 2000 1000
+Wire Wire Line
+	2300 1000 2400 1000
+Wire Wire Line
+	2400 1000 2400 900 
+Wire Wire Line
+	3100 1900 3500 1900
+Wire Wire Line
+	3500 1700 3000 1700
+Wire Wire Line
+	3000 1700 3000 1500
+Connection ~ 3000 1500
+Text GLabel 4500 1800 2    50   Input ~ 0
+OUT1
+Wire Wire Line
+	4100 1800 4500 1800
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5CEA0D6A
+P 3800 2500
+F 0 "RV?" V 3595 2500 50  0000 C CNN
+F 1 "R_POT_US" V 3686 2500 50  0000 C CNN
+F 2 "" H 3800 2500 50  0001 C CNN
+F 3 "~" H 3800 2500 50  0001 C CNN
+	1    3800 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 2500 3500 2500
+Wire Wire Line
+	3500 2500 3500 1900
+Connection ~ 3500 1900
+Wire Wire Line
+	3950 2500 4100 2500
+Wire Wire Line
+	4100 2500 4100 1800
+Connection ~ 4100 1800
+Wire Wire Line
+	3500 2500 3500 2750
+Wire Wire Line
+	3500 2750 3800 2750
+Wire Wire Line
+	3800 2750 3800 2650
+Connection ~ 3500 2500
+Text GLabel 1000 3500 0    50   Input ~ 0
+CV1
+$Comp
+L Device:R_US R?
+U 1 1 5CEA9A6D
+P 1650 3500
+F 0 "R?" V 1445 3500 50  0000 C CNN
+F 1 "R_US" V 1536 3500 50  0000 C CNN
+F 2 "" V 1690 3490 50  0001 C CNN
+F 3 "~" H 1650 3500 50  0001 C CNN
+	1    1650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5CEAA857
+P 2000 4150
+F 0 "R?" H 1932 4104 50  0000 R CNN
+F 1 "R_US" H 1932 4195 50  0000 R CNN
+F 2 "" V 2040 4140 50  0001 C CNN
+F 3 "~" H 2000 4150 50  0001 C CNN
+	1    2000 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 2300 2000 2750
+Wire Wire Line
+	2000 2750 2000 3300
+Connection ~ 2000 2750
+Wire Wire Line
+	2000 3500 1800 3500
+Wire Wire Line
+	1500 3500 1000 3500
+$Comp
+L Device:D D?
+U 1 1 5CEE5F1B
+P 2800 3250
+F 0 "D?" V 2754 3329 50  0000 L CNN
+F 1 "D" V 2845 3329 50  0000 L CNN
+F 2 "" H 2800 3250 50  0001 C CNN
+F 3 "~" H 2800 3250 50  0001 C CNN
+	1    2800 3250
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
