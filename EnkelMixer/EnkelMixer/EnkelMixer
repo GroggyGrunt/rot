@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>C:\Users\TrplTiT\Documents\GitHub\rot\EnkelMixer\EnkelMixer\EnkelMixer.sch</h1>
+    <p>08/02/19 14:28:25</p>
+    <p>Eeschema (5.1.2)-1</p>
+    <p><b>Component Count:</b>73</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C1, C4</td><td>2</td><td>22pF</td><td>Device:CP1_Small</td><td>~</td><td>Polarized capacitor, small US symbol</td><td></td></tr><tr><td>C2, C3, C5, C6, C7, C8, C9, C10</td><td>8</td><td>0.1uF</td><td>Device:CP1_Small</td><td>~</td><td>Polarized capacitor, small US symbol</td><td></td></tr><tr><td>J1, J2, J3, J4, J5, J6, J7, J8, J9, J10</td><td>10</td><td>PJ301M-12</td><td>Eurorack:PJ301M-12</td><td></td><td></td><td></td></tr><tr><td>R1, R2, R3, R4, R5, R7, R8, R9, R10, R11, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32, R33, R34, R35, R36</td><td>34</td><td>1K</td><td>Device:R_Small_US</td><td>~</td><td>Resistor, small US symbol</td><td></td></tr><tr><td>R6, R12</td><td>2</td><td>39K</td><td>Device:R_Small_US</td><td>~</td><td>Resistor, small US symbol</td><td></td></tr><tr><td>RV1, RV2, RV3, RV4, RV5, RV6, RV7, RV8, RV9, RV10, RV11, RV12, RV13, RV14, RV15, RV16</td><td>16</td><td>10K</td><td>Device:R_POT_US</td><td>~</td><td>Potentiometer, US symbol</td><td></td></tr><tr><td>U1</td><td>1</td><td>TL074</td><td>Amplifier_Operational:TL074</td><td>http://www.ti.com/lit/ds/symlink/tl071.pdf</td><td>Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
