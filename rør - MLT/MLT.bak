@@ -20,7 +20,7 @@ U 1 1 5CD16B9C
 P 2300 2100
 F 0 "U1" H 2300 2467 50  0000 C CNN
 F 1 "TL074" H 2300 2376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 2250 2200 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 2250 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 2300 50  0001 C CNN
 	1    2300 2100
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 2 1 5CD1BCDF
 P 2300 2600
 F 0 "U1" H 2300 2967 50  0000 C CNN
 F 1 "TL074" H 2300 2876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 2250 2700 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 2250 2700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 2800 50  0001 C CNN
 	2    2300 2600
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 3 1 5CD1E376
 P 2300 3100
 F 0 "U1" H 2300 3467 50  0000 C CNN
 F 1 "TL074" H 2300 3376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 2250 3200 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 2250 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 3300 50  0001 C CNN
 	3    2300 3100
 	1    0    0    -1  
@@ -53,7 +53,7 @@ U 4 1 5CD221B5
 P 2300 3600
 F 0 "U1" H 2300 3967 50  0000 C CNN
 F 1 "TL074" H 2300 3876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 2250 3700 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 2250 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 3800 50  0001 C CNN
 	4    2300 3600
 	1    0    0    -1  
@@ -463,7 +463,7 @@ U 1 1 5CDC1A66
 P 5300 2100
 F 0 "U2" H 5300 2467 50  0000 C CNN
 F 1 "TL074" H 5300 2376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 5250 2200 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 5250 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5350 2300 50  0001 C CNN
 	1    5300 2100
 	1    0    0    -1  
@@ -474,7 +474,7 @@ U 2 1 5CDC1A6C
 P 5300 2600
 F 0 "U2" H 5300 2967 50  0000 C CNN
 F 1 "TL074" H 5300 2876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 5250 2700 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 5250 2700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5350 2800 50  0001 C CNN
 	2    5300 2600
 	1    0    0    -1  
@@ -485,7 +485,7 @@ U 3 1 5CDC1A72
 P 5300 3100
 F 0 "U2" H 5300 3467 50  0000 C CNN
 F 1 "TL074" H 5300 3376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 5250 3200 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 5250 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5350 3300 50  0001 C CNN
 	3    5300 3100
 	1    0    0    -1  
@@ -496,7 +496,7 @@ U 4 1 5CDC1A78
 P 5300 3600
 F 0 "U2" H 5300 3967 50  0000 C CNN
 F 1 "TL074" H 5300 3876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 5250 3700 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 5250 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5350 3800 50  0001 C CNN
 	4    5300 3600
 	1    0    0    -1  
@@ -732,7 +732,7 @@ U 5 1 5CDC1AFB
 P 4500 5750
 F 0 "U1" H 4458 5796 50  0000 L CNN
 F 1 "TL074" H 4458 5705 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 4450 5850 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 4450 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4550 5950 50  0001 C CNN
 	5    4500 5750
 	1    0    0    -1  
@@ -743,7 +743,7 @@ U 1 1 5CDD3CA6
 P 8300 2100
 F 0 "U3" H 8300 2467 50  0000 C CNN
 F 1 "TL074" H 8300 2376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 8250 2200 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 8250 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8350 2300 50  0001 C CNN
 	1    8300 2100
 	1    0    0    -1  
@@ -754,7 +754,7 @@ U 2 1 5CDD3CAC
 P 8300 2600
 F 0 "U3" H 8300 2967 50  0000 C CNN
 F 1 "TL074" H 8300 2876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 8250 2700 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 8250 2700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8350 2800 50  0001 C CNN
 	2    8300 2600
 	1    0    0    -1  
@@ -765,7 +765,7 @@ U 3 1 5CDD3CB2
 P 8300 3100
 F 0 "U3" H 8300 3467 50  0000 C CNN
 F 1 "TL074" H 8300 3376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 8250 3200 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 8250 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8350 3300 50  0001 C CNN
 	3    8300 3100
 	1    0    0    -1  
@@ -776,7 +776,7 @@ U 4 1 5CDD3CB8
 P 8300 3600
 F 0 "U3" H 8300 3967 50  0000 C CNN
 F 1 "TL074" H 8300 3876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 8250 3700 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 8250 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8350 3800 50  0001 C CNN
 	4    8300 3600
 	1    0    0    -1  
@@ -998,7 +998,7 @@ U 5 1 5CDD3D3B
 P 5000 5750
 F 0 "U3" H 4958 5796 50  0000 L CNN
 F 1 "TL074" H 4958 5705 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 4950 5850 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 4950 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5050 5950 50  0001 C CNN
 	5    5000 5750
 	1    0    0    -1  
@@ -1009,7 +1009,7 @@ U 5 1 5CD24328
 P 4750 5750
 F 0 "U2" H 4708 5796 50  0000 L CNN
 F 1 "TL074" H 4708 5705 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W8.89mm_SMDSocket_LongPads" H 4700 5850 50  0001 C CNN
+F 2 "Package_DIP:SMDIP-14_W9.53mm" H 4700 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4800 5950 50  0001 C CNN
 	5    4750 5750
 	1    0    0    -1  
