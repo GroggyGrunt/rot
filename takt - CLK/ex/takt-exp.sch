@@ -1112,12 +1112,6 @@ Tr7
 Text GLabel 9550 3750 2    50   Input ~ 0
 Tr9
 Wire Wire Line
-	1550 3400 1550 3450
-Wire Wire Line
-	4050 3400 4050 3450
-Wire Wire Line
-	6550 3400 6550 3450
-Wire Wire Line
 	1550 3300 1550 3450
 Wire Wire Line
 	4050 3300 4050 3450
