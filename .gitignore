@@ -1,0 +1,13 @@
+# KiCad: backups, cache og lokale innstillinger
+*.bak
+*-bak
+*-backups/
+fp-info-cache
+_autosave-*
+~*.lck
+*.kicad_prl
+*-save.pro
+*-save.kicad_pcb
+
+# Arduino-byggfiler
+build/
