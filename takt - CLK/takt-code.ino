@@ -1,117 +1,134 @@
-#include <SimpleTimer.h>
 #include <Wire.h>
 
+// Takt - klokkemodul for Eurorack
+// Pinne 2..10: utganger, pinne 11: reset, A0: tempo-pot, A4/A5: I2C til ekspansjonsmodul (adresse 8)
+
 //sets pinout
-const int OUT_0_PIN = 2;
-const int OUT_1_PIN = 3;
-const int OUT_2_PIN = 4;
-const int OUT_3_PIN = 5;
-const int OUT_4_PIN = 6;
-const int OUT_5_PIN = 7;
-const int OUT_6_PIN = 8;
-const int OUT_7_PIN = 9;
-const int OUT_8_PIN = 10;
+const int NUM_OUTPUTS = 9;
+const int OUT_PINS[NUM_OUTPUTS] = {2, 3, 4, 5, 6, 7, 8, 9, 10};
+const int POT_PIN   = A0;
+const int RESET_PIN = 11;       // HIGH = start på steg 0 (trenger pull-down, f.eks. 10k til GND)
 
-//dividers
-const int divider0 = 1;       //led1
-const int divider1 = 2;       //led2
-const int divider2 = 4;       //led3
-const int divider3 = 8;      //led4
-const int divider4 = 16;      //led5
-const int divider5 = 32;       //led6
-const int divider6 = 3;       //led7
-const int divider7 = 7;       //led8
-const int divider8 = 13;       //led9
+//dividers                     led1 led2 led3 led4 led5 led6 led7 led8 led9
+const int DIVIDERS[NUM_OUTPUTS] = {1,   2,   4,   8,   16,  32,  3,   7,   13};
 
-int bpm = 0;            	  //bpm
-int bpmHi = 250;        	  //max bpm
-int bpmLo = 30;				  //min bpm
-int bpmOld = 0;        		  //old bpm
-int bpmPot = 0;     //bpmPot
-int cyclePeriod = 60000 / bpm / 4;  //set cycle length
-unsigned long count = 0;      //run you long time baby 150 000h - elektrofon
-bool started = false; 
+const int I2C_ADDRESS = 8;
+const int BPM_HI = 250;         //max bpm (maks 255, sendes som én byte over I2C)
+const int BPM_LO = 30;          //min bpm
+const int POT_THRESHOLD = 5;    //bpm update threshold, hindrer at tempoet hopper av støy på poten
+const unsigned long PULSE_US = 2000;          // 2ms trigger length
+const unsigned long RESET_DEBOUNCE_MS = 20;
 
-SimpleTimer timer;
+#define DEBUG 0  // sett til 1 for count/bpm på serial
 
-void cycleOn();           //define cycle function on?
-void cycleOff();          //define cycle function off?
-void rqBpm();             //define i2c request
+volatile byte bpm = 0;          // leses av I2C-avbruddet, derfor byte (atomisk) og volatile
+int bpmPotOld = -1000;
+unsigned long cyclePeriod;      // mikrosekunder per 1/16-note
+unsigned long count = 0;
+unsigned long countWrap;        // count går rundt på minste felles multiplum av delerne, så ingen utgang hopper
+unsigned long nextStep;
+unsigned long pulseStart;
+bool pulseOn = false;
+bool resetWasHigh = false;
+unsigned long lastReset = 0;
 
-void setup() {            //sets pinmode I/O
-  Wire.begin(8); // join i2c bus (address optional for master)
-  Wire.onRequest(rqBpm); // register event
-  Serial.begin(9600);
-  pinMode(OUT_0_PIN, OUTPUT);
-  pinMode(OUT_1_PIN, OUTPUT);
-  pinMode(OUT_2_PIN, OUTPUT);
-  pinMode(OUT_3_PIN, OUTPUT);
-  pinMode(OUT_4_PIN, OUTPUT);
-  pinMode(OUT_5_PIN, OUTPUT);
-  pinMode(OUT_6_PIN, OUTPUT);
-  pinMode(OUT_7_PIN, OUTPUT);
-  pinMode(OUT_8_PIN, OUTPUT);
-  pinMode(A0, INPUT);
+void setup() {
+  Wire.begin(I2C_ADDRESS);
+  Wire.onRequest(rqBpm);
+#if DEBUG
+  Serial.begin(115200);
+#endif
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    pinMode(OUT_PINS[i], OUTPUT);
+  }
+  pinMode(POT_PIN, INPUT);
+  pinMode(RESET_PIN, INPUT);
+
+  countWrap = 1;
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    countWrap = lcm(countWrap, DIVIDERS[i]);
+  }
+
+  readBpm();
+  nextStep = micros();
 }
 
-void loop() {           //repeating code
-  
-  bpmPot = analogRead(A0);      //set bpmPot to analog input A0
-  
-  if (!started) {         //starts if not started
-    bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
-    cyclePeriod = 60000 / bpm / 4;
-    cycleOn();            
-    started = true;
+void loop() {
+  unsigned long now = micros();
+
+  // reset på stigende flanke: steg 0 fyrer med en gang
+  bool resetHigh = digitalRead(RESET_PIN) == HIGH;
+  if (resetHigh && !resetWasHigh && millis() - lastReset >= RESET_DEBOUNCE_MS) {
+    lastReset = millis();
+    count = 0;
+    nextStep = now;
   }
-      
-  if (abs(bpmOld - bpmPot) > 5){ 	//bpm update threshold
-    bpm = map(bpmPot, 0, 1023, bpmLo, bpmHi);
-    cyclePeriod = 60000 / bpm / 4;
-    bpmOld = bpmPot;      //save bpmPot  in bpmOld
-    cyclePeriod = 60000 / bpm / 4;  //set cycle length
+  resetWasHigh = resetHigh;
+
+  if ((long)(now - nextStep) >= 0) {
+    cycleOn(now);
+  }
+
+  if (pulseOn && now - pulseStart >= PULSE_US) {
+    cycleOff();
+  }
+
+#if DEBUG
+  static unsigned long lastPrint = 0;
+  if (millis() - lastPrint >= 250) { // strupet, så serial aldri blokkerer
+    lastPrint = millis();
     Serial.print(" count: ");
     Serial.print(count);
-    Serial.print(" bpmPot: ");
-    Serial.print(bpmPot);
     Serial.print(" bpm: ");
     Serial.println(bpm);
-   }
-  
-  timer.run();
+  }
+#endif
 }
 
-void cycleOn() {
-  digitalWrite(OUT_0_PIN, !(count % divider0));
-  digitalWrite(OUT_1_PIN, !(count % divider1));
-  digitalWrite(OUT_2_PIN, !(count % divider2));
-  digitalWrite(OUT_3_PIN, !(count % divider3));
-  digitalWrite(OUT_4_PIN, !(count % divider4));
-  digitalWrite(OUT_5_PIN, !(count % divider5));
-  digitalWrite(OUT_6_PIN, !(count % divider6));
-  digitalWrite(OUT_7_PIN, !(count % divider7));
-  digitalWrite(OUT_8_PIN, !(count % divider8));
-  
-  timer.setTimeout(cyclePeriod, cycleOn);
-  timer.setTimeout(2, cycleOff);  // 2ms trigger length
+void readBpm() {
+  int bpmPot = analogRead(POT_PIN);
+  if (abs(bpmPot - bpmPotOld) > POT_THRESHOLD) {
+    bpmPotOld = bpmPot;
+    bpm = map(bpmPot, 0, 1023, BPM_LO, BPM_HI);
+    cyclePeriod = 60000000UL / bpm / 4;
+  }
 }
 
-void rqBpm() {
-  Wire.write(bpm); // respond with message of 6 bytes
-  // as expected by master
+void cycleOn(unsigned long now) {
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    digitalWrite(OUT_PINS[i], count % DIVIDERS[i] == 0);
+  }
+  pulseStart = now;
+  pulseOn = true;
+
+  count = (count + 1) % countWrap;
+
+  readBpm();
+
+  // neste steg regnes fra forrige planlagte tidspunkt, ikke fra "nå", så klokka ikke sklir
+  nextStep += cyclePeriod;
+  if ((long)(now - nextStep) >= 0) { // henger vi etter (f.eks. etter stor tempoendring), start på nytt
+    nextStep = now + cyclePeriod;
+  }
 }
 
 void cycleOff() {
-  digitalWrite(OUT_0_PIN, LOW);
-  digitalWrite(OUT_1_PIN, LOW);
-  digitalWrite(OUT_2_PIN, LOW);
-  digitalWrite(OUT_3_PIN, LOW);
-  digitalWrite(OUT_4_PIN, LOW);
-  digitalWrite(OUT_5_PIN, LOW);
-  digitalWrite(OUT_6_PIN, LOW);
-  digitalWrite(OUT_7_PIN, LOW);
-  digitalWrite(OUT_8_PIN, LOW);
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    digitalWrite(OUT_PINS[i], LOW);
+  }
+  pulseOn = false;
+}
 
-  count++;
+void rqBpm() {
+  Wire.write(bpm); // svarer ekspansjonsmodulen med én byte
+}
 
+unsigned long lcm(unsigned long a, unsigned long b) {
+  unsigned long x = a, y = b;
+  while (y) {
+    unsigned long t = x % y;
+    x = y;
+    y = t;
+  }
+  return a / x * b;
 }
