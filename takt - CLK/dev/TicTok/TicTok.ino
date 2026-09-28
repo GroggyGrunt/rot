@@ -1,742 +1,101 @@
 //Programmed by SyntheMafia(06_06_2018)
 //Edited by GGroggyGrunt(09_01_2019)
 //Trigger Clock for synth
+//
+// Pinne 2..9 gir pulser på ÷1, ÷2, ÷4, ÷8, ÷16, ÷32, ÷64, ÷128 (i 1/16-noter)
+// Potmeter på A0 styrer tempo
+// Reset på pinne 11: HIGH starter sekvensen på nytt fra steg 0 (trenger pull-down, f.eks. 10k til GND)
 
-#include <SimpleTimer.h>
+const int FIRST_PIN   = 2;
+const int NUM_OUTPUTS = 8;
+const int STEPS       = 1 << (NUM_OUTPUTS - 1); // 128 steg -> alle utganger går opp igjen samtidig
+const int POT_PIN     = A0;
+const int RESET_PIN   = 11;
+const unsigned long RESET_DEBOUNCE_MS = 20;
 
+const float MIN_BPM        = 60;
+const float MAX_BPM        = 240;
+const int   STEPS_PER_BEAT = 4;     // 1/16-noter
+const unsigned long PULSE_US = 2000; // pulslengde, 2 ms
 
-SimpleTimer timer;
+#define DEBUG 0  // sett til 1 for BPM/count på serial
+
 int count = 0;
+float bpm = MIN_BPM;
+unsigned long nextStep;
+unsigned long pulseStart;
+bool pulseOn = false;
+bool resetWasHigh = false;
+unsigned long lastReset = 0;
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(11, INPUT);
- }
-
-bool started = false;
-int priority = 0;
-int input1X = 0;
-float bpm; 
-int maxBpm = 240*4; // maxBpm... go figure 
-int minBpm = 60*4;  // minBpm.. go figure again 
-int max_time = ((1/(minBpm/60)) * 1000);
-int min_time = ((1/(maxBpm/60)) * 1000);
+#if DEBUG
+  Serial.begin(115200);
+#endif
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    pinMode(FIRST_PIN + i, OUTPUT);
+  }
+  pinMode(RESET_PIN, INPUT);
+  nextStep = micros();
+}
 
 void loop() {
-  
-  if (!started) {
-    cycle_on();
-    started = true;
+  unsigned long now = micros();
+
+  // reset på stigende flanke: steg 0 fyrer med en gang
+  bool resetHigh = digitalRead(RESET_PIN) == HIGH;
+  if (resetHigh && !resetWasHigh && millis() - lastReset >= RESET_DEBOUNCE_MS) {
+    lastReset = millis();
+    count = 0;
+    nextStep = now;
   }
-  
-  timer.run();
-  Serial.print(" COUNT: ");
-  Serial.print(count);
-  Serial.print(" BPM: ");
-  Serial.println(bpm/4);
-  
+  resetWasHigh = resetHigh;
+
+  if ((long)(now - nextStep) >= 0) {
+    cycle_on(now);
+  }
+
+  if (pulseOn && now - pulseStart >= PULSE_US) {
+    cycle_off();
+  }
+
+#if DEBUG
+  static unsigned long lastPrint = 0;
+  if (millis() - lastPrint >= 250) { // strupet, så serial aldri blokkerer
+    lastPrint = millis();
+    Serial.print(" COUNT: ");
+    Serial.print(count);
+    Serial.print(" BPM: ");
+    Serial.println(bpm);
+  }
+#endif
+}
+
+void cycle_on(unsigned long now) {
+  // utgang i fyrer når count er delelig med 2^i
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    if ((count & ((1 << i) - 1)) == 0) {
+      digitalWrite(FIRST_PIN + i, HIGH);
+    }
+  }
+  pulseStart = now;
+  pulseOn = true;
+
+  count = (count + 1) % STEPS;
+
+  bpm = MIN_BPM + (MAX_BPM - MIN_BPM) * analogRead(POT_PIN) / 1023.0;
+  unsigned long period = 60000000.0 / (bpm * STEPS_PER_BEAT);
+
+  // neste steg regnes fra forrige planlagte tidspunkt, ikke fra "nå", så klokka ikke sklir
+  nextStep += period;
+  if ((long)(now - nextStep) >= 0) { // henger vi etter (f.eks. etter stor tempoendring), start på nytt
+    nextStep = now + period;
+  }
 }
 
 void cycle_off() {
-  digitalWrite(2, LOW);
-  digitalWrite(3, LOW);
-  digitalWrite(4, LOW);
-  digitalWrite(5, LOW);
-  digitalWrite(6, LOW);
-  digitalWrite(7, LOW);
-  digitalWrite(8, LOW);
-  digitalWrite(9, LOW);
-  digitalWrite(10, LOW);
-  
-  count++;
-
- /* int input2 = digitalRead(11); //read push button for reset loop
-  
-    if (input2 == HIGH){ // feels for voltage
-    count = 127; // sets count to last (127) so next step is 0
-  }*/
-  
-    if (count == 127){ //checks steps for 127
-    count = 0; // resets loop to count 0
-	}  
-
-}
-
-void cycle_on() {
-
-  switch (count) {
-    case 0:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      digitalWrite(7, HIGH);      
-      digitalWrite(8, HIGH);
-      digitalWrite(9, HIGH); 
-      break;
-
-    case 1:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 2:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 3:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 4:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 5:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 6:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 7:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 8:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 9:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 10:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 11:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 12:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 13:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 14:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 15:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 16:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      break;
-
-    case 17:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 18:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 19:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 20:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 21:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 22:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 23:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 24:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 25:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 26:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 27:
-    digitalWrite(2, HIGH);
-      break;
-      
-    case 28:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 29:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 30:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 31:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 32:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      digitalWrite(7, HIGH);      
-      break;
-
-    case 33:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 34:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 35:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 36:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 37:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 38:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 39:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 40:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 41:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 42:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 43:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 44:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 45:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 46:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 47:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 48:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      break;
-
-    case 49:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 50:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 51:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 52:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 53:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 54:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 55:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 56:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 57:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 58:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 59:
-    digitalWrite(2, HIGH);
-      break;
-      
-    case 60:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 61:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 62:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 63:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 64:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      digitalWrite(7, HIGH);      
-      digitalWrite(8, HIGH);
-      break;
-
-    case 65:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 66:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 67:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 68:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 69:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 70:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 71:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 72:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 73:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 74:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 75:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 76:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 77:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 78:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 79:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 80:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      break;
-
-    case 81:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 82:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 83:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 84:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 85:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 86:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 87:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 88:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 89:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 90:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 91:
-    digitalWrite(2, HIGH);
-      break;
-      
-    case 92:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 93:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 94:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 95:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 96:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      digitalWrite(7, HIGH);      
-      break;
-
-    case 97:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 98:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 99:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 100:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 101:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 102:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 103:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 104:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 105:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 106:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 107:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 108:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 109:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 110:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 111:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 112:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      digitalWrite(6, HIGH);
-      break;
-
-    case 113:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 114:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 115:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 116:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-
-    case 117:
-      digitalWrite(2, HIGH);
-      break;
-
-    case 118:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-
-    case 119:
-      digitalWrite(2, HIGH);
-      break;
-  
-    case 120:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      digitalWrite(5, HIGH);
-      break;
-
-    case 121:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 122:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 123:
-    digitalWrite(2, HIGH);
-      break;
-      
-    case 124:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      digitalWrite(4, HIGH);
-      break;
-      
-    case 125:
-      digitalWrite(2, HIGH);
-      break;
-      
-    case 126:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, HIGH);
-      break;
-      
-    case 127:
-      digitalWrite(2, HIGH);
-   /*   digitalWrite(10, HIGH); */
-      break;
-
+  for (int i = 0; i < NUM_OUTPUTS; i++) {
+    digitalWrite(FIRST_PIN + i, LOW);
   }
-
-  int input1 = analogRead(A0);
-
-  if (priority == 0){
-    bpm = map(input1, 0, 1023, minBpm, maxBpm);
-     
-  }
-
-  if (input1X - input1 > 5){
-    priority = 0;
-  }
-  if (input1X - input1 < -5){
-    priority = 0;
-  }
-
-  input1X = input1;
-  
-  int cycletime = (60000/bpm);
-  float cycle_start = cycletime;
-  float cycle_stop = 2;
-
-  timer.setTimeout(cycle_start, cycle_on);
-  timer.setTimeout(cycle_stop, cycle_off);
-
+  pulseOn = false;
 }
